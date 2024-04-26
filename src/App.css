@@ -1,38 +1,168 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Gadugi";
+  src: url(../src/assets//fonts//GADUGI.TTF);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Gadugi-Bold";
+  src: url(../src/assets//fonts//GADUGIB.TTF);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Global Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1 {
+  font-size: 45px;
+  font-family: "Stint";
+  font-family: "Gadugi", Raleway Dots, cursive;
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+h4 {
+  font-size: 1em;
+  color: #333;
+}
+
+h5 {
+  font-size: 0.8em;
+  color: #333;
+}
+
+h6 {
+  font-size: 0.6em;
+  color: #333;
+}
+
+p {
+  font-size: 1em;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  background-color: #7c99ff;
   color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  height: 60px;
+  width: max-content;
+  font-size: 30px;
+  margin: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Header Styling */
+
+.header {
+  background-color: #b3b3b3;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.logo {
+  width: 70px;
+  margin: 5px;
+}
+
+.text-container {
+  display: block;
+  line-height: 45px;
+  letter-spacing: 3px;
+}
+
+.logo-text {
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding-left: 10px;
+}
+
+.contact-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  align-items: flex-end;
+}
+
+.fb-icon {
+  height: 60px;
+  width: auto;
+  margin-right: 10px;
+  align-items: flex-end;
+}
+
+/* Navbar Styling */
+.navbar {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 5px;
+  margin: auto;
+  padding: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #7c99ff;
+  z-index: 1;
+  border-radius: 0 0 15px 15px;
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 5px;
+}
+
+.navbar-links a {
+  color: white;
+  padding: 10px;
+  margin: 0 10px;
+  font-family: "Gadugi-Bold";
+}
+
+.navbar-links a:hover {
+  color: #333;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* Carousel Styling */
+.carousel-item img {
+  height: 600px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
