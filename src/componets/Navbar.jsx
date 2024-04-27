@@ -1,19 +1,38 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
+  // Function to scroll to the specified section
+  const scrollToElement = (elementId) => {
+    const section = document.getElementById(elementId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
-    <div className='navbar'>
-        <div className='navbar-container'>
-            <div className='navbar-links'>
-                <a href='#home'>Home</a>
-                <a href='#services'>Services</a>
-                <a href='#about'>Our Story</a>
-                <a href='#pricing'>Pricing</a>
-                <a href='#contact'>Contact</a>
-            </div>
+    <div className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-links">
+          <Link to="/">Home</Link>
+          <div
+            onClick={() => scrollToElement("Services")}
+            style={{ cursor: "pointer" }}
+          >
+            Services
+          </div>
+          <Link to="/our-story">Our Story</Link>
+          <Link to="/pricing">Pricing</Link>
+          <div
+            onClick={() => scrollToElement("Contact")}
+            style={{ cursor: "pointer" }}
+          >
+            Contact
+          </div>
         </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

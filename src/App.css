@@ -170,7 +170,7 @@ a {
   align-items: center;
 }
 
-.navbar-links a {
+.navbar-links a, .navbar-links div {
   color: white;
   font-family: "Gadugi-Bold";
   width: 100px;
@@ -233,7 +233,49 @@ a {
 .service-counties {
   margin: 25px;
   margin-right: 0;
-  width: 340px;
+}
+
+/* Services Styling */
+.services-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 20px;
+  padding: 0;
+}
+
+
+.service {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #d7d7d7;
+  border-radius: 10px;
+}
+
+.service h2 {
+  font-size: 24px;
+  color: #333;
+  justify-self: flex-start;
 }
 
 /* Contact Me Styling */
@@ -343,31 +385,78 @@ a {
 
 /* Footer Styling */
 
-.footer {
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--dark-color-2);
+  background-color: var(--dark-color);
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.footer-text {
-  color: var(--light-color);
-  font-size: 1.2em;
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-color);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.footer-links a {
+  color: white;
+  font-family: "Gadugi-Bold";
+  width: 100px;
+  text-align: center;
+}
+
+.footer-links > :hover {
+  color: #333;
+  background-color: var(--light-color);
+  border-radius: 10px;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 10px;
 }
 
-.footer-text a {
-  color: var(--primary-color);
+.footer-contact p, .footer-contact > p > a{
+  display: flex;
+  font-size: 14px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  margin: 0;
+  color: var(--light-color);
+
 }
 
-.footer-text a:hover {
-  color: var(--dark-color);
+.eric {
+  justify-content: space-around;
+  align-items: center;
+  gap: 5px;
 }
+
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {

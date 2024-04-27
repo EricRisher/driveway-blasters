@@ -15,12 +15,10 @@ export default function ContactMe() {
         "2f33Ymo02d8DFKvSh"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
           alert("Message sent successfully!");
         },
-        (error) => {
-          console.log(error.text);
+        () => {
           alert("Failed to send the message, please try again.");
         }
       );
@@ -36,6 +34,10 @@ export default function ContactMe() {
           can make your space shine. We’re here to help with all your pressure
           washing needs in <b>Los Angeles County</b>, <b>Orange County</b>, and
           <b> Riverside County</b>.
+        </p>
+        <p>
+          <b>Eric: </b> (949) 484-3698 <br />
+          <b>Jeremy:</b> (949) 540-8402
         </p>
       </div>
       <form
