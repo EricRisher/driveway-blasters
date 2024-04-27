@@ -11,8 +11,8 @@ function Header() {
           <h1 className="logo-text">Driveway Blasters LLC</h1>
         </div>
       </div>
-      <div className="contact-container">
-        <button className="contact-button btn">Free Quote!</button>
+      <div className="header-contact-container">
+        <button className="contact-button btn btn-primary">Free Quote!</button>
         <img src={fbIcon} alt="fb-icon" className="fb-icon"></img>
       </div>
     </div>
