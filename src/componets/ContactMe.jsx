@@ -112,7 +112,7 @@ export default function ContactMe() {
               required
             />
           </label>
-          <label htmlFor="message" className="contact--label">
+          <label htmlFor="message" className="contact--label-message">
             <textarea
               className="contact--input text-md"
               id="message"

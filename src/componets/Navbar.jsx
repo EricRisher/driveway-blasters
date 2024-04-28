@@ -22,7 +22,6 @@ function Navbar() {
             Services
           </div>
           <Link to="/our-story">Our Story</Link>
-          <Link to="/pricing">Pricing</Link>
           <div
             onClick={() => scrollToElement("Contact")}
             style={{ cursor: "pointer" }}

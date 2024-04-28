@@ -170,7 +170,8 @@ a {
   align-items: center;
 }
 
-.navbar-links a, .navbar-links div {
+.navbar-links a,
+.navbar-links div {
   color: white;
   font-family: "Gadugi-Bold";
   width: 100px;
@@ -259,7 +260,6 @@ a {
   padding: 0;
 }
 
-
 .service {
   display: grid;
   justify-content: center;
@@ -281,7 +281,7 @@ a {
 /* Contact Me Styling */
 .contact--section {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
@@ -298,24 +298,21 @@ a {
   justify-content: center;
   align-items: flex-start;
   background-color: var(--dark-color-2);
-  width: 70%;
+  width: 90%;
   height: 100%;
   margin: 25px;
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: row; 
   background-color: var(--dark-color-2);
-  width: 300px;
-  height: 100%;
-  gap: 25px;
-  margin-top: 15px;
-  padding: 0;
-  justify-items: start;
-  align-items: start;
-  margin-right: 50px;
+  width: 100%; 
+  max-width: 1000px; 
+  gap: 5px;
+  margin: auto; 
+  justify-content: start; 
+  align-items: start; 
 }
 
 .contact--label {
@@ -324,15 +321,19 @@ a {
   line-height: 28px;
   letter-spacing: 2px;
   font-size: 1.2em;
-  color: #ffffff;
-  max-width: 500px;
-  margin: 5px;
+  flex: 1 1 auto;
+  margin-bottom: 10px;
+}
+
+.contact-container > label {
+ width: 100%;
 }
 
 .contact-container label > input {
   background-color: var(--light-color);
   border-radius: 5px;
   max-width: 100%;
+  width: 200px;
 }
 
 .contact-text {
@@ -374,13 +375,24 @@ a {
 .contact--input {
   background-color: var(--light-color);
   border-radius: 10px;
-  max-width: 80%; 
+  max-width: 100%;
+  max-width: 400px;
 }
 
 .contact--form--btn {
   align-items: center;
   margin: auto;
   margin-top: 25px;
+}
+
+.contact--label-message {
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 28px;
+  letter-spacing: 2px;
+  display: inline-block; 
+  width: fit-content; 
+  margin: auto; 
 }
 
 /* Footer Styling */
@@ -438,17 +450,18 @@ a {
   padding: 10px;
 }
 
-.footer-contact p, .footer-contact > p > a{
+.footer-contact p,
+.footer-contact > p > a {
   display: flex;
   font-size: 14px;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: max-content;
   height: 100%;
   margin: 0;
+  padding: 5px;
   color: var(--light-color);
-
 }
 
 .eric {
@@ -456,7 +469,6 @@ a {
   align-items: center;
   gap: 5px;
 }
-
 
 /* Media Queries */
 @media screen and (max-width: 1024px) {
@@ -502,8 +514,7 @@ a {
   }
 
   .contact--section {
-    flex-direction: column;
-    padding-top: 50px;
+    padding-top: 25px;
   }
 
   .contact-text {
@@ -511,14 +522,27 @@ a {
   }
 
   .contact--form--container {
-    width: 90%;
+    width: 100%;
     padding: 0;
   }
 
-  .contact-container{
+  .contact-container {
     align-items: center;
     justify-items: center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px){
+.contact-container {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: auto auto; 
+    gap: 5px; 
+  }
+
+  .contact-container > label {
+    width: 200px;
   }
 }
 
@@ -531,22 +555,64 @@ a {
   }
 
   .contact-container {
-    width: 250px;
     margin-right: 0px;
   }
 
   .logo-text {
     font-size: 28px;
   }
+
+  .service-text-container {
+    padding: 0;
+  }
+
+  .service-area-iamge {
+    width: 400px;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .logo-text {
+  .logo-text {
     font-size: 20px;
     padding: 3px;
   }
-  
+
   .logo {
     width: 50px;
   }
+
+  .navbar {
+    width: 95%;
+  }
+
+  .fb-icon {
+    height: 40px;
+  }
+
+  .contact-button {
+    width: 70px;
+    font-size: 18px;
+  }
+
+  .service {
+    width: 90%;
+  }
+
+  .service h2 {
+    font-size: 24px;
+  }
+
+  .service p {
+    font-size: 18px;
+  }
+
+  .contact-container {
+      width: 300px;
+      margin: 10px;
+  }
+
 }
