@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/driveway-blasters/static/css/main.1f069ee8.css",
+    "main.css": "/driveway-blasters/static/css/main.520232e5.css",
     "main.js": "/driveway-blasters/static/js/main.0fec9fa1.js",
     "static/media/hero2.png": "/driveway-blasters/static/media/hero2.75cc96e10d82a039ba4f.png",
     "static/media/hero3.jpg": "/driveway-blasters/static/media/hero3.fba3c60ccc332de6761f.jpg",
@@ -12,11 +12,11 @@
     "static/media/servicing-counties.png": "/driveway-blasters/static/media/servicing-counties.1994381ccbd3f3e6a410.png",
     "index.html": "/driveway-blasters/index.html",
     "static/media/fb-icon.svg": "/driveway-blasters/static/media/fb-icon.f595e494f9b93adc2e19cac0b1faf0fe.svg",
-    "main.1f069ee8.css.map": "/driveway-blasters/static/css/main.1f069ee8.css.map",
+    "main.520232e5.css.map": "/driveway-blasters/static/css/main.520232e5.css.map",
     "main.0fec9fa1.js.map": "/driveway-blasters/static/js/main.0fec9fa1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1f069ee8.css",
+    "static/css/main.520232e5.css",
     "static/js/main.0fec9fa1.js"
   ]
 }
