@@ -8,46 +8,49 @@ function Services() {
         <div className="service">
           <h2>Driveway Cleaning</h2>
           <p>
-            We use a high-pressure washer to clean your driveway. This method is
-            effective at removing dirt, grime, and stains from the surface.
+            Our advanced high-pressure washing techniques meticulously remove
+            even the most stubborn dirt, grime, and stains from your driveway,
+            restoring its pristine appearance.
           </p>
         </div>
         <div className="service">
           <h2>House Washing</h2>
           <p>
-            We use a soft wash system to clean the exterior of your home. This
-            method is gentle on your siding and effective at removing dirt and
-            grime.
+            Utilizing a low-pressure soft wash approach, we delicately cleanse
+            your home's exterior, safeguarding the integrity of your siding
+            while effectively banishing accumulated pollutants.
           </p>
         </div>
         <div className="service">
           <h2>Deck Washing</h2>
           <p>
-            We use a high-pressure washer to clean your deck. This method is
-            effective at removing dirt, grime, and stains from the surface.
+            Employing state-of-the-art pressure washing technology, we expertly
+            eliminate debris and discolorations from your deck, enhancing its
+            longevity and aesthetic appeal.
           </p>
         </div>
         <div className="service">
           <h2>Roof Cleaning</h2>
           <p>
-            We use a soft wash system to clean your roof. This method is gentle
-            on your shingles and effective at removing dirt, grime, and algae.
+            Our gentle yet effective soft washing service removes dirt, algae,
+            and grime from your roof without compromising the durability of your
+            shingles.
           </p>
         </div>
         <div className="service">
           <h2>Window Cleaning</h2>
           <p>
-            We use a professional window cleaning solution to clean your windows
-            inside and out. This method is effective at removing dirt, grime,
-            and streaks from the glass.
+            We use specialized window cleaning formulations to ensure a
+            streak-free clarity for your windows, enhancing both interior and
+            exterior views.
           </p>
         </div>
         <div className="service">
           <h2>Gutter Cleaning</h2>
           <p>
-            We use a professional gutter cleaning solution to clean your gutters
-            and downspouts. This method is effective at removing leaves, debris,
-            and blockages from the system.
+            Our comprehensive gutter cleaning process removes leaves, debris,
+            and obstructions, ensuring optimal functionality of your drainage
+            system.
           </p>
         </div>
       </div>

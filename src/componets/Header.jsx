@@ -11,6 +11,10 @@ function Header() {
     }
   };
 
+  const naviagteToFb = () => {
+    window.open("https://www.facebook.com/profile.php?id=61558602227969", "_blank");
+  }
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -20,14 +24,13 @@ function Header() {
         </div>
       </div>
       <div className="header-contact-container">
-        {/* Updated button with onClick event handler */}
         <button
           className="contact-button btn btn-primary"
           onClick={scrollToContact}
         >
           Free Quote!
         </button>
-        <img src={fbIcon} alt="fb-icon" className="fb-icon" />
+        <img src={fbIcon} alt="fb-icon" className="fb-icon" onClick={naviagteToFb} />
       </div>
     </div>
   );
