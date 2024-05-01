@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 var heroData = [
   {
     id: 1,
-    image: require("../assets/images/hero1.jpeg"),
+    image: require("../assets/images/hero1.webp"),
     title: "lorem ipsum 1",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
@@ -11,7 +11,7 @@ var heroData = [
   },
   {
     id: 2,
-    image: require("../assets/images/hero2.png"),
+    image: require("../assets/images/hero2.webp"),
     title: "lorem ipsum 2",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
@@ -19,7 +19,7 @@ var heroData = [
   },
   {
     id: 3,
-    image: require("../assets/images/hero3.jpg"),
+    image: require("../assets/images/hero3.webp"),
     title: "lorem ipsum 3",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
@@ -27,7 +27,7 @@ var heroData = [
   },
   {
     id: 4,
-    image: require("../assets/images/hero4.jpg"),
+    image: require("../assets/images/hero4.webp"),
     title: "lorem ipsum 4",
     description:
       "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",

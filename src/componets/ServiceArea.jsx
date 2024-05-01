@@ -18,7 +18,7 @@ function ServiceArea() {
         </p>
       </div>
       <img
-        src={require("../assets/images/servicing-counties.png")}
+        src={require("../assets/images/servicing-counties.webp")}
         alt="service area"
         className="service-area-image"
       />
