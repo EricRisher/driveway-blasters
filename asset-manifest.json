@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.18390385.css",
-    "main.js": "/static/js/main.94f28d27.js",
-    "static/media/hero2.png": "/static/media/hero2.75cc96e10d82a039ba4f.png",
-    "static/media/hero3.jpg": "/static/media/hero3.fba3c60ccc332de6761f.jpg",
+    "main.js": "/static/js/main.a82b60f8.js",
+    "static/media/hero3.webp": "/static/media/hero3.c09f303bb84e6a42b851.webp",
     "static/media/logo.png": "/static/media/logo.9acbcb6239a64245d921.png",
     "static/media/GADUGI.TTF": "/static/media/GADUGI.590073b28e5b8bc6f747.TTF",
     "static/media/GADUGIB.TTF": "/static/media/GADUGIB.94f1987150497b646b4f.TTF",
-    "static/media/hero4.jpg": "/static/media/hero4.b945b5431f2687f45284.jpg",
-    "static/media/hero1.jpeg": "/static/media/hero1.347f0d08bdec0e17259a.jpeg",
-    "static/media/servicing-counties.png": "/static/media/servicing-counties.1994381ccbd3f3e6a410.png",
+    "static/media/hero4.webp": "/static/media/hero4.cf35065f21ef2cd2a0f7.webp",
+    "static/media/hero1.webp": "/static/media/hero1.93ba2c2cab2a0b328f8d.webp",
+    "static/media/hero2.webp": "/static/media/hero2.1f2be2cf644958628f17.webp",
+    "static/media/servicing-counties.webp": "/static/media/servicing-counties.4ed16764d4cf4cab9ad4.webp",
     "index.html": "/index.html",
     "static/media/fb-icon.svg": "/static/media/fb-icon.f595e494f9b93adc2e19cac0b1faf0fe.svg",
     "main.18390385.css.map": "/static/css/main.18390385.css.map",
-    "main.94f28d27.js.map": "/static/js/main.94f28d27.js.map"
+    "main.a82b60f8.js.map": "/static/js/main.a82b60f8.js.map"
   },
   "entrypoints": [
     "static/css/main.18390385.css",
-    "static/js/main.94f28d27.js"
+    "static/js/main.a82b60f8.js"
   ]
 }
