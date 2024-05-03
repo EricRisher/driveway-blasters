@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c83feb3.css",
-    "main.js": "/static/js/main.3f1d4a92.js",
+    "main.css": "/static/css/main.800d4a69.css",
+    "main.js": "/static/js/main.f12bd3e0.js",
     "static/media/hero3.webp": "/static/media/hero3.c09f303bb84e6a42b851.webp",
     "static/media/logo.png": "/static/media/logo.9acbcb6239a64245d921.png",
     "static/media/GADUGI.TTF": "/static/media/GADUGI.590073b28e5b8bc6f747.TTF",
@@ -12,11 +12,11 @@
     "static/media/servicing-counties.webp": "/static/media/servicing-counties.4ed16764d4cf4cab9ad4.webp",
     "index.html": "/index.html",
     "static/media/fb-icon.svg": "/static/media/fb-icon.8aced030609b7375688a47c7ea43e222.svg",
-    "main.6c83feb3.css.map": "/static/css/main.6c83feb3.css.map",
-    "main.3f1d4a92.js.map": "/static/js/main.3f1d4a92.js.map"
+    "main.800d4a69.css.map": "/static/css/main.800d4a69.css.map",
+    "main.f12bd3e0.js.map": "/static/js/main.f12bd3e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c83feb3.css",
-    "static/js/main.3f1d4a92.js"
+    "static/css/main.800d4a69.css",
+    "static/js/main.f12bd3e0.js"
   ]
 }
