@@ -16,7 +16,7 @@ function Header() {
   }
 
   return (
-    <div className="header">
+    <div className="header" id="Header">
       <div className="logo-container">
         <img src={logo} alt="logo" className="logo" />
         <div className="text-container">
