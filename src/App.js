@@ -1,31 +1,49 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./componets/Header";
-import Hero from "./componets/Hero";
-import Navbar from "./componets/Navbar";
-import ServiceArea from "./componets/ServiceArea";
-import Services from "./componets/Services";
-import ContactMe from "./componets/ContactMe";
-import Faq from "./componets/Faq";
-import Footer from "./componets/Footer";
-import Testimonials from "./componets/Testimonials";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import ServiceArea from "./components/ServiceArea";
+import Services from "./components/Services";
+import ContactMe from "./components/ContactMe";
+import Faq from "./components/Faq";
+import Footer from "./components/Footer";
+import Testimonials from "./components/Testimonials";
+
+import DrivewayAndDeckRevival from "./components/Pages/DrivewaysAndDecks";
+import HouseAndRoofCare from "./components/Pages/HouseAndRoof";
+import WindowsAndGutters from "./components/Pages/WindowsAndGutters";
 
 function App() {
   return (
-    <>
-      <Router>
-        <Header />
-        <Navbar />
-        <Hero />
-        <ServiceArea />
-        <Services />
-        <Testimonials />
-        <Faq />
-        <ContactMe />
-        <Footer />
-      </Router>
-    </>
+    <Router>
+      <Header />
+      <Navbar />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Hero />
+              <ServiceArea />
+              <Services />
+              <Testimonials />
+              <Faq />
+              <ContactMe />
+            </>
+          }
+        />
+        <Route
+          path="/driveway-deck-revival"
+          element={<DrivewayAndDeckRevival />}
+        />
+        <Route path="/house-roof-care" element={<HouseAndRoofCare />} />
+        <Route path="/window-gutter-cleaning" element={<WindowsAndGutters />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

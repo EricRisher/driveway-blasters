@@ -97,7 +97,6 @@ export default function ContactMe() {
       .then(
         () => {
           alert("Message sent successfully!");
-          // Optionally remove or leave the hidden input
         },
         () => {
           alert(
