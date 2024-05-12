@@ -4,17 +4,20 @@ function ServiceArea() {
   return (
     <div className="service-wrapper">
       <div className="service-text-container">
-        <h2>Driveway Blasters LLC</h2>
-        <h4>
-          <b>Service Area</b>
-        </h4>
+        <h1>
+          <b>Driveway Blasters LLC</b>
+        </h1>
+        <h3 className="mt-3">
+          Expert Pressure Washing Services Near Me in Orange, Riverside, and Los
+          Angeles Counties.
+        </h3>
         <p className="service-counties">
-          Driveway Blasters LLC proudly offers top-quality pressure washing
-          services across <b>Los Angeles County</b>, <b>Orange County</b>, and <b>Riverside County</b>. We're committed to enhancing the cleanliness and curb appeal
-          of both residential and commercial properties in these vibrant
-          Southern California communities. Whether you're in urban LA, scenic
-          Orange County, or sprawling Riverside, our expert team is ready to
-          transform your property with professional care
+          Looking for Pressure Washing in Orange County? Driveway Blasters LLC is
+          your premier choice for expert pressure washing services in <b>Los
+          Angeles, Orange, and Riverside Counties</b>. From urban LA to scenic
+          Orange County and sprawling Riverside, we deliver top-quality cleaning
+          for residential and commercial properties. Enhance your property's
+          cleanliness and curb appeal with our professional care today!
         </p>
       </div>
       <img

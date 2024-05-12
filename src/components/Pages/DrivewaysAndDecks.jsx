@@ -1,27 +1,33 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function DrivewayAndDeckRevival() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleNavigateAndScroll = () => {
-    // Navigate and include a hash in the URL
-    navigate("/#Contact");
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("Contact");
+
+    // Check if already on the home page and just scroll to the contact
+    if (location.pathname === "/" && window.location.hash !== "#Contact") {
+      window.location.hash = "Contact";
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    } else {
+      navigate("/#Contact");
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    }
   };
 
-  // React to changes in location when component is rendered
-  React.useEffect(() => {
-    const hash = window.location.hash;
-    if (hash === "#Contact") {
-      const section = document.getElementById("Contact");
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth", block: "start" });
-      }
-    }
-  }, []);
-
   return (
-    <div className="container">
+    <div className="container mt-3">
       <h1 className="mb-4 text-center">
         <b>Enhance Your Curb Appeal</b>
       </h1>
@@ -116,7 +122,7 @@ function DrivewayAndDeckRevival() {
       <div className="d-flex justify-content-center">
         <button
           className="btn btn-primary mt-4 mb-5 w-100"
-          onClick={handleNavigateAndScroll}
+          onClick={scrollToContact}
         >
           Get a Free Quote Today!
         </button>

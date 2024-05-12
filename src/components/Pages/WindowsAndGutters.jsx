@@ -1,15 +1,33 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function WindowsAndGutters() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const handleNavigateAndScroll = () => {
-    navigate("/#Contact");
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("Contact");
+
+    // Check if already on the home page and just scroll to the contact
+    if (location.pathname === "/" && window.location.hash !== "#Contact") {
+      window.location.hash = "Contact";
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    } else {
+      navigate("/#Contact");
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    }
   };
-
+  
   return (
-    <div className="container mt-5">
+    <div className="container mt-3">
       <h1 className="mb-4 text-center">
         <b>Spotless Window and Gutter Cleaning Services</b>
       </h1>
@@ -103,10 +121,7 @@ function WindowsAndGutters() {
       </p>
 
       <div className="d-flex justify-content-center">
-        <button
-          onClick={handleNavigateAndScroll}
-          className="btn btn-primary mt-4 mb-5"
-        >
+        <button onClick={scrollToContact} className="btn btn-primary mt-4 mb-5">
           Get a Free Quote Today!
         </button>
       </div>

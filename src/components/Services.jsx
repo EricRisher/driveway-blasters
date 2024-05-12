@@ -1,4 +1,5 @@
 import React, { Component, useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import ReactCompareImage from "react-compare-image";
 
 import drivewayBefore from "../assets/images/drivewaybefore.webp";
@@ -68,9 +69,9 @@ function Services() {
               />
             </div>
             <p>{service.description}</p>
-            <a href={service.href} className="btn btn-primary w-100">
+            <Link to={service.href} className="btn btn-primary w-100">
               Learn More!
-            </a>{" "}
+            </Link>{" "}
           </section>
         ))}
       </div>

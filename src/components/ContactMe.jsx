@@ -110,7 +110,7 @@ export default function ContactMe() {
     <section id="Contact" className="contact--section">
       <div className="contact--container">
         <div className="contact-text">
-          <h2>Contact Us!</h2>
+          <h2>Contact Us for Expert Pressure Washing Services!</h2>
           <p>
             Ready for a cleaner property? Contact Driveway Blasters LLC today!
             Call us or fill out our online form to get a free quote and see how

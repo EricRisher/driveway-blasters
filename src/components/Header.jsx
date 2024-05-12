@@ -1,16 +1,30 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/icons/logo.png";
 import fbIcon from "../assets/icons/fb-icon.svg";
 
 function Header() {
   const navigate = useNavigate();
+  const location = useLocation();
 
-  // Function to handle scrolling to the Contact section
   const scrollToContact = () => {
     const contactSection = document.getElementById("Contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    // Check if already on the home page and just scroll to the contact
+    if (location.pathname === "/" && window.location.hash !== "#Contact") {
+      window.location.hash = "Contact";
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    } else {
+      navigate("/#Contact");
+      setTimeout(() => {
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
     }
   };
 
@@ -30,7 +44,6 @@ function Header() {
   return (
     <div className="header" id="Header">
       <div className="logo-container">
-        {/* Added navigateToHome to onClick event of the logo */}
         <img
           src={logo}
           alt="logo"

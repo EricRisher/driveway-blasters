@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import "./App.css";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -15,10 +15,12 @@ import Testimonials from "./components/Testimonials";
 import DrivewayAndDeckRevival from "./components/Pages/DrivewaysAndDecks";
 import HouseAndRoofCare from "./components/Pages/HouseAndRoof";
 import WindowsAndGutters from "./components/Pages/WindowsAndGutters";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Navbar />
       <Routes>
