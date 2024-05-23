@@ -1,41 +1,32 @@
 import Carousel from "react-bootstrap/Carousel";
+import { useLocation } from "react-router-dom";
 
 var heroData = [
   {
     id: 1,
     image: require("../assets/images/hero1.webp"),
-    title: "lorem ipsum 1",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    link: "#",
+    hero: "Top-Quality Pressure Washing. Boost Your Curb Appeal Today!",
   },
   {
     id: 2,
     image: require("../assets/images/hero2.webp"),
-    title: "lorem ipsum 2",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    link: "#",
+    hero: "Top-Quality Pressure Washing. Boost Your Curb Appeal Today!",
   },
   {
     id: 3,
     image: require("../assets/images/hero3.webp"),
-    title: "lorem ipsum 3",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    link: "#",
+    hero: "Top-Quality Pressure Washing. Boost Your Curb Appeal Today!",
   },
   {
     id: 4,
     image: require("../assets/images/hero4.webp"),
-    title: "lorem ipsum 4",
-    description:
-      "lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    link: "#",
-  }
+    hero: "Top-Quality Pressure Washing. Boost Your Curb Appeal Today!",
+  },
 ];
 
 function AppHero() {
+  const location = useLocation();
+
   return (
     <section id="home" className="hero-block">
       <Carousel>
@@ -51,6 +42,25 @@ function AppHero() {
           );
         })}
       </Carousel>
+      <div className="hero-text-block">
+        <h1 className="hero-h1">
+          RELIABLE - HIGH PRESSURE & SOFT WASH EXPERTS
+        </h1>
+        <h2 className="hero-h2">
+          Bring New Life to Your Surfaces with Our Comprehensive Cleaning
+          Services!
+        </h2>
+        <button
+          className="btn btn-primary hero-btn mt-3"
+          onClick={() =>
+            location.pathname === "/"
+              ? (window.location.href = "/contact")
+              : null
+          }
+        >
+          Get a Free Quote!
+        </button>
+      </div>
     </section>
   );
 }

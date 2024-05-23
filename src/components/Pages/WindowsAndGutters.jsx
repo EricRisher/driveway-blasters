@@ -121,8 +121,15 @@ function WindowsAndGutters() {
       </p>
 
       <div className="d-flex justify-content-center">
-        <button onClick={scrollToContact} className="btn btn-primary mt-4 mb-5">
-          Get a Free Quote Today!
+        <button
+          className="btn btn-primary pagesQuoteBtn mb-5"
+          onClick={() =>
+            location.pathname === "/"
+              ? (window.location.href = "/contact")
+              : null
+          }
+        >
+          Get a Free Quote!
         </button>
       </div>
     </div>

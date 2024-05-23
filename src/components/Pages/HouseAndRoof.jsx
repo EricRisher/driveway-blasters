@@ -112,10 +112,14 @@ function DrivewayAndDeckRevival() {
       </p>
       <div className="d-flex justify-content-center">
         <button
-          className="btn btn-primary mt-4 mb-5 w-100"
-          onClick={scrollToContact}
+          className="btn btn-primary pagesQuoteBtn mb-5"
+          onClick={() =>
+            location.pathname === "/"
+              ? (window.location.href = "/contact")
+              : null
+          }
         >
-          Get a Free Quote Today!
+          Get a Free Quote!
         </button>
       </div>
     </div>

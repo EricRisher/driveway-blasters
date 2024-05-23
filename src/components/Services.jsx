@@ -46,7 +46,7 @@ function Services() {
           entry.target.classList.toggle("show", entry.isIntersecting);
         });
       },
-      { rootMargin: "0px", threshold: 0.1 }
+      { rootMargin: "0px", threshold: 0.2 }
     );
 
     const cards = document.querySelectorAll(".service");
@@ -56,7 +56,7 @@ function Services() {
   }, []);
 
   return (
-    <div className="services-container" id="Services">
+    <div className="services-container mt-5" id="Services">
       <h1>Services</h1>
       <div className="services">
         {services.map((service, index) => (

@@ -29,24 +29,23 @@ function Footer() {
       <div className="footer">
         <div className="footer-links">
           <div
-            onClick={() => scrollToElement("Header")}
+            onClick={() => (window.location.href = "/driveway-deck-revival")}
             style={{ cursor: "pointer" }}
           >
-            Home
+            Driveway & Decks
           </div>
           <div
-            onClick={() => scrollToElement("Services")}
+            onClick={() => (window.location.href = "/house-roof-care")}
             style={{ cursor: "pointer" }}
           >
-            Services
+            House & Roofs
           </div>
-          <a
-            href="https://www.facebook.com/profile.php?id=61558602227969"
-            target="_blank"
-            rel="noreferrer"
+          <div
+            onClick={() => (window.location.href = "/window-gutter-cleaning")}
+            style={{ cursor: "pointer" }}
           >
-            Facebook
-          </a>
+            Windows & Gutters
+          </div>
         </div>
         <div className="footer-contact">
           <p>

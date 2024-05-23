@@ -214,7 +214,7 @@ export default function ContactMe() {
           <input
             type="submit"
             value="Submit"
-            className="btn btn-primary contact--form--btn"
+            className="btn btn-primary w-50 align-self-center"
           ></input>
         </form>
       </div>
