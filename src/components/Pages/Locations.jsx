@@ -1,8 +1,7 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Locations() {
-  const location = useLocation();
   return (
     <section className="location-container">
       <div className="bg-wrapper">
@@ -13,16 +12,12 @@ function Locations() {
         />
         <div className="hero-text-block">
           <h1 className="service-area-h1">Areas We Serve</h1>
-          <button
-            className="btn btn-primary locations-btn"
-            onClick={() =>
-              location.pathname === "/"
-                ? (window.location.href = "/contact")
-                : null
-            }
+          <Link
+            to="/contact"
+            className={`btn btn-primary locations-btn mt-3 mb-4`}
           >
-            Get a Free Quote!
-          </button>
+            Get Your Free Quote!
+          </Link>
         </div>
       </div>
       <img
@@ -49,14 +44,9 @@ function Locations() {
         <h4 className="mt-5">+ All Surrounding Cities!</h4>
 
         <h2 className="text-center mt-5">Eager to Enhance Your Curb Appeal?</h2>
-        <button
-          className="btn btn-primary mt-4 mb-4"
-          onClick={() =>
-            window.location.href = "/contact"
-          }
-        >
-          Get a Free Quote!
-        </button>
+        <Link to="/contact" className={`btn btn-primary mt-3 mb-4`}>
+          Get Your Free Quote!
+        </Link>
       </article>
     </section>
   );

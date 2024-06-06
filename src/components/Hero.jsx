@@ -1,5 +1,5 @@
 import Carousel from "react-bootstrap/Carousel";
-import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 var heroData = [
   {
@@ -25,8 +25,6 @@ var heroData = [
 ];
 
 function AppHero() {
-  const location = useLocation();
-
   return (
     <section id="home" className="hero-block">
       <Carousel>
@@ -44,22 +42,14 @@ function AppHero() {
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          RELIABLE - HIGH PRESSURE & SOFT WASH EXPERTS
+          Orange, LA and Riverside County's Best Exterior Cleaners
         </h1>
         <h2 className="hero-h2">
-          Bring New Life to Your Surfaces with Our Comprehensive Cleaning
-          Services!
+          Instantly Restore The Shine of Your Home With The Click of a Button!
         </h2>
-        <button
-          className="btn btn-primary hero-btn mt-3"
-          onClick={() =>
-            location.pathname === "/"
-              ? (window.location.href = "/contact")
-              : null
-          }
-        >
-          Get a Free Quote!
-        </button>
+        <Link className="btn btn-primary hero-btn" to="/contact">
+          Get Your Free Quote!
+        </Link>
       </div>
     </section>
   );

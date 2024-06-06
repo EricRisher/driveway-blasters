@@ -1,36 +1,9 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function DrivewayAndDeckRevival() {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  const scrollToContact = () => {
-    const contactSection = document.getElementById("Contact");
-
-    // Check if already on the home page and just scroll to the contact
-    if (location.pathname === "/" && window.location.hash !== "#Contact") {
-      window.location.hash = "Contact";
-      setTimeout(() => {
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }, 50);
-    } else {
-      navigate("/#Contact");
-      setTimeout(() => {
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      }, 50);
-    }
-  };
-
   return (
     <div className="container mt-3">
-      <h1 className="mb-4 text-center">
-        <b>Enhance Your Curb Appeal</b>
-      </h1>
       <h2 className="mb-3">
         <b> Transformative Cleaning Services in Servicing Counties</b>
       </h2>
@@ -120,16 +93,9 @@ function DrivewayAndDeckRevival() {
         professional cleaning services.
       </p>
       <div className="d-flex justify-content-center">
-        <button
-          className="btn btn-primary pagesQuoteBtn mb-5"
-          onClick={() =>
-            location.pathname === "/"
-              ? (window.location.href = "/contact")
-              : null
-          }
-        >
-          Get a Free Quote!
-        </button>
+        <Link to="/contact" className={`btn btn-primary mb-5`}>
+          Get Your Free Quote!
+        </Link>
       </div>
     </div>
   );

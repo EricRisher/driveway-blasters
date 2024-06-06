@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 8vw;
   font-family: "Stint";
   font-family: "Gadugi", Raleway Dots, cursive;
 }
@@ -68,17 +68,17 @@ a {
 }
 
 .btn {
-  background-color: #7c99ff;
+  background-color: #4a8aea;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  height: 60px;
   width: max-content;
   font-size: 30px;
-  margin: 0 20px;
+  margin: 0 auto;
   font-weight: bold;
+  
 }
 
 .pagesQuoteBtn {
@@ -194,7 +194,6 @@ a {
   list-style: none;
   margin: 0 10px 10px 0;
   flex-direction: row;
-  
 }
 
 .navbar--content,
@@ -355,13 +354,25 @@ a {
   margin-top: -85px;
 }
 
+.hero-text-block::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(47, 124, 248, 0.404);
+  pointer-events: none;
+}
+
 .hero-text-block {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 95vw;
   height: 100%;
   padding: 0;
+  margin: auto;
 }
 
 .hero-h1 {
@@ -373,7 +384,7 @@ a {
   z-index: 8;
   text-align: center;
   color: #fff;
-  text-shadow: 0 -1px 10px #000;
+  text-shadow: 0 -1px 5px #000;
   font-weight: 900;
 }
 
@@ -413,6 +424,7 @@ a {
 
 .testimonial-block {
   margin-top: 50px;
+  border-top: #7c99ff 3px dotted;
   width: 70vw;
   display: flex;
   justify-content: center;
@@ -484,8 +496,12 @@ a {
 }
 
 .service-area-bg-img {
-  max-height: 100vh;
-  width: auto;
+  height: 90vh;
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
 }
 
 .service-area-article {
@@ -525,26 +541,15 @@ a {
 }
 
 .bg-wrapper {
-  max-height: 100vh;
-}
-
-.bg-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 110vh;
-  background: rgba(47, 124, 248, 0.404);
-  pointer-events: none;
+  max-height: 95vh;
 }
 
 .service-area-h1 {
   font-size: 15vw;
-  line-height: 50px;
+  line-height: 60px;
   letter-spacing: 2px;
   position: absolute;
-  transform: translateY(-80vh);
+  transform: translateY(-65vh);
   z-index: 8;
   text-align: center;
   color: #fff;
@@ -553,7 +558,7 @@ a {
 }
 
 .locations-btn {
-  transform: translateY(-65vh);
+  transform: translateY(-50vh);
   z-index: 8;
 }
 
@@ -589,7 +594,10 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
-  margin: 20px 0;
+}
+
+.services-h1 {
+  font-size: 12vw;
 }
 
 .service {
@@ -597,17 +605,16 @@ a {
   place-items: center;
   width: 400px;
   height: max-content;
-  margin: 40px;
-  padding: 10px;
+  margin: 25px;
+  padding: 15px;
   background-color: #d7d7d7;
-  border-radius: 10px;
+  border-radius: 5px;
   transform: translateX(100px);
   opacity: 0;
   transition: transform 0.5s, opacity 0.5s;
 }
 
 .imageWrapper {
-  padding: 10px;
   width: 100%;
   height: 100%;
   align-self: center;
@@ -647,22 +654,33 @@ a {
 }
 
 /* FAQ Styling */
+.faq-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .accordion {
   width: 50%;
   margin: 0 auto;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .faq-header {
+  font-size: 7.2vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--dark-color-2);
   color: white;
   padding: 10px;
+  width: 97vw;
   border-radius: 10px;
-  margin: 10px;
   cursor: pointer;
+}
+
+.btn-faq {
+  align-self: center;
 }
 
 /* Contact Me Styling */
@@ -674,7 +692,6 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 87.6vh;
   margin: 0;
   padding: 0;
   border-radius: 10px 10px 0 0;
@@ -714,7 +731,7 @@ a {
   flex: 1 1 auto;
   margin-bottom: 25px;
   flex-direction: column;
-  width: 150px;
+  width: 80vw;
   margin: 5px;
 }
 
@@ -797,7 +814,7 @@ a {
   font-family: "Gadugi-Bold";
   width: max-content;
   text-align: center;
-  font-size: 13px;
+  font-size: 3.2vw;
   flex-wrap: nowrap;
   padding: 5px;
 }
@@ -854,7 +871,6 @@ a {
 
   .service-text-container {
     border-right: none;
-    border-bottom: #7c99ff 3px dotted;
     width: 90%;
   }
 
@@ -870,10 +886,6 @@ a {
     align-items: center;
     justify-items: center;
     width: 100%;
-  }
-
-  .contact--label {
-    width: 90%;
   }
 
   .contact--label-message {
@@ -902,7 +914,6 @@ a {
 @media screen and (max-width: 900px) {
   .contact-details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto auto;
     gap: 5px;
   }
@@ -1024,9 +1035,9 @@ a {
   }
 
   .hero-h1 {
-    font-size: 10vw;
-    line-height: 14vw;
-    transform: translateY(-70vh);
+    font-size: 7.5vw;
+    line-height: 12vw;
+    transform: translateY(-80vh);
   }
 
   .hero-h2 {
@@ -1036,8 +1047,8 @@ a {
   }
 
   .hero-btn {
-    font-size: 6vw;
-    transform: translateY(-40vh);
-    max-width: 70vw;
+    font-size: 7vw;
+    transform: translateY(-35vh);
+    max-width: 85vw;
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
 function Footer() {
   const navigate = useNavigate();
@@ -28,23 +28,17 @@ function Footer() {
     <div className="footer-container" id="Footer">
       <div className="footer">
         <div className="footer-links">
-          <div
-            onClick={() => (window.location.href = "/driveway-deck-revival")}
-            style={{ cursor: "pointer" }}
-          >
-            Driveway & Decks
+          <div style={{ cursor: "pointer" }}>
+            <Link to="/driveway-deck-revival">Driveway & Decks</Link>
           </div>
-          <div
-            onClick={() => (window.location.href = "/house-roof-care")}
-            style={{ cursor: "pointer" }}
-          >
-            House & Roofs
+          <div style={{ cursor: "pointer" }}>
+            <Link to="/house-roof-care">House & Roofs</Link>
           </div>
-          <div
-            onClick={() => (window.location.href = "/window-gutter-cleaning")}
-            style={{ cursor: "pointer" }}
-          >
-            Windows & Gutters
+          <div style={{ cursor: "pointer" }}>
+            <Link to="/windows">Windows</Link>
+          </div>
+          <div style={{ cursor: "pointer" }}>
+            <Link to="/gutters">Gutters</Link>
           </div>
         </div>
         <div className="footer-contact">

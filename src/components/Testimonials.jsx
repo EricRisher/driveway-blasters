@@ -4,44 +4,44 @@ var testimonials = [
   {
     id: 1,
     description:
-      "Driveway Blasters LLC did a spectacular job cleaning my home's exterior and driveway. They were punctual, professional, and thorough. Highly recommended for rejuvenating your property!",
+      "I was thrilled with the job Driveway Blasters did on my home's exterior and driveway. They showed up on time, were super professional, and didn’t miss a spot. I’d definitely recommend them if you’re looking to freshen up your property!",
     name: "Jonathan R.",
-    city: "Anaheim (Orange County)",
+    city: "Anaheim",
   },
   {
     id: 2,
     description:
-      "Driveway Blasters transformed our patio and siding, making them look new again. The team was friendly and respectful. I’m eager to use their services again next year!",
+      "Driveway Blasters really brought our patio and siding back to life! Everyone on the team was pleasant and respectful. I’m already planning to book them again for next year!",
     name: "Sarah M.",
-    city: "Riverside (Riverside County)",
+    city: "Riverside",
   },
   {
     id: 3,
     description:
-      "The curb appeal of my home improved dramatically after Driveway Blasters cleaned our walkways and facade. Transparent pricing and quick service setup. A top-notch choice!",
+      "I was amazed at how much better my house looked after Driveway Blasters worked their magic on our walkways and facade. Their pricing was clear, and setting up the service was a breeze. Definitely a top-notch company!",
     name: "Michael T.",
-    city: "Irvine (Orange County)",
+    city: "Irvine",
   },
   {
     id: 4,
     description:
-      "Driveway Blasters quickly cleaned our roof and gutters, providing before and after photos. Their professionalism and quality are impressive. I’ll certainly use them again!",
+      "Driveway Blasters did an efficient job cleaning our roof and gutters, and they provided photos to show the before and after. I was impressed with their professionalism and the quality of their work. I'm definitely a returning customer!",
     name: "Emily C.",
-    city: "Long Beach (Los Angeles County)",
+    city: "Long Beach",
   },
   {
     id: 5,
     description:
-      "Fantastic decision to choose Driveway Blasters for cleaning my property. They removed tough stains and were courteous and thorough. Highly recommend for top-notch pressure washing.",
+      "Choosing Driveway Blasters to clean my property was a fantastic decision. They tackled some tough stains with ease and were both courteous and thorough throughout. I highly recommend them for anyone in need of quality pressure washing.",
     name: "Grace H.",
-    city: "Santa Monica (Los Angeles County)",
+    city: "Santa Monica",
   },
   {
     id: 6,
     description:
-      "Driveway Blasters made a dramatic difference on our home’s exterior, removing years of dirt. The team was prompt and professional, with excellent follow-up. Highly recommended!",
+      "What a difference Driveway Blasters made on our home’s exterior—it's like night and day! They were prompt and professional, and their follow-up was excellent. I can’t recommend them enough!",
     name: "Jonathan R.",
-    city: "Corona (Riverside County)",
+    city: "Corona",
   },
 ];
 
@@ -49,7 +49,7 @@ var testimonials = [
 function Testimonials() {
   return (
     <section className="testimonial-block">
-      <h1 className="testimonial-cta">See What Your Neighbors Are Saying!</h1>
+      <h1 className="testimonial-cta mt-5">See What Your Neighbors Are Saying!</h1>
       <Carousel interval={9000}>
         {testimonials.map((testimonial) => {
           return (

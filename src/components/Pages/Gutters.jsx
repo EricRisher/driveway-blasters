@@ -1,7 +1,7 @@
 import React from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation, Link } from "react-router-dom";
 
-function WindowsAndGutters() {
+function Gutters() {
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -25,37 +25,17 @@ function WindowsAndGutters() {
       }, 50);
     }
   };
-  
+
   return (
     <div className="container mt-3">
       <h1 className="mb-4 text-center">
-        <b>Spotless Window and Gutter Cleaning Services</b>
+        <b>Gutter Cleaning Services</b>
       </h1>
       <p className="lead mb-4">
-        Driveway Blasters LLC provides <b>top-tier</b> window and gutter
-        cleaning services across Orange, Riverside, and Los Angeles County.
-        Emphasizing <b>safety</b> and <b>efficiency</b>, our team delivers{" "}
+        Driveway Blasters LLC provides <b>top-tier</b> gutter cleaning services
+        across Orange, Riverside, and Los Angeles County. Emphasizing{" "}
+        <b>safety</b> and <b>efficiency</b>, our team delivers{" "}
         <b>exceptional</b> cleaning without the hassle of doing it yourself.
-      </p>
-
-      <h2 className="mb-3">
-        <b>Precision Window Cleaning</b>
-      </h2>
-      <p className="mb-4">
-        We leverage state-of-the-art equipment and <b>eco-friendly</b> cleaning
-        solutions to ensure your windows shine without <b>streaks</b> or{" "}
-        <b>spots</b>. Our meticulous cleaning process includes:
-        <ul>
-          <li>Thorough washing of window glass, frames, and tracks.</li>
-          <li>
-            Use of purified water to eliminate mineral deposit buildup, ensuring
-            a <b>spot-free</b> finish.
-          </li>
-          <li>
-            Safe and effective techniques for both interior and exterior
-            windows, enhancing natural light and visibility.
-          </li>
-        </ul>
       </p>
 
       <h2 className="mb-3">
@@ -83,29 +63,35 @@ function WindowsAndGutters() {
       </p>
 
       <h2 className="mb-3">
-        <b>Comprehensive Services for Every Need</b>
+        <b>Protect your property with Expert Gutter Cleaning</b>
       </h2>
       <p className="mb-4">
-        We offer specialized <b>Solar Panel Cleaning</b> as part of our
-        comprehensive cleaning services, essential for:
         <ul>
           <li>
-            <b>Maintaining Energy Efficiency:</b> Regular cleaning removes
-            debris, dust, and bird droppings that can significantly decrease
-            solar panel effectiveness.
+            <b>Avoid Water Damage:</b> Our cleaning prevents overflow,
+            protecting your roof, siding, and foundation from water damage.
           </li>
           <li>
-            <b>Prolonging Panel Lifespan:</b> Keeping solar panels clean helps
-            prevent damage and extends their useful life.
+            <b>Enhance Your Home's Curb Appeal:</b> Maintain your property’s
+            value and aesthetic with clean, functional gutters.
           </li>
           <li>
-            <b>Enhancing Return on Investment:</b> Clean panels operate at peak
-            efficiency, ensuring you get the best return on your solar energy
-            investment.
+            <b>Preventative Maintenance Saves Money:</b> Regular gutter
+            maintenance ensures optimal condition, preventing expensive future
+            repairs.
+          </li>
+          <li>
+            <b>Eco-Friendly Cleaning Solutions:</b> Opt for sustainable cleaning
+            with our environmentally friendly methods.
+          </li>
+          <li>
+            <b>Prompt and Reliable Service:</b> Rely on our timely, efficient
+            services that respect your schedule and property integrity.
           </li>
         </ul>
-        This service is ideal for both residential and commercial properties
-        looking to optimize their energy solutions and sustainability.
+        Don't let gutter issues compromise your home.{" "}
+        <b>Contact Driveway Blasters LLC</b> today for professional cleaning and
+        exceptional care.
       </p>
 
       <h2 className="mb-3">
@@ -121,19 +107,12 @@ function WindowsAndGutters() {
       </p>
 
       <div className="d-flex justify-content-center">
-        <button
-          className="btn btn-primary pagesQuoteBtn mb-5"
-          onClick={() =>
-            location.pathname === "/"
-              ? (window.location.href = "/contact")
-              : null
-          }
-        >
-          Get a Free Quote!
-        </button>
+        <Link to="/contact" className={`btn btn-primary mb-5`}>
+          Get Your Free Quote!
+        </Link>
       </div>
     </div>
   );
 }
 
-export default WindowsAndGutters;
+export default Gutters;

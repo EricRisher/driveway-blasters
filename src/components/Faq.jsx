@@ -1,9 +1,10 @@
 import React from "react";
 import { Accordion } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Faq() {
   return (
-    <>
+    <section className="faq-wrapper">
       <h2 className="faq-header">Frequently Asked Questions </h2>
       <Accordion defaultActiveKey="0" className="accordion">
         <Accordion.Item eventKey="0">
@@ -90,7 +91,10 @@ function Faq() {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-    </>
+      <Link to="/contact" className={`btn btn-primary btn-faq mb-5`}>
+        Get Your Free Quote!
+      </Link>
+    </section>
   );
 }
 

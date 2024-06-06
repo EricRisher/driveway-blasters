@@ -1,15 +1,15 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
 import check from "../assets/icons/check.png";
+import { NavLink } from "react-router-dom";
 
 const features = [
   {
     id: 1,
-    description: "Expert in all settings, ready for any challenge",
+    description: "Expert in all settings, ready for any challenge.",
   },
   {
     id: 2,
-    description: "Guaranteed satisfaction: our clients love us!",
+    description: "Guaranteed satisfaction: we're not happy with the job until you are!",
   },
   {
     id: 3,
@@ -26,7 +26,6 @@ const features = [
   },
 ];
 function ServiceArea() {
-  const location = useLocation();
   return (
     <div className="service-wrapper">
       <div className="service-text-container">
@@ -44,23 +43,9 @@ function ServiceArea() {
             );
           })}
         </div>
-
-        <p className="service-counties mt-3">
-          Tired of dirt and grime? Let Driveway Blasters bring the shine! We're
-          your go-to experts for both residential & commercial pressure washing.
-          Reach out today and see the difference we can make!
-        </p>
-
-        <button
-          className="btn btn-primary pagesQuoteBtn mb-5"
-          onClick={() =>
-            location.pathname === "/"
-              ? (window.location.href = "/contact")
-              : null
-          }
-        >
-          Get a Free Quote!
-        </button>
+        <NavLink to="/contact" className={`btn btn-primary mt-3 mb-5`}>
+          Get Your Free Quote!
+        </NavLink>
       </div>
     </div>
   );

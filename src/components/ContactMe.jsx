@@ -136,7 +136,7 @@ export default function ContactMe() {
             <label htmlFor="name" className="contact--label">
               <input
                 type="text"
-                placeholder="Full Name*"
+                placeholder="Full Name"
                 className="contact--input text-md"
                 name="name"
                 id="name"
@@ -147,7 +147,7 @@ export default function ContactMe() {
             <label htmlFor="email" className="contact--label">
               <input
                 type="email"
-                placeholder="Email*"
+                placeholder="Email"
                 className="contact--input text-md"
                 name="email"
                 id="email"
@@ -156,8 +156,8 @@ export default function ContactMe() {
             </label>
             <label htmlFor="phone-number" className="contact--label">
               <input
-                type="number"
-                placeholder="Phone Number*"
+                type="tel"
+                placeholder="Phone Number"
                 className="contact--input text-md"
                 name="number"
                 id="phone-number"
@@ -166,7 +166,7 @@ export default function ContactMe() {
             <label htmlFor="service-address" className="contact--label">
               <input
                 type="address"
-                placeholder="Service Address*"
+                placeholder="Service Address"
                 className="contact--input text-md"
                 name="address"
                 id="service-address"
@@ -218,6 +218,8 @@ export default function ContactMe() {
           ></input>
         </form>
       </div>
+      
     </section>
+
   );
 }

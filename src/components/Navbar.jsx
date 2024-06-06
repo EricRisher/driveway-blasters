@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import { NavLink, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -9,24 +8,23 @@ import yelp from "../assets/icons/yelpicon.png";
 import facebook from "../assets/icons/fb-icon.png";
 
 function Navbar() {
-  const location = useLocation();
   const [navActive, setNavActive] = useState(false);
-  const [bgColor, setBgColor] = useState(false); // State to manage the background color
-  const [anchorEl, setAnchorEl] = useState(null); // Material-UI menu anchor
-  const isOpen = Boolean(anchorEl); // Determines if the dropdown is open
+  const [bgColor, setBgColor] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const isOpen = Boolean(anchorEl);
 
   const toggleNav = () => setNavActive(!navActive);
   const closeMenu = () => {
-    setNavActive(false);
     setAnchorEl(null);
+    setNavActive(false);
   };
 
   const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(anchorEl ? null : event.currentTarget); // Toggle dropdown
   };
 
   const handleClose = () => {
-    setAnchorEl(null);
+     setAnchorEl(null);
   };
 
   const handleScroll = () => {
@@ -56,7 +54,6 @@ function Navbar() {
 
   return (
     <nav
-      id="Navbar"
       className={`navbar ${navActive ? "active" : ""} ${
         bgColor ? "navbar-colored" : ""
       }`}
@@ -81,10 +78,10 @@ function Navbar() {
         <ul>
           <li>
             <NavLink
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
               to="/"
               className="navbar--content"
+              onClick={closeMenu}
+              activeClassName="navbar--active-content"
             >
               Home
             </NavLink>
@@ -92,9 +89,9 @@ function Navbar() {
           <li>
             <NavLink
               to="/locations"
-              activeClassName="navbar--active-content"
               className="navbar--content"
               onClick={closeMenu}
+              activeClassName="navbar--active-content"
             >
               Locations
             </NavLink>
@@ -102,32 +99,24 @@ function Navbar() {
           <li>
             <NavLink
               to="/contact"
-              activeClassName="navbar--active-content"
               className="navbar--content"
               onClick={closeMenu}
+              activeClassName="navbar--active-content"
             >
               Contact Us
             </NavLink>
           </li>
           <li>
-            <ScrollLink
-              onClick={closeMenu}
-              activeClass="navbar--active-content"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              to="AboutMe"
+            <NavLink
+              to="/about-us"
               className="navbar--content"
+              onClick={closeMenu}
+              activeClassName="navbar--active-content"
             >
-              About Our Team
-            </ScrollLink>
+              About our Team
+            </NavLink>
           </li>
-          <li
-            onMouseEnter={handleMenu}
-            onMouseLeave={handleClose}
-            className="navbar--services"
-          >
+          <li onClick={handleMenu} className="navbar--services">
             <div className="navbar--content">
               Services{" "}
               <ExpandMoreIcon
@@ -137,38 +126,36 @@ function Navbar() {
             <Menu
               id="services-menu"
               anchorEl={anchorEl}
-              open={isOpen}
+              open={Boolean(anchorEl)}
               onClose={handleClose}
               MenuListProps={{ onMouseLeave: handleClose }}
             >
-              <MenuItem onClick={handleClose}>
+              <MenuItem onClick={closeMenu}>
                 <NavLink to="/driveway-deck-revival">
                   <b>Driveway & Deck Revival</b>
                 </NavLink>
               </MenuItem>
-              <MenuItem onClick={handleClose}>
+              <MenuItem onClick={closeMenu}>
                 <NavLink to="/house-roof-care">
                   <b>House & Roof Care</b>
                 </NavLink>
               </MenuItem>
-              <MenuItem onClick={handleClose}>
-                <NavLink to="/window-gutter-cleaning">
-                  <b>Window & Gutter Cleaning</b>
+              <MenuItem onClick={closeMenu}>
+                <NavLink to="/windows">
+                  <b>Window Clarity</b>
+                </NavLink>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <NavLink to="/gutters">
+                  <b>Gutter Cleaning</b>
                 </NavLink>
               </MenuItem>
             </Menu>
           </li>
         </ul>
-        <button
-          className="btn btn-primary"
-          onClick={() =>
-            location.pathname === "/"
-              ? (window.location.href = "/contact")
-              : null
-          }
-        >
+        <NavLink to="/contact" className="btn btn-primary" onClick={closeMenu}>
           Get Your Free Quote!
-        </button>
+        </NavLink>
         <div className="d-flex flex-column align-items-center mt-5">
           <h2>Keep up with us on</h2>
           <div>
@@ -176,6 +163,7 @@ function Navbar() {
               href="https://www.yelp.com/biz/driveway-blasters-corona"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeMenu}
             >
               <img src={yelp} alt="Yelp icon" className="mx-2" />
             </a>
@@ -183,6 +171,7 @@ function Navbar() {
               href="https://www.facebook.com/profile.php?id=61558602227969"
               target="_blank"
               rel="noopener noreferrer"
+              onClick={closeMenu}
             >
               <img src={facebook} alt="Facebook icon" className="mx-2" />
             </a>

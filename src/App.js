@@ -13,9 +13,10 @@ import Testimonials from "./components/Testimonials";
 
 import DrivewayAndDeckRevival from "./components/Pages/DrivewaysAndDecks";
 import HouseAndRoofCare from "./components/Pages/HouseAndRoof";
-import WindowsAndGutters from "./components/Pages/WindowsAndGutters";
+import Windows from "./components/Pages/Windows";
 import ScrollToTop from "./components/ScrollToTop";
 import Locations from "./components/Pages/Locations";
+import Gutters from "./components/Pages/Gutters";
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
           element={<DrivewayAndDeckRevival />}
         />
         <Route path="/house-roof-care" element={<HouseAndRoofCare />} />
-        <Route path="/window-gutter-cleaning" element={<WindowsAndGutters />} />
+        <Route path="/windows" element={<Windows />} />
+        <Route path="/gutters" element={<Gutters />} />
         <Route path="/contact" element={<ContactMe />} />
         <Route path="/locations" element={<Locations />} />
       </Routes>
