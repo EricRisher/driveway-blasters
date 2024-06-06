@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.2dac8b47.css",
-    "main.js": "/static/js/main.c85406f2.js",
+    "main.css": "/static/css/main.d55b2c17.css",
+    "main.js": "/static/js/main.6a4ec0c7.js",
     "static/media/serviceareas.webp": "/static/media/serviceareas.793997e39416508790f1.webp",
+    "static/media/windowbefore.webp": "/static/media/windowbefore.6dd917ce9cec29b6f5f7.webp",
+    "static/media/windowafter.webp": "/static/media/windowafter.19138477dd606dae7703.webp",
     "static/media/drivewaybefore.webp": "/static/media/drivewaybefore.348fd9df2cbce8a066f0.webp",
     "static/media/hero3.webp": "/static/media/hero3.c09f303bb84e6a42b851.webp",
     "static/media/logo and name.png": "/static/media/logo and name.25dab49cc574dcfb1606.png",
@@ -18,11 +20,11 @@
     "static/media/housewashafter.webp": "/static/media/housewashafter.5de49a8755bdf6555133.webp",
     "static/media/servicing-counties.webp": "/static/media/servicing-counties.4ed16764d4cf4cab9ad4.webp",
     "index.html": "/index.html",
-    "main.2dac8b47.css.map": "/static/css/main.2dac8b47.css.map",
-    "main.c85406f2.js.map": "/static/js/main.c85406f2.js.map"
+    "main.d55b2c17.css.map": "/static/css/main.d55b2c17.css.map",
+    "main.6a4ec0c7.js.map": "/static/js/main.6a4ec0c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dac8b47.css",
-    "static/js/main.c85406f2.js"
+    "static/css/main.d55b2c17.css",
+    "static/js/main.6a4ec0c7.js"
   ]
 }
