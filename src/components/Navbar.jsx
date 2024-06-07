@@ -38,7 +38,7 @@ function Navbar() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 1200) {
+      if (window.innerWidth <= 100) {
         closeMenu();
       }
     };

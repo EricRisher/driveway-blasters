@@ -68,9 +68,9 @@ function Services() {
 
   return (
     <div className="services-container mt-3" id="Services">
-      <h1 className="services-h1">
+      <h2 className="services-h1">
         <b>Services</b>
-      </h1>
+      </h2>
       <div className="services">
         {services.map((service, index) => (
           <section className="service" key={index}>
