@@ -1,108 +1,129 @@
-import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
-import Select from "react-select";
+'use client';
 
-export default function ContactMe() {
-  const form = useRef();
-  const [selectedOptions, setSelectedOptions] = useState([]);
+import React, { useRef, useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
+import Select from 'react-select';
 
-  // Options for the react-select component
+const ContactMe: React.FC = () => {
+  const form = useRef<HTMLFormElement>(null);
+  const [selectedOptions, setSelectedOptions] = useState<
+    Array<{ value: string; label: string }>
+  >([]);
+
+  useEffect(() => {
+    document.title = 'Driveway Blasters LLC - Contact Us';
+
+    // Set the meta description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
+      );
+    } else {
+      const newMetaDescription = document.createElement('meta');
+      newMetaDescription.name = 'description';
+      newMetaDescription.content =
+        'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!';
+      document.head.appendChild(newMetaDescription);
+    }
+  }, []);
+
   const options = [
-    { value: "driveway-cleaning", label: "Driveway Cleaning" },
-    { value: "patio-washing", label: "Patio Washing" },
-    { value: "window-cleaning", label: "Window Cleaning" },
-    { value: "commercial-service", label: "Commercial Service" },
-    { value: "other", label: "Other" },
+    { value: 'driveway-cleaning', label: 'Driveway Cleaning' },
+    { value: 'patio-washing', label: 'Patio Washing' },
+    { value: 'window-cleaning', label: 'Window Cleaning' },
+    { value: 'commercial-service', label: 'Commercial Service' },
+    { value: 'other', label: 'Other' },
   ];
 
   const customStyles = {
-    control: (provided) => ({
+    control: (provided: any) => ({
       ...provided,
-      minHeight: "56px",
-      fontSize: "16px",
-      color: "black",
-      backgroundColor: "white",
+      minHeight: '56px',
+      fontSize: '16px',
+      color: 'black',
+      backgroundColor: 'white',
     }),
-    input: (provided) => ({
+    input: (provided: any) => ({
       ...provided,
-      color: "black",
+      color: 'black',
     }),
-    placeholder: (provided) => ({
+    placeholder: (provided: any) => ({
       ...provided,
-      color: "black",
+      color: 'black',
     }),
-    singleValue: (provided) => ({
+    singleValue: (provided: any) => ({
       ...provided,
-      color: "black",
+      color: 'black',
     }),
-    valueContainer: (provided) => ({
+    valueContainer: (provided: any) => ({
       ...provided,
-      padding: "0 8px",
-      color: "black",
+      padding: '0 8px',
+      color: 'black',
     }),
-    multiValue: (provided) => ({
+    multiValue: (provided: any) => ({
       ...provided,
-      backgroundColor: "lightgray",
-      color: "black",
+      backgroundColor: 'lightgray',
+      color: 'black',
     }),
-    multiValueLabel: (provided) => ({
+    multiValueLabel: (provided: any) => ({
       ...provided,
-      color: "black",
+      color: 'black',
     }),
-    multiValueRemove: (provided) => ({
+    multiValueRemove: (provided: any) => ({
       ...provided,
-      color: "black",
-      ":hover": {
-        backgroundColor: "red",
-        color: "white",
+      color: 'black',
+      ':hover': {
+        backgroundColor: 'red',
+        color: 'white',
       },
     }),
-    option: (provided, state) => ({
+    option: (provided: any, state: any) => ({
       ...provided,
-      backgroundColor: state.isFocused ? "lightgray" : "#f1eded",
-      color: "black",
+      backgroundColor: state.isFocused ? 'lightgray' : '#f1eded',
+      color: 'black',
     }),
   };
 
-  const handleSelectChange = (selected) => {
+  const handleSelectChange = (selected: any) => {
     setSelectedOptions(selected);
   };
 
-  const sendEmail = (e) => {
-    e.preventDefault(); // Prevent the native form submission
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-    // Prepare services data for email
-    const services = selectedOptions.map((option) => option.label).join(", ");
+    const services = selectedOptions.map((option) => option.label).join(', ');
 
-    // Check if the hidden input for services already exists
-    let servicesInput = form.current.querySelector('input[name="services"]');
+    let servicesInput = form.current?.querySelector(
+      'input[name="services"]',
+    ) as HTMLInputElement | null;
     if (servicesInput) {
-      servicesInput.value = services; // Update existing input
-    } else {
-      // Create a new hidden input for services if it doesn't exist
-      servicesInput = document.createElement("input");
-      servicesInput.type = "hidden";
-      servicesInput.name = "services";
       servicesInput.value = services;
-      form.current.appendChild(servicesInput);
+    } else {
+      servicesInput = document.createElement('input');
+      servicesInput.type = 'hidden';
+      servicesInput.name = 'services';
+      servicesInput.value = services;
+      form.current?.appendChild(servicesInput);
     }
 
     emailjs
       .sendForm(
-        "service_qhq2uzo",
-        "template_uw8hc8c",
-        form.current,
-        "2f33Ymo02d8DFKvSh"
+        'service_qhq2uzo',
+        'template_uw8hc8c',
+        form.current!,
+        '2f33Ymo02d8DFKvSh',
       )
       .then(
         () => {
-          alert("Message sent successfully!");
+          alert('Message sent successfully!');
         },
         () => {
           alert(
-            "Failed to send the message, please try again later or contact us directly."
+            'Failed to send the message, please try again later or contact us directly.',
           );
-        }
+        },
       );
   };
 
@@ -115,9 +136,8 @@ export default function ContactMe() {
             Ready for a cleaner property? Contact Driveway Blasters LLC today!
             Call us or fill out our online form to get a free quote and see how
             we can make your space shine. We’re here to help with all your
-            pressure washing needs in <b>Los Angeles County</b>,{" "}
-            <b>Orange County</b>, and
-            <b> Riverside County</b>.
+            pressure washing needs in <b>Los Angeles County</b>,{' '}
+            <b>Orange County</b>, and <b>Riverside County</b>.
           </p>
           <p>
             <b>Eric: </b> (949) 484-3698 <br />
@@ -202,8 +222,7 @@ export default function ContactMe() {
               <textarea
                 className="contact--input text-md"
                 id="message"
-                rows="3"
-                cols={50}
+                rows={3}
                 placeholder="Type your message..."
                 name="message"
                 required
@@ -214,12 +233,12 @@ export default function ContactMe() {
           <input
             type="submit"
             value="Submit"
-            className="btn btn-primary w-50 align-self-center"
-          ></input>
+            className="button btn-primary w-50 align-self-center"
+          />
         </form>
       </div>
-      
     </section>
-
   );
-}
+};
+
+export default ContactMe;

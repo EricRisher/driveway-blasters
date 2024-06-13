@@ -1,13 +1,18 @@
-import React from "react";
-import { useNavigate, useLocation, Link } from "react-router-dom";
+"use client";
 
-function Footer() {
-  const navigate = useNavigate();
-  const location = useLocation();
+import Link from "next/link";
+import { useEffect, useCallback, useState } from "react";
+import { usePathname } from 'next/navigation';
 
-  // Function to scroll to the specified section
-  const scrollToElement = (elementId) => {
-    // Function to perform the scrolling
+const Footer: React.FC = () => {
+  const [routerMounted, setRouterMounted] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setRouterMounted(true);
+  }, []);
+
+  const scrollToElement = useCallback((elementId: string) => {
     const doScroll = () => {
       const section = document.getElementById(elementId);
       if (section) {
@@ -15,30 +20,36 @@ function Footer() {
       }
     };
 
-    // Check if the user is already at the home page
-    if (location.pathname !== "/") {
-      navigate("/", { replace: true });
-      setTimeout(doScroll, 50); // Adjust timing as needed
+    if (pathname !== "/") {
+      window.location.href = `/#${elementId}`;
+      setTimeout(doScroll, 50);
     } else {
       doScroll();
     }
-  };
+  }, [pathname]);
 
+  if (!routerMounted) {
+    return null;
+  }
   return (
     <div className="footer-container" id="Footer">
       <div className="footer">
         <div className="footer-links">
           <div style={{ cursor: "pointer" }}>
-            <Link to="/driveway-deck-revival">Driveway & Decks</Link>
+            <Link href="/driveway-deck-revival" passHref>Driveway & Decks
+            </Link>
           </div>
           <div style={{ cursor: "pointer" }}>
-            <Link to="/house-roof-care">House & Roofs</Link>
+            <Link href="/house-roof-care" passHref>House & Roofs
+            </Link>
           </div>
           <div style={{ cursor: "pointer" }}>
-            <Link to="/windows">Windows</Link>
+            <Link href="/windows" passHref>Windows
+            </Link>
           </div>
           <div style={{ cursor: "pointer" }}>
-            <Link to="/gutters">Gutters</Link>
+            <Link href="/gutters" passHref>Gutters
+            </Link>
           </div>
         </div>
         <div className="footer-contact">
@@ -47,18 +58,18 @@ function Footer() {
           </p>
           <p className="eric">
             Website by{" "}
-            <a
+            <Link
               href="https://www.ericrisher.com"
               target="_blank"
               rel="noreferrer"
             >
               <b>Eric Risher</b>
-            </a>
+            </Link>
           </p>
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Footer;

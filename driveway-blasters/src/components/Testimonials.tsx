@@ -1,12 +1,14 @@
+"use client";
+
 import Carousel from "react-bootstrap/Carousel";
 
-var testimonials = [
+const testimonials = [
   {
     id: 1,
     description:
       "I was thrilled with the job Driveway Blasters did on my home's exterior and driveway. They showed up on time, were super professional, and didn’t miss a spot. I’d definitely recommend them if you’re looking to freshen up your property!",
-    name: "Jonathan R.",
-    city: "Anaheim",
+    name: "Brando M.",
+    city: "Laguna Hills",
   },
   {
     id: 2,
@@ -33,8 +35,8 @@ var testimonials = [
     id: 5,
     description:
       "Choosing Driveway Blasters to clean my property was a fantastic decision. They tackled some tough stains with ease and were both courteous and thorough throughout. I highly recommend them for anyone in need of quality pressure washing.",
-    name: "Grace H.",
-    city: "Santa Monica",
+    name: "Will S.",
+    city: "Aliso Viejo",
   },
   {
     id: 6,
@@ -45,11 +47,12 @@ var testimonials = [
   },
 ];
 
-
 function Testimonials() {
   return (
     <section className="testimonial-block">
-      <h1 className="testimonial-cta mt-4">See What Your Neighbors Are Saying!</h1>
+      <h1 className="testimonial-cta mt-4">
+        See What Your Neighbors Are Saying!
+      </h1>
       <Carousel interval={9000}>
         {testimonials.map((testimonial) => {
           return (

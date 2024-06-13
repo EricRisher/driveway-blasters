@@ -1,20 +1,23 @@
-import React, { Component, useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+"use client";
+
+import { useEffect } from "react";
+import Link from "next/link";
 import ReactCompareImage from "react-compare-image";
+import Image from "next/image";
 
-import drivewayBefore from "../assets/images/drivewaybefore.webp";
-import drivewayAfter from "../assets/images/drivewayafter.webp";
+import drivewayBefore from "../../public/images/drivewaybefore.webp";
+import drivewayAfter from "../../public/images/drivewayafter.webp";
 
-import housewashBefore from "../assets/images/housewashbefore.webp";
-import housewashAfter from "../assets/images/housewashafter.webp";
+import housewashBefore from "../../public/images/housewashbefore.webp";
+import housewashAfter from "../../public/images/housewashafter.webp";
 
-import guttersBefore from "../assets/images/beforegutters.webp";
-import guttersAfter from "../assets/images/aftergutters.webp";
+import guttersBefore from "../../public/images/beforegutters.webp";
+import guttersAfter from "../../public/images/aftergutters.webp";
 
-import windowBefore from "../assets/images/windowbefore.webp";
-import windowAfter from "../assets/images/windowafter.webp";
+import windowBefore from "../../public/images/windowbefore.webp";
+import windowAfter from "../../public/images/windowafter.webp";
 
-var services = [
+const services = [
   {
     title: "Driveway & Deck Revival",
     description:
@@ -74,17 +77,25 @@ function Services() {
       <div className="services">
         {services.map((service, index) => (
           <section className="service" key={index}>
-            <h2><b>{service.title}</b></h2>
+            <h2>
+              <b>{service.title}</b>
+            </h2>
             <div className="imageWrapper">
               <ReactCompareImage
-                leftImage={service.before}
-                rightImage={service.after}
+                leftImage={service.before.src}
+                rightImage={service.after.src}
+                leftImageAlt={`Before ${service.title}`}
+                rightImageAlt={`After ${service.title}`}
               />
             </div>
             <p className="mt-2">{service.description}</p>
-            <Link to={service.href} className="btn btn-primary w-100">
+            <Link
+              href={service.href}
+              className="button btn-primary w-100 text-center"
+              passHref
+            >
               Learn More!
-            </Link>{" "}
+            </Link>
           </section>
         ))}
       </div>

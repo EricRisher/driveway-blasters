@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Testimonials from "../Testimonials";
+import Testimonials from "../../../../driveway-blasters/src/componets/Testimonials";
 
 function AboutUs() {
   return (
