@@ -20,11 +20,13 @@
 @font-face {
   font-family: 'Gadugi';
   src: url(../../public/fonts/GADUGI.TTF);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gadugi-Bold';
   src: url(../../public/fonts/GADUGIB.TTF);
+  font-display: swap;
 }
 
 /* Global Styling */
@@ -202,7 +204,7 @@ a {
 }
 
 .navbar--items.active {
-  top: 85px; 
+  top: 85px;
   transform: translateY(0);
 }
 
@@ -915,7 +917,7 @@ a {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
   .hero-h1 {
     font-size: 5rem;
     line-height: 7rem;
@@ -988,7 +990,6 @@ a {
     font-size: 1.5rem;
     line-height: 3rem;
   }
-
 }
 
 @media screen and (max-width: 900px) {
@@ -1123,7 +1124,8 @@ a {
     max-width: 85vw;
   }
 
-  .about-us-h1, .service-area-h1 {
+  .about-us-h1,
+  .service-area-h1 {
     font-size: 3rem;
   }
 

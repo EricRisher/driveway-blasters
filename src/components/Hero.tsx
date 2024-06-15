@@ -3,7 +3,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
-
 interface HeroData {
   id: number;
   image: string;
@@ -40,6 +39,8 @@ const HeroCarousel: React.FC = () => {
               alt={`slide ${hero.id}`}
               width={1920}
               height={1080}
+              priority={hero.id === 1}
+              loading={hero.id !== 1 ? 'lazy' : undefined}
             />
           </Carousel.Item>
         ))}
