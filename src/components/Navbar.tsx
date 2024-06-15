@@ -78,6 +78,7 @@ const Navbar: React.FC = () => {
       <button
         className={`nav__hamburger ${navActive ? 'active' : ''}`}
         onClick={toggleNav}
+        aria-label="Toggle navigation"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>

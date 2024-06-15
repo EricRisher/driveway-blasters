@@ -42,6 +42,7 @@ const AboutUs: React.FC = () => {
               width={300}
               height={300}
               className="rounded m-3 flex-shrink"
+              loading='eager'
             />
             <Image
               src="/images/jeremy-headshot.jpg"
@@ -49,6 +50,7 @@ const AboutUs: React.FC = () => {
               width={300}
               height={300}
               className="rounded m-3 flex-shrink"
+              loading='eager'
             />
           </div>
         </div>
