@@ -1,5 +1,6 @@
+import { withVercelAnalytics } from '@vercel/analytics';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
-const { withVercelAnalytics } = require('@vercel/analytics');
 
-export default nextConfig;
+export default withVercelAnalytics(nextConfig);
