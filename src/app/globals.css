@@ -915,6 +915,26 @@ a {
 }
 
 /* Media Queries */
+@media screen and (max-width: 1200px){
+  .hero-h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    transform: translateY(-80vh);
+  }
+
+  .hero-h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    transform: translateY(-40vh);
+  }
+
+  .hero-btn {
+    font-size: 2.5rem;
+    transform: translateY(-25vh);
+    max-width: 100vw;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .contact-button {
     width: 150px;
@@ -960,22 +980,15 @@ a {
   }
 
   .hero-h1 {
-    font-size: 6rem;
-    line-height: 8rem;
-    transform: translateY(-80vh);
+    font-size: 4.5rem;
+    line-height: 6rem;
   }
 
   .hero-h2 {
-    font-size: 2rem;
-    line-height: 4rem;
-    transform: translateY(-45vh);
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
 
-  .hero-btn {
-    font-size: 6vw;
-    transform: translateY(-25vh);
-    max-width: 60vw;
-  }
 }
 
 @media screen and (max-width: 900px) {

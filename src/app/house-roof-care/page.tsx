@@ -1,13 +1,42 @@
-'use server';
-
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Driveway Blasters LLC - Professional House and Roof Care Services',
+  description:
+    'Driveway Blasters LLC offers expert house and roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
+  openGraph: {
+    title: 'Driveway Blasters LLC - Professional House and Roof Care Services',
+    description:
+      'Driveway Blasters LLC offers expert house and roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com/house-and-roof-care',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Driveway Blasters LLC - Professional House and Roof Care Services',
+    description:
+      'Driveway Blasters LLC offers expert house and roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
+    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+  },
+};
 
 const HouseAndRoofCare: React.FC = () => {
   return (
     <div className="container mt-3">
-      <h2 className="mb-3">
-        <b>Expert House and Roof Care</b>
+      <h2 className="mb-3 text-center">
+        <b>Expert House and Roof Care Services</b>
       </h2>
       <p className="mb-4">
         Protect and enhance your home with Driveway Blasters LLC’s professional

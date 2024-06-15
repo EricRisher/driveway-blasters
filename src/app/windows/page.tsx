@@ -1,7 +1,36 @@
-'use server';
-
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+  description:
+    'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+  openGraph: {
+    title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+    description:
+      'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com/windows',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC Window Cleaning Services',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+    description:
+      'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+  },
+};
 
 const Windows: React.FC = () => {
   return (

@@ -7,9 +7,33 @@ import React from 'react';
 import Head from 'next/head';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - Locations',
+  title: 'Driveway Blasters LLC - Pressure Washing Service Areas',
   description:
-    'Driveway Blasters LLC provides expert pressure washing services in Orange, Riverside, and Los Angeles Counties. Get your free quote today!',
+    'Driveway Blasters LLC provides expert pressure washing services in Orange County, Riverside County, and Los Angeles County. Enhance your curb appeal with our professional cleaning services. Get your free quote today!',
+  openGraph: {
+    title: 'Driveway Blasters LLC - Pressure Washing Service Areas',
+    description:
+      'Driveway Blasters LLC provides expert pressure washing services in Orange County, Riverside County, and Los Angeles County. Enhance your curb appeal with our professional cleaning services. Get your free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com/locations',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC Service Areas',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Driveway Blasters LLC - Pressure Washing Service Areas',
+    description:
+      'Driveway Blasters LLC provides expert pressure washing services in Orange County, Riverside County, and Los Angeles County. Enhance your curb appeal with our professional cleaning services. Get your free quote today!',
+    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+  },
 };
 
 const Locations: React.FC = () => {
@@ -18,7 +42,7 @@ const Locations: React.FC = () => {
       <div className="bg-wrapper">
         <Image
           src={serviceAreas}
-          alt="service-img"
+          alt="Service Areas"
           className="service-area-bg-img"
           placeholder="blur"
         />
@@ -35,7 +59,7 @@ const Locations: React.FC = () => {
       </div>
       <Image
         src={servicingCounties}
-        alt="service area"
+        alt="Service Area"
         className="service-area-image"
         placeholder="blur"
       />

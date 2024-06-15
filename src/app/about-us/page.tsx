@@ -5,9 +5,19 @@ import Testimonials from '@/components/Testimonials';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - About Us',
+  title: 'Driveway Blasters LLC - About Our Team',
   description:
     'Learn about Driveway Blasters LLC: founded by Eric and Jeremy, providing pressure washing in Riverside, LA, and Orange County with integrity and excellence.',
+  openGraph: {
+    title: 'Driveway Blasters LLC - About Our Team',
+    description:
+      'Learn about Driveway Blasters LLC: founded by Eric and Jeremy, providing pressure washing in Riverside, LA, and Orange County with integrity and excellence.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com/about-us',
+    siteName: 'Driveway Blasters LLC',
+  },
+
 };
 
 const AboutUs: React.FC = () => {

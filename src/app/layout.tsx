@@ -5,16 +5,26 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { title } from 'process';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title:
-    'Driveway Blasters LLC - Expert Pressure Washing Services in Orange, Riverside, and Los Angeles Counties',
+  metadataBase: new URL('https://www.drivewayblasters.com/'),
+  title: 'Driveway Blasters - Top-Rated Pressure Washing & Softwash Services',
   description:
     'Top driveway cleaning in Orange, Los Angeles, and Riverside Counties. Eco-friendly solutions for tough stains like oil and rust. Get your free quote today!',
   viewport: 'width=device-width, initial-scale=1',
   charset: 'UTF-8',
+  openGraph: {
+    title: 'Driveway Blasters - Top-Rated Pressure Washing & Softwash Services',
+    description:
+      'Top driveway cleaning in Orange, Los Angeles, and Riverside Counties. Eco-friendly solutions for tough stains like oil and rust. Get your free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com',
+    site_name: 'Driveway Blasters LLC',
+  },
   icons: {
     icon: '/favicon.ico',
   },

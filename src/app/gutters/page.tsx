@@ -1,13 +1,42 @@
-'use server';
-
+import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: 'Driveway Blasters LLC - Professional Gutter Cleaning Services',
+  description:
+    'Driveway Blasters LLC offers top-tier gutter cleaning services in Orange, Riverside, and Los Angeles County. Ensure your gutters are clean and functional with our expert services. Contact us for a free quote today!',
+  openGraph: {
+    title: 'Driveway Blasters LLC - Professional Gutter Cleaning Services',
+    description:
+      'Driveway Blasters LLC offers top-tier gutter cleaning services in Orange, Riverside, and Los Angeles County. Ensure your gutters are clean and functional with our expert services. Contact us for a free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblasters.com/gutters',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Driveway Blasters LLC - Professional Gutter Cleaning Services',
+    description:
+      'Driveway Blasters LLC offers top-tier gutter cleaning services in Orange, Riverside, and Los Angeles County. Ensure your gutters are clean and functional with our expert services. Contact us for a free quote today!',
+    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+  },
+};
 
 const Gutters: React.FC = () => {
   return (
     <div className="container mt-3">
-      <h1 className="mb-4 text-center">
-        <b>Gutter Cleaning Services</b>
+      <h1 className="mb-3 text-center">
+        <b>Professional Gutter Cleaning Services</b>
       </h1>
       <p className="lead mb-4">
         Driveway Blasters LLC provides <b>top-tier</b> gutter cleaning services
@@ -17,7 +46,7 @@ const Gutters: React.FC = () => {
       </p>
 
       <h2 className="mb-3">
-        <b>Protect your property with Expert Gutter Cleaning</b>
+        <b>Protect Your Property with Expert Gutter Cleaning</b>
       </h2>
       <ul className="list-disc pl-5 mb-4">
         <li className="mt-2">
@@ -44,7 +73,7 @@ const Gutters: React.FC = () => {
       </ul>
 
       <h2 className="mb-3">
-        <b>Gutter Cleaning and Maintenance</b>
+        <b>Comprehensive Gutter Cleaning and Maintenance</b>
       </h2>
       <p className="mb-4">
         Clogged gutters can lead to water damage and foundation issues. Our
@@ -69,21 +98,21 @@ const Gutters: React.FC = () => {
         thorough gutter maintenance service.
       </p>
 
+      <h2 className="mb-3">
+        <b>Why Choose Professional Gutter Cleaning?</b>
+      </h2>
+      <p className="mb-4">
+        Professional cleaning not only enhances the <b>curb appeal</b> of your
+        property but also extends the life of your home’s exterior features.
+        Regular maintenance prevents the buildup of harmful materials that can
+        lead to expensive repairs, ensuring your property remains a welcoming
+        and safe space.
+      </p>
+
       <p className="mb-4">
         Don't let gutter issues compromise your home.{' '}
         <b>Contact Driveway Blasters LLC</b> today for professional cleaning and
         exceptional care.
-      </p>
-
-      <h2 className="mb-3">
-        <b>Why Professional Cleaning?</b>
-      </h2>
-      <p className="mb-4">
-        Professional cleaning helps not only in enhancing the <b>curb appeal</b>{' '}
-        but also in extending the life of your property’s external features.
-        Regular maintenance prevents the buildup of harmful materials that can
-        lead to expensive repairs, ensuring that your property remains a
-        welcoming and safe space.
       </p>
 
       <div className="d-flex justify-content-center">
