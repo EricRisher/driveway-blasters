@@ -2,6 +2,7 @@
 
 import { useState, useEffect, MouseEvent } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -15,6 +16,7 @@ const Navbar: React.FC = () => {
   const [bgColor, setBgColor] = useState(false);
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const isOpen = Boolean(anchorEl);
+  const pathname = usePathname();
 
   const toggleNav = () => setNavActive(!navActive);
   const closeMenu = () => {
@@ -23,7 +25,7 @@ const Navbar: React.FC = () => {
   };
 
   const handleMenu = (event: MouseEvent<HTMLElement>) => {
-    setAnchorEl(anchorEl ? null : event.currentTarget); // Toggle dropdown
+    setAnchorEl(anchorEl ? null : event.currentTarget);
   };
 
   const handleClose = () => {
@@ -36,20 +38,25 @@ const Navbar: React.FC = () => {
   };
 
   useEffect(() => {
+    if (pathname === '/') {
+      window.addEventListener('scroll', handleScroll);
+    } else {
+      setBgColor(true);
+    }
+
     const handleResize = () => {
       if (window.innerWidth <= 100) {
         closeMenu();
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [pathname]);
 
   return (
     <nav
@@ -57,7 +64,10 @@ const Navbar: React.FC = () => {
         bgColor ? 'navbar-colored' : ''
       }`}
     >
-      <div onClick={() => (window.location.href = '/')}>
+      <div
+        onClick={() => (window.location.href = '/')}
+        className="nav-header ml-5"
+      >
         <Image
           src={logo}
           alt="portfolio logo"

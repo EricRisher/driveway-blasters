@@ -60,7 +60,7 @@ function Services() {
           entry.target.classList.toggle("show", entry.isIntersecting);
         });
       },
-      { rootMargin: "0px", threshold: 0.2 }
+      { rootMargin: "0px", threshold: 0.1 }
     );
 
     const cards = document.querySelectorAll(".service");

@@ -17,27 +17,54 @@ const DrivewayAndDeckRevival: React.FC = () => {
       </p>
 
       <h2 className="mb-3">
-        <b>Comprehensive Removal of All Impurities</b>
+        <b>Why Regular Cleaning Matters</b>
       </h2>
       <p className="mb-4">
-        We expertly remove:
-        <ul className="mb-4">
-          <li>
-            <b>Algae,</b> which can create slippery surfaces.
-          </li>
-          <li>
-            <b>Mold and mildew</b> that degrade surface integrity and can cause
-            health issues.
-          </li>
-          <li>
-            <b>Oil and vehicle fluid stains</b> that can permanently damage your
-            property's appearance.
-          </li>
-          <li>
-            <b>Rust and other mineral deposits</b> that can etch and weaken
-            concrete and stone.
-          </li>
-        </ul>
+        Regular cleaning of your driveway and sidewalks enhances curb appeal,
+        extends their lifespan, and improves safety. It prevents the
+        accumulation of harmful materials that degrade surfaces over time.
+      </p>
+      <p className="mb-4">
+        Benefits of our professional cleaning services include:
+      </p>
+      <ul className="mb-4 list-disc pl-5">
+        <li className="mt-2">
+          <b>Enhanced Safety:</b> Reduce the risk of slips and falls on your
+          property with regular removal of slippery algae and mold.
+        </li>
+        <li className="mt-2">
+          <b>Increased Durability:</b> Preventative maintenance extends the life
+          of your surfaces, saving you money on future repairs.
+        </li>
+        <li className="mt-2">
+          <b>Improved Aesthetics:</b> A clean exterior increases property value
+          and makes your home or business more welcoming to guests and
+          customers.
+        </li>
+      </ul>
+
+      <h2 className="mb-3">
+        <b>Comprehensive Removal of All Impurities</b>
+      </h2>
+      <p className="mb-4">We expertly remove:</p>
+      <ul className="mb-4 list-disc pl-5">
+        <li className="mt-2">
+          <b>Algae,</b> which can create slippery surfaces.
+        </li>
+        <li className="mt-2">
+          <b>Mold and mildew</b> that degrade surface integrity and can cause
+          health issues.
+        </li>
+        <li className="mt-2">
+          <b>Oil and vehicle fluid stains</b> that can permanently damage your
+          property's appearance.
+        </li>
+        <li className="mt-2">
+          <b>Rust and other mineral deposits</b> that can etch and weaken
+          concrete and stone.
+        </li>
+      </ul>
+      <p className="mb-4">
         Our services are designed to tackle these and other stubborn stains with
         precision, restoring your surfaces to their pristine condition.
       </p>
@@ -47,46 +74,21 @@ const DrivewayAndDeckRevival: React.FC = () => {
       </h2>
       <p className="mb-4">
         Our team is trained to clean a variety of materials, including:
-        <ul className="mb-4">
-          <b>
-            <li>Concrete</li>
-            <li>Asphalt</li>
-            <li>Brick</li>
-            <li>Stone</li>
-            <li>Pavers</li>
-            <li>Flagstone</li>
-            <li>Wood</li>
-          </b>
-        </ul>
+      </p>
+      <ul className="mb-4 list-disc pl-5">
+        <li className="mt-2">Concrete</li>
+        <li className="mt-2">Asphalt</li>
+        <li className="mt-2">Brick</li>
+        <li className="mt-2">Stone</li>
+        <li className="mt-2">Pavers</li>
+        <li className="mt-2">Flagstone</li>
+        <li className="mt-2">Wood</li>
+      </ul>
+      <p className="mb-4">
         Whether your paths are made of traditional concrete or upscale paver
         stones, our advanced cleaning techniques are{' '}
         <b>safe, effective, and tailored</b> to meet the specific needs of each
         material.
-      </p>
-
-      <h2 className="mb-3">
-        <b>Why Regular Cleaning Matters</b>
-      </h2>
-      <p className="mb-4">
-        Regular cleaning of your driveway and sidewalks enhances curb appeal,
-        extends their lifespan, and improves safety. It prevents the
-        accumulation of harmful materials that degrade surfaces over time.
-        Benefits of our professional cleaning services include:
-        <ul className="mb-4">
-          <li>
-            <b>Enhanced Safety:</b> Reduce the risk of slips and falls on your
-            property with regular removal of slippery algae and mold.
-          </li>
-          <li>
-            <b>Increased Durability:</b> Preventative maintenance extends the
-            life of your surfaces, saving you money on future repairs.
-          </li>
-          <li>
-            <b>Improved Aesthetics:</b> A clean exterior increases property
-            value and makes your home or business more welcoming to guests and
-            customers.
-          </li>
-        </ul>
       </p>
 
       <p className="mb-4">

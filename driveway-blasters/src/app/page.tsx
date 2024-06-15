@@ -1,6 +1,5 @@
 "use server";
 
-import type { Metadata } from 'next';
 import WhyChooseUs from '../components/WhyChooseUs';
 import Hero from '../components/Hero';
 import Services from '../components/Services';

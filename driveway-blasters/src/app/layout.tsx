@@ -6,6 +6,18 @@ import Footer from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
+export const metadata = {
+  title:
+    'Driveway Blasters LLC - Expert Pressure Washing Services in Orange, Riverside, and Los Angeles Counties',
+  description:
+    'Top driveway cleaning in Orange, Los Angeles, and Riverside Counties. Eco-friendly solutions for tough stains like oil and rust. Get your free quote today!',
+  viewport: 'width=device-width, initial-scale=1',
+  charset: 'UTF-8',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};
+
 export default function RootLayout({
   children,
 }: {

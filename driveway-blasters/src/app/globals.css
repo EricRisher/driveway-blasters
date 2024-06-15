@@ -165,7 +165,10 @@ a {
   background-color: #7c98ff00;
   transition: opacity 0.5s ease-out;
   opacity: 1;
-  flex-wrap: nowrap;
+}
+
+.nav-header {
+  z-index: 5;
 }
 
 .navbar-hidden {
@@ -190,8 +193,17 @@ a {
   align-items: center;
   height: 100vh;
   transform: translateY(-100vh);
-  align-items: center;
   flex-direction: column;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.navbar--items.active {
+  top: 85px; 
+  transform: translateY(0);
 }
 
 .navbar--items ul {
@@ -284,17 +296,9 @@ a {
     display: flex;
     z-index: 200;
   }
-  .navbar--items {
-    display: flex;
-  }
+
   .navbar--items {
     position: absolute;
-    display: flex;
-    background-color: rgba(255, 255, 255);
-    top: -20rem;
-    left: 0;
-    width: 100%;
-    transition: all ease-in-out 0.4s;
     z-index: 4;
   }
   .navbar--items ul {
@@ -306,9 +310,7 @@ a {
   .navbar--content {
     padding: 0.5rem;
   }
-  .navbar--items.active {
-    top: 110vh;
-  }
+
   .nav__hamburger.active :nth-child(1) {
     transform: rotate(45deg) translate(1rem, 0.6rem);
   }
@@ -557,9 +559,9 @@ a {
 }
 
 .service-area-h1 {
-  font-size: 15vw;
+  font-size: 10vw;
   line-height: 60px;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   position: absolute;
   transform: translateY(-65vh);
   z-index: 8;
@@ -567,6 +569,7 @@ a {
   color: #fff;
   text-shadow: 0 -1px 5px #000;
   font-weight: 900;
+  margin: auto;
 }
 
 .locations-btn {
@@ -677,7 +680,6 @@ a {
 }
 
 .faq-header {
-  font-size: 3rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -719,8 +721,8 @@ a {
 
 .contact--container {
   display: flex;
-  margin: 25px auto;
-  border-radius: 10px 10px;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
   background-color: var(--light-color);
   flex-direction: column;
   align-items: center;
@@ -824,19 +826,30 @@ a {
   background-position: center;
   background-color: rgba(47, 124, 248, 0.404);
   background-blend-mode: multiply;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headshot-wrapper > img {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 .about-us-h1 {
-  font-size: 15vw;
+  font-size: 10vw;
   line-height: 60px;
-  margin-top: 110px;
-  letter-spacing: 2px;
+  letter-spacing: 6px;
   position: absolute;
   z-index: 8;
   text-align: center;
   color: #fff;
   text-shadow: 0 -1px 5px #000;
   font-weight: 900;
+  margin: auto;
 }
 
 .about-text-wrapper {
@@ -1095,5 +1108,18 @@ a {
     font-size: 1.7rem;
     transform: translateY(-35vh);
     max-width: 85vw;
+  }
+
+  .about-us-h1, .service-area-h1 {
+    font-size: 3rem;
+  }
+
+  .headshot-wrapper {
+    flex-direction: row;
+  }
+
+  .headshot-wrapper > img {
+    max-width: 40vw;
+    max-height: 40vw;
   }
 }

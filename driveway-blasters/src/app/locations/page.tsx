@@ -1,7 +1,16 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import serviceAreas from '../../../public/images/serviceareas.webp';
 import servicingCounties from '../../../public/images/servicing-counties.webp';
+import React from 'react';
+import Head from 'next/head';
+
+export const metadata: Metadata = {
+  title: 'Driveway Blasters LLC - Locations',
+  description:
+    'Driveway Blasters LLC provides expert pressure washing services in Orange, Riverside, and Los Angeles Counties. Get your free quote today!',
+};
 
 const Locations: React.FC = () => {
   return (
@@ -31,18 +40,18 @@ const Locations: React.FC = () => {
         placeholder="blur"
       />
       <article className="service-area-article">
-        <h3 className="service-counties-h3 mt-5">Orange County:</h3>
-        <p className="service-cities">
+        <h3 className="service-counties-h3 mt-3">Orange County:</h3>
+        <p className="service-cities text-center">
           Anaheim - Santa Ana - Irvine - Huntington Beach - Costa Mesa - Orange
-          - Fullerton - Mission Viejo - Newport Beach - Garden Grove
+          - Aliso Viejo - Mission Viejo - Newport Beach - Laguna Niguel
         </p>
-        <h3 className="service-counties-h3 mt-5">Riverside County:</h3>
-        <p className="service-cities">
+        <h3 className="service-counties-h3 mt-3">Riverside County:</h3>
+        <p className="service-cities text-center">
           Riverside - Corona - Moreno Valley - Temecula - Murrieta - Palm
           Springs - Perris - Lake Elsinore - Indio - Hemet
         </p>
-        <h3 className="service-counties-h3 mt-5">Los Angeles County:</h3>
-        <p className="service-cities">
+        <h3 className="service-counties-h3 mt-3">Los Angeles County:</h3>
+        <p className="service-cities text-center">
           Los Angeles - Long Beach - Pasadena - Santa Monica - Burbank -
           Glendale - Pomona - Torrance - Whittier - Lancaster
         </p>

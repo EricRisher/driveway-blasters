@@ -1,10 +1,9 @@
-'use client';
+'use server';
 
 import React from 'react';
 import Link from 'next/link';
 
 const Gutters: React.FC = () => {
-
   return (
     <div className="container mt-3">
       <h1 className="mb-4 text-center">
@@ -18,22 +17,49 @@ const Gutters: React.FC = () => {
       </p>
 
       <h2 className="mb-3">
+        <b>Protect your property with Expert Gutter Cleaning</b>
+      </h2>
+      <ul className="list-disc pl-5 mb-4">
+        <li className="mt-2">
+          <b>Avoid Water Damage:</b> Our cleaning prevents overflow, protecting
+          your roof, siding, and foundation from water damage.
+        </li>
+        <li className="mt-2">
+          <b>Enhance Your Home's Curb Appeal:</b> Maintain your property’s value
+          and aesthetic with clean, functional gutters.
+        </li>
+        <li className="mt-2">
+          <b>Preventative Maintenance Saves Money:</b> Regular gutter
+          maintenance ensures optimal condition, preventing expensive future
+          repairs.
+        </li>
+        <li className="mt-2">
+          <b>Eco-Friendly Cleaning Solutions:</b> Opt for sustainable cleaning
+          with our environmentally friendly methods.
+        </li>
+        <li className="mt-2">
+          <b>Prompt and Reliable Service:</b> Rely on our timely, efficient
+          services that respect your schedule and property integrity.
+        </li>
+      </ul>
+
+      <h2 className="mb-3">
         <b>Gutter Cleaning and Maintenance</b>
       </h2>
       <p className="mb-4">
         Clogged gutters can lead to water damage and foundation issues. Our
         comprehensive gutter cleaning services involve:
       </p>
-      <ul className="mb-4">
-        <li>
+      <ul className="list-disc pl-5 mb-4">
+        <li className="mt-2">
           Removing <b>leaves, debris, and obstructions</b> to ensure proper
           water flow.
         </li>
-        <li>
+        <li className="mt-2">
           Inspecting and clearing downspouts to prevent water buildup and
           potential damage.
         </li>
-        <li>
+        <li className="mt-2">
           Optional <b>gutter guard installation</b> to reduce future debris
           accumulation.
         </li>
@@ -43,32 +69,6 @@ const Gutters: React.FC = () => {
         thorough gutter maintenance service.
       </p>
 
-      <h2 className="mb-3">
-        <b>Protect your property with Expert Gutter Cleaning</b>
-      </h2>
-      <ul className="mb-4">
-        <li>
-          <b>Avoid Water Damage:</b> Our cleaning prevents overflow, protecting
-          your roof, siding, and foundation from water damage.
-        </li>
-        <li>
-          <b>Enhance Your Home's Curb Appeal:</b> Maintain your property’s value
-          and aesthetic with clean, functional gutters.
-        </li>
-        <li>
-          <b>Preventative Maintenance Saves Money:</b> Regular gutter
-          maintenance ensures optimal condition, preventing expensive future
-          repairs.
-        </li>
-        <li>
-          <b>Eco-Friendly Cleaning Solutions:</b> Opt for sustainable cleaning
-          with our environmentally friendly methods.
-        </li>
-        <li>
-          <b>Prompt and Reliable Service:</b> Rely on our timely, efficient
-          services that respect your schedule and property integrity.
-        </li>
-      </ul>
       <p className="mb-4">
         Don't let gutter issues compromise your home.{' '}
         <b>Contact Driveway Blasters LLC</b> today for professional cleaning and
