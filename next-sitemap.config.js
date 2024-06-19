@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 const config = {
-  siteUrl: 'https://www.drivewayblasters.com',
+  siteUrl: 'https://www.drivewayblaster.com',
   generateRobotsTxt: true,
   changefreq: 'daily',
   priority: 0.7,
