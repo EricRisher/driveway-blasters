@@ -1,15 +1,18 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+  title:
+    'Expert Window and Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
   description:
-    'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+    'Driveway Blasters LLC offers professional window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance and efficiency with our eco-friendly solutions. Get a free quote today!',
   openGraph: {
-    title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+    title:
+      'Expert Window and Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+      'Driveway Blasters LLC offers professional window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance and efficiency with our eco-friendly solutions. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/windows',
@@ -25,9 +28,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Driveway Blasters LLC - Window & Solar Panel Cleaning Services',
+    title:
+      'Expert Window and Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers top-tier window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your home’s efficiency and curb appeal with our professional cleaning. Get your free quote today!',
+      'Driveway Blasters LLC offers professional window and solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance and efficiency with our eco-friendly solutions. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -45,30 +49,6 @@ const Windows: React.FC = () => {
         <b>safety</b> and <b>efficiency</b>, our team delivers{' '}
         <b>exceptional</b> cleaning without the hassle of doing it yourself.
       </p>
-
-      <h2 className="mb-3">
-        <b>Comprehensive Services for Every Need</b>
-      </h2>
-      <p className="mb-4">
-        We offer specialized <b>Solar Panel Cleaning</b> as part of our
-        comprehensive cleaning services, essential for:
-      </p>
-      <ul className="list-disc pl-5 mb-4">
-        <li className="mt-2">
-          <b>Maintaining Energy Efficiency:</b> Regular cleaning removes debris,
-          dust, and bird droppings that can significantly decrease solar panel
-          effectiveness.
-        </li>
-        <li className="mt-2">
-          <b>Prolonging Panel Lifespan:</b> Keeping solar panels clean helps
-          prevent damage and extends their useful life.
-        </li>
-        <li className="mt-2">
-          <b>Enhancing Return on Investment:</b> Clean panels operate at peak
-          efficiency, ensuring you get the best return on your solar energy
-          investment.
-        </li>
-      </ul>
 
       <h2 className="mb-3">
         <b>Precision Window Cleaning</b>
@@ -98,20 +78,127 @@ const Windows: React.FC = () => {
       </p>
 
       <h2 className="mb-3">
-        <b>Why Professional Cleaning?</b>
+        <b>The Benefits of Professional Window Cleaning</b>
       </h2>
       <p className="mb-4">
-        Professional cleaning helps not only in enhancing the <b>curb appeal</b>{' '}
-        but also in extending the life of your property’s external features.
-        Regular maintenance prevents the buildup of harmful materials that can
-        lead to expensive repairs.
+        Professional window cleaning offers numerous benefits beyond just a
+        clear view. Here’s how regular window cleaning can enhance your
+        property:
+      </p>
+      <ul className="list-disc pl-5 mb-4">
+        <li className="mt-2">
+          <b>Enhances Curb Appeal:</b> Clean windows significantly improve the
+          overall appearance of your home or business, making a positive
+          impression on visitors and potential buyers.
+        </li>
+        <li className="mt-2">
+          <b>Increases Natural Light:</b> Clean windows allow more natural light
+          to enter your space, creating a brighter and more welcoming
+          environment.
+        </li>
+        <li className="mt-2">
+          <b> Prolongs Window Lifespan:</b> Removing dirt, debris, and hard
+          water stains prevents damage and extends the life of your windows.
+        </li>
+        <li className="mt-2">
+          <b>Improves Energy Efficiency:</b> Clean windows reduce the need for
+          artificial lighting, helping to lower energy costs.
+        </li>
+        <li className="mt-2">
+          <b>Promotes Health:</b> Removing mold, pollen, and other allergens
+          from window surfaces contributes to a healthier indoor environment.
+        </li>
+      </ul>
+
+      <h2 className="mb-3">
+        <b>Why Choose Us for Window and Solar Panel Cleaning?</b>
+      </h2>
+      <ul className="list-disc pl-5 mb-4">
+        <li className="mt-2">
+          <b>Experienced Technicians:</b> Our team is proficient in advanced
+          cleaning techniques, ensuring your windows and solar panels are
+          spotless.
+        </li>
+        <li className="mt-2">
+          <b>Eco-Friendly Solutions:</b> We use biodegradable cleaning products
+          that are safe for your home and the environment.
+        </li>
+        <li className="mt-2">
+          <b>Customer Satisfaction:</b> We are dedicated to delivering
+          exceptional customer service and ensuring you are thrilled with the
+          results.
+        </li>
+        <li className="mt-2">
+          <b>Affordable Pricing:</b> Our rates are competitive and transparent,
+          providing excellent value for your investment.
+        </li>
+        <li className="mt-2">
+          <b>Reliable Service:</b> We are punctual and efficient, completing the
+          job on time while respecting your schedule and property
+        </li>
+      </ul>
+
+      <h2 className="mb-3">
+        <b>Benefits of Regular Solar Panel Cleaning</b>
+      </h2>
+      <ul className="list-disc pl-5 mb-4">
+        <li className="mt-2">
+          <b>Maintaining Energy Efficiency:</b> Regular cleaning removes debris,
+          dust, and bird droppings that can significantly decrease solar panel
+          effectiveness.
+        </li>
+        <li className="mt-2">
+          <b>Prolonging Panel Lifespan:</b> Keeping solar panels clean helps
+          prevent damage and extends their useful life.
+        </li>
+        <li className="mt-2">
+          <b>Enhancing Return on Investment:</b> Clean panels operate at peak
+          efficiency, ensuring you get the best return on your solar energy
+          investment.
+        </li>
+      </ul>
+
+      <section>
+        <h2>
+          <b>Our Eco-Friendly Approach</b>
+        </h2>
+        <p className="mb-4">
+          At Driveway Blasters LLC, we are committed to protecting the
+          environment. Our eco-friendly cleaning methods include:
+        </p>
+        <ul className="mb-4 list-disc pl-5">
+          <li className="mt-2">
+            <b>Biodegradable cleaning solutions:</b> We use products that are
+            safe for the environment and won’t harm your landscaping.
+          </li>
+          <li className="mt-2">
+            <b>Water conservation techniques:</b> Our pressure washing systems
+            are designed to use water efficiently, reducing waste while still
+            providing a thorough clean.
+          </li>
+          <li className="mt-2">
+            <b>Safe disposal practices:</b> We ensure that any waste generated
+            during the cleaning process is disposed of responsibly.
+          </li>
+          <li className="mt-2">
+            <b>Eco-friendly equipment:</b> Our tools and machines are chosen for
+            their minimal environmental impact.
+          </li>
+        </ul>
+      </section>
+
+      <p className="mb-4">
+        Ready to safeguard and beautify your home? Contact Driveway Blasters LLC
+        for a free estimate and see the difference professional care can make.
       </p>
 
       <div className="d-flex justify-content-center">
-        <Link href="/contact" className="button btn-primary mb-5" passHref>
+        <Link href="/contact" className="button btn-primary mb-1" passHref>
           Get Your Free Quote!
         </Link>
       </div>
+
+      <Testimonials />
     </div>
   );
 };

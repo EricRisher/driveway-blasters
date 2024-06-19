@@ -5,13 +5,13 @@ import Testimonials from '@/components/Testimonials';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - About Our Team',
+  title: 'About Driveway Blasters LLC | Expert Pressure Washing Team',
   description:
-    'Learn about Driveway Blasters LLC: founded by Eric and Jeremy, providing pressure washing in Riverside, LA, and Orange County with integrity and excellence.',
+    'Learn about the expert team behind Driveway Blasters LLC. Our skilled professionals provide top-notch pressure washing services in Orange, Riverside, and LA counties.',
   openGraph: {
-    title: 'Driveway Blasters LLC - About Our Team',
+    title: 'About Driveway Blasters LLC | Expert Pressure Washing Team',
     description:
-      'Learn about Driveway Blasters LLC: founded by Eric and Jeremy, providing pressure washing in Riverside, LA, and Orange County with integrity and excellence.',
+      'Learn about the expert team behind Driveway Blasters LLC. Our skilled professionals provide top-notch pressure washing services in Orange, Riverside, and LA counties.',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/about-us',
@@ -24,7 +24,7 @@ const AboutUs: React.FC = () => {
   return (
     <div className="about-us-container">
       <div className="about-us-block">
-        <h1 className="about-us-h1 text-center">About Our Team</h1>
+        <h1 className="about-us-h1 text-center">About Driveway Blasters LLC</h1>
       </div>
       <section className="about-text-wrapper mt-3">
         <div className="dottedBorder pb-4 about-us-p flex flex-col md:flex-row items-center">
@@ -42,7 +42,7 @@ const AboutUs: React.FC = () => {
               width={300}
               height={300}
               className="rounded m-3 flex-shrink"
-              loading='eager'
+              loading="eager"
             />
             <Image
               src="/images/jeremy-headshot.jpg"
@@ -50,7 +50,7 @@ const AboutUs: React.FC = () => {
               width={300}
               height={300}
               className="rounded m-3 flex-shrink"
-              loading='eager'
+              loading="eager"
             />
           </div>
         </div>

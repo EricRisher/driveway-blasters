@@ -11,15 +11,15 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   metadataBase: new URL('https://www.drivewayblasters.com/'),
-  title: 'Driveway Blasters - Top-Rated Pressure Washing & Softwash Services',
+  title: 'Top-Rated Pressure Washing & Softwash Services - Driveway Blasters:',
   description:
-    'Top driveway cleaning in Orange, Los Angeles, and Riverside Counties. Eco-friendly solutions for tough stains like oil and rust. Get your free quote today!',
+    'Top-rated pressure washing services in Orange, Riverside, and LA counties. Expert driveway, deck, house, roof, window, and gutter cleaning by Driveway Blasters LLC.',
   viewport: 'width=device-width, initial-scale=1',
   charset: 'UTF-8',
   openGraph: {
-    title: 'Driveway Blasters - Top-Rated Pressure Washing & Softwash Services',
+    title: 'Top-Rated Pressure Washing & Softwash Services - Driveway Blasters',
     description:
-      'Top driveway cleaning in Orange, Los Angeles, and Riverside Counties. Eco-friendly solutions for tough stains like oil and rust. Get your free quote today!',
+      'Top-rated pressure washing services in Orange, Riverside, and LA counties. Expert driveway, deck, house, roof, window, and gutter cleaning by Driveway Blasters LLC.',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com',

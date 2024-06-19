@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
+import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title: 'Driveway Blasters LLC - Driveway and Deck Revival Services',
@@ -36,18 +37,18 @@ const DrivewayAndDeckRevival: React.FC = () => {
   return (
     <div className="container mt-3">
       <h2 className="mb-3 text-center">
-        <b>
-          Transformative Driveway and Deck Cleaning Services in Riverside, LA,
-          and Orange County
-        </b>
+        <b>Expert Driveway and Deck Cleaning Services</b>
       </h2>
       <p className="mb-4">
-        At Driveway Blasters LLC, we specialize in driveway and deck cleaning
-        services that significantly enhance the appearance and safety of your
-        property. Our advanced pressure washing techniques effectively remove
-        unsightly stains, mold, mildew, and other hazards, ensuring your
-        surfaces look pristine and are safe to use.
+        Revitalize your outdoor spaces with Driveway Blasters LLC’s professional
+        driveway and deck cleaning services. Serving Riverside, Los Angeles, and
+        Orange Counties, we specialize in removing tough stains and restoring
+        your property’s curb appeal.
       </p>
+
+      <Link href="/contact" className="button btn-primary mb-5">
+        Get Your Free Quote!
+      </Link>
 
       <h2 className="mb-3">
         <b>Why Regular Driveway and Deck Cleaning Matters</b>
@@ -66,6 +67,11 @@ const DrivewayAndDeckRevival: React.FC = () => {
           <b>Enhanced Safety:</b> Reduce the risk of slips and falls by removing
           slippery algae and mold from your driveway and deck.
         </li>
+        <li className="mt-2">
+          <b>Increase Property Value:</b> A well-maintained driveway and deck
+          can significantly boost your home’s market value.
+        </li>
+
         <li className="mt-2">
           <b>Increased Durability:</b> Regular maintenance prevents damage and
           extends the life of your surfaces, saving you money in the long run.
@@ -127,19 +133,82 @@ const DrivewayAndDeckRevival: React.FC = () => {
         material.
       </p>
 
+      <section>
+        <h2 className="mb-3">
+          <b>Why Choose Driveway Blasters?</b>
+        </h2>
+        <ul className="mb-5 list-disc pl-5">
+          <li className="mt-2">
+            <b>Experienced Technicians:</b> Our team is proficient in advanced
+            pressure washing techniques, ensuring we can tackle any driveway and
+            deck cleaning challenge.
+          </li>
+          <li className="mt-2">
+            <b>Eco-Friendly Solutions:</b> We use environmentally friendly
+            cleaning products to protect your property and the surrounding
+            environment.
+          </li>
+          <li className="mt-2">
+            <b>Customer Satisfaction:</b> We are dedicated to delivering
+            exceptional customer service and ensuring you are thrilled with the
+            results.
+          </li>
+          <li className="mt-2">
+            <b>Competitive Pricing:</b> Our rates are affordable and
+            transparent, providing great value for your investment.
+          </li>
+          <li className="mt-2">
+            <b>Reliable Service:</b> We are punctual and efficient, completing
+            the job on time while respecting your schedule and property.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>
+          <b>Our Eco-Friendly Cleaning Approach</b>
+        </h2>
+        <p className="mb-4">
+          At Driveway Blasters LLC, we prioritize environmental sustainability.
+          Our eco-friendly cleaning practices include:
+        </p>
+        <ul className="mb-4 list-disc pl-5">
+          <li className="mt-2">
+            <b>Biodegradable Cleaning Products:</b> Our cleaning solutions are
+            safe for the environment and will not harm your landscaping.
+          </li>
+          <li className="mt-2">
+            <b>Water Conservation Methods:</b> Our pressure washing systems are
+            designed to use water efficiently, minimizing waste while providing
+            a thorough clean.
+          </li>
+          <li className="mt-2">
+            <b>Responsible Waste Disposal:</b> We ensure that all waste
+            generated during the cleaning process is disposed of in an
+            environmentally responsible manner.
+          </li>
+          <li className="mt-2">
+            <b>Eco-Friendly Equipment:</b> Our tools and machines are selected
+            for their minimal environmental impact.
+          </li>
+        </ul>
+      </section>
+
       <p className="mb-4">
-        Ready to transform your property’s look and safety? Contact Driveway
-        Blasters LLC for a free quote and discover the impact of our
-        professional driveway and deck cleaning services.
+        Contact Driveway Blasters LLC for a free quote and discover the impact
+        of our professional driveway and deck cleaning services. Our team is
+        ready to help you achieve a pristine and safe outdoor space.
       </p>
+
       <div className="d-flex justify-content-center">
-        <Link href="/contact" className="button btn-primary mb-5">
+        <Link href="/contact" className="button btn-primary mb-1" passHref>
           Get Your Free Quote!
         </Link>
       </div>
+
+      <Testimonials />
     </div>
   );
 };
-
 
 export default DrivewayAndDeckRevival;
