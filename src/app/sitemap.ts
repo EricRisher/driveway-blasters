@@ -1,38 +1,23 @@
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  return [
-    {
-      url: 'https://www.drivewayblasters.com/',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/about-us',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/house-and-roof-care',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/locations',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/gutter-cleaning',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/contact',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/windows-solar-panels',
-      lastModified: new Date(),
-    },
-    {
-      url: 'https://www.drivewayblasters.com/driveway-deck-revival',
-      lastModified: new Date(),
-    },
+  const baseUrl = 'https://www.drivewayblasters.com';
+
+  const routes = [
+    '/',
+    '/about-us',
+    '/house-and-roof-care',
+    '/locations',
+    '/gutter-cleaning',
+    '/contact',
+    '/windows-solar-panels',
+    '/driveway-deck-revival',
   ];
+
+  const sitemapEntries = routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date().toISOString(),
+  }));
+
+  return sitemapEntries;
 }
