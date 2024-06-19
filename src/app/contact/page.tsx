@@ -3,6 +3,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Select from 'react-select';
+import Head from 'next/head';
 
 const ContactMe: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -129,6 +130,13 @@ const ContactMe: React.FC = () => {
 
   return (
     <section id="Contact" className="contact--section">
+      <Head>
+        <title>Driveway Blasters LLC - Contact Us</title>
+        <meta
+          name="description"
+          content="Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!"
+        />
+      </Head>
       <div className="contact--container">
         <div className="contact-text">
           <h2>Contact Us for Expert Pressure Washing Services!</h2>
