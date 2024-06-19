@@ -19,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: 'https://www.drivewayblasters.com/gutters',
+      url: 'https://www.drivewayblasters.com/gutter-cleaning',
       lastModified: new Date(),
     },
     {
@@ -27,7 +27,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
     },
     {
-      url: 'https://www.drivewayblasters.com/windows',
+      url: 'https://www.drivewayblasters.com/windows-solar-panels',
       lastModified: new Date(),
     },
     {

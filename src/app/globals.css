@@ -74,7 +74,7 @@ p {
 
 a {
   text-decoration: none !important;
-  color: #333 !important;
+  color: #333;
 }
 
 .button {
@@ -230,6 +230,10 @@ a {
   padding: 5px;
   border-radius: 10px;
   width: 90vw;
+}
+
+.MuiMenu-paper a {
+  color: #343434;
 }
 
 .navbar--services {
@@ -868,6 +872,8 @@ a {
   height: 100%;
   margin: 0;
   padding: 0;
+  flex-direction: column;
+  border-radius: 15px 15px 0 0;
 }
 
 .footer-links,
@@ -877,8 +883,12 @@ a {
   align-items: center;
   width: 100%;
   padding: 5px;
-  height: 100%;
+  height: auto;
   color: #fff !important;
+}
+
+.footer-contact {
+  flex-wrap: wrap;
 }
 
 .footer-links a,
@@ -904,16 +914,26 @@ a {
   font-size: 14px;
   color: var(--light-color) !important;
   margin: 0;
-  width: max-content;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 5px;
 }
 
 .eric {
   justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.eric b {
+  padding: 2px;
+}
+
+.google-map {
+  max-width: 600px;
 }
 
 /* Media Queries */

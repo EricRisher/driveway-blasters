@@ -140,13 +140,13 @@ const Navbar: React.FC = () => {
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/windows" passHref>
+                <Link href="/windows-solar-panels" passHref>
                   {' '}
-                  <b>Window Clarity</b>
+                  <b>Window & Solar Panel Clarity</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/gutters" passHref>
+                <Link href="/gutter-cleaning" passHref>
                   {' '}
                   <b>Gutter Cleaning</b>
                 </Link>

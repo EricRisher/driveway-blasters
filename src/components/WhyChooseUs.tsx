@@ -36,9 +36,7 @@ function WhyChooseUs() {
     <div className="service-wrapper">
       <div className="service-text-container">
         <h2>
-          <b>
-            Why Choose Driveway Blasters for Your Pressure Washing Needs?
-          </b>
+          <b>Why Choose Driveway Blasters for Your Pressure Washing Needs?</b>
         </h2>
 
         <div className="service-features mt-3">
@@ -55,11 +53,32 @@ function WhyChooseUs() {
 
         <section className="d-flex flex-column align-items-center">
           <p>
-            At Driveway Blasters LLC, we’re not just another pressure washing
-            service. We pride ourselves on being the best priced and highest
-            quality in your county. Whether it’s driveways, decks, houses,
-            roofs, windows, or gutters, we tackle every challenge with expertise
-            and a smile.
+            At{' '}
+            <a
+              href="https://maps.app.goo.gl/qxdnroFKMHc771PNA"
+              className="fw-bold text-blue-600"
+            >
+              Driveway Blasters LLC
+            </a>
+            , we’re not just another pressure washing service. We pride
+            ourselves on being the best priced and highest quality in your
+            county. Whether it’s{' '}
+            <a href="/driveway-deck-revival" className="fw-bold text-blue-600">
+              driveways / decks,
+            </a>{' '}
+            <a href="/house-roof-care" className="fw-bold text-blue-600">
+              houses / roofs,
+            </a>{' '}
+            <a href="/windows-solar-panels" className="fw-bold text-blue-600">
+              windows / solar panels,
+            </a>{' '}
+            <a
+              href="/gutter-cleaning"
+              className="fw-bold text-blue-600"
+            >
+              gutters.
+            </a>{' '}
+            we tackle every challenge with expertise and a smile.{' '}
           </p>
         </section>
       </div>

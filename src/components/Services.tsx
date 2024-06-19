@@ -34,12 +34,12 @@ const services = [
     href: '/house-roof-care',
   },
   {
-    title: 'Window Clarity',
+    title: 'Window & Solar Panel Clarity',
     description:
       'With our advanced and thorough cleaning of window sills, frames, and tracks not only delivers a brilliant reflective shine but also ensures lasting cleanliness that resists the first signs of rain.',
     before: windowBefore,
     after: windowAfter,
-    href: '/windows',
+    href: '/windows-solar-panels',
   },
   {
     title: 'Gutter Cleaning',
@@ -47,7 +47,7 @@ const services = [
       "Without regularly cleaned gutters they won't function properly and will lead to costly repairs. So let us leave you with clean, good-looking, and functional gutters.",
     before: guttersBefore,
     after: guttersAfter,
-    href: '/gutters',
+    href: '/gutter-cleaning',
   },
 ];
 
