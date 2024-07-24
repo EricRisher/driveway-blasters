@@ -379,8 +379,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(47, 124, 248, 0.404);
   pointer-events: none;
 }
@@ -866,21 +866,20 @@ a {
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--dark-color);
+  align-items: start;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  flex-direction: column;
+  flex-direction: row;
   border-radius: 15px 15px 0 0;
 }
 
-.footer-links,
-.footer-contact {
+.footer-links {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: start;
   width: 100%;
   padding: 5px;
   height: auto;
@@ -889,11 +888,25 @@ a {
 
 .footer-contact {
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  color: #fff !important;
+}
+
+.footer > div > h2 {
+  color: #4a8aea !important;
+  margin: 0;
+  font-weight: 600;
 }
 
 .footer-links a,
 .footer-links div {
-  color: white !important;
+  color: #000000 !important;
   font-family: 'Gadugi-Bold';
   width: max-content;
   text-align: center;
@@ -905,14 +918,14 @@ a {
 .footer-links div:hover,
 .footer-contact a:hover {
   color: #333;
-  background-color: #444444;
+  background-color: #c0c0c0;
   border-radius: 10px;
 }
 
 .footer-contact p,
 .footer-contact p a {
   font-size: 14px;
-  color: var(--light-color) !important;
+  color: var(#000) !important;
   margin: 0;
   width: auto;
   display: flex;
@@ -920,6 +933,38 @@ a {
   justify-content: center;
   flex-direction: row;
   gap: 5px;
+}
+
+.footer-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 33vw;
+  margin: 0 auto;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 0.7rem;
+  background-color: #dbdbdb;
+}
+
+.our-mission {
+  padding: 5px;
+}
+
+.our-mission p {
+  font-size: 1em;
+  color: #333;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.footer-contact ul > li > a{
+  padding: 5px;
 }
 
 .eric {
@@ -933,7 +978,7 @@ a {
 }
 
 .google-map {
-  max-width: 600px;
+  max-width: 250px;
 }
 
 /* Media Queries */

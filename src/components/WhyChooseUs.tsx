@@ -63,20 +63,27 @@ function WhyChooseUs() {
             , we’re not just another pressure washing service. We pride
             ourselves on being the best priced and highest quality in your
             county. Whether it’s{' '}
-            <a href="/driveway-deck-revival" className="fw-bold text-blue-600">
-              driveways / decks,
+            <a href="/driveway-revival" className="fw-bold text-blue-600">
+              driveways,
             </a>{' '}
-            <a href="/house-roof-care" className="fw-bold text-blue-600">
-              houses / roofs,
+            <a href="/deck-cleaning" className="fw-bold text-blue-600">
+              decks,
             </a>{' '}
-            <a href="/windows-solar-panels" className="fw-bold text-blue-600">
-              windows / solar panels,
+            <a href="/exterior-house-washing" className="fw-bold text-blue-600">
+              house exteriors,
             </a>{' '}
-            <a
-              href="/gutter-cleaning"
-              className="fw-bold text-blue-600"
-            >
-              gutters.
+            <a href="/roof-cleaning" className="fw-bold text-blue-600">
+              roofs,
+            </a>{' '}
+            <a href="/window-clarity" className="fw-bold text-blue-600">
+              windows,
+            </a>{' '}
+            <a href="/solar-panel-efficiency" className="fw-bold text-blue-600">
+              solar panels,
+            </a>
+            {' or '}
+            <a href="/gutter-cleaning" className="fw-bold text-blue-600">
+              gutters
             </a>{' '}
             we tackle every challenge with expertise and a smile.{' '}
           </p>

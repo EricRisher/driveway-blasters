@@ -129,20 +129,37 @@ const Navbar: React.FC = () => {
               MenuListProps={{ onMouseLeave: handleClose }}
             >
               <MenuItem onClick={closeMenu}>
-                <Link href="/driveway-deck-revival" passHref>
+                <Link href="/driveway-revival" passHref>
                   {' '}
-                  <b>Driveway & Deck Revival</b>
+                  <b>Driveway Revival</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/house-roof-care" passHref>
-                  <b>House & Roof Care</b>
+                <Link href="/deck-cleaning" passHref>
+                  {' '}
+                  <b>Deck Cleaning</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/windows-solar-panels" passHref>
+                <Link href="/exterior-house-washing" passHref>
+                  <b>Exterior House Washing</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/roof-cleaning" passHref>
+                  <b>Roof Cleaning</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/windows-clarity" passHref>
                   {' '}
-                  <b>Window & Solar Panel Clarity</b>
+                  <b>Window Clarity</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/solar-panel-efficiency" passHref>
+                  {' '}
+                  <b>Solar Panel Efficiency</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>

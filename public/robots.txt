@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.drivewayblasters.com
+Host: https://www.drivewayblaster.com
 
 # Sitemaps
-Sitemap: https://www.drivewayblasters.com/sitemap.xml
+Sitemap: https://www.drivewayblaster.com/sitemap.xml
