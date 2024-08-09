@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.drivewayblaster.com
+
+# Sitemaps
+Sitemap: https://www.drivewayblaster.com/sitemap.xml

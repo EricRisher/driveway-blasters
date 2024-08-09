@@ -20,11 +20,13 @@
 @font-face {
   font-family: 'Gadugi';
   src: url(../../public/fonts/GADUGI.TTF);
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Gadugi-Bold';
   src: url(../../public/fonts/GADUGIB.TTF);
+  font-display: swap;
 }
 
 /* Global Styling */
@@ -36,7 +38,6 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family: 'Stint' !important;
   font-family:
     'Gadugi',
     Raleway Dots,
@@ -48,15 +49,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 h6 {
@@ -64,15 +65,15 @@ h6 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   color: #333;
-  line-height: 34px;
-  letter-spacing: 1.5px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 a {
   text-decoration: none !important;
-  color: #333 !important;
+  color: #333;
 }
 
 .button {
@@ -202,7 +203,7 @@ a {
 }
 
 .navbar--items.active {
-  top: 85px; 
+  top: 85px;
   transform: translateY(0);
 }
 
@@ -228,6 +229,10 @@ a {
   padding: 5px;
   border-radius: 10px;
   width: 90vw;
+}
+
+.MuiMenu-paper a {
+  color: #343434;
 }
 
 .navbar--services {
@@ -373,8 +378,8 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: rgba(47, 124, 248, 0.404);
   pointer-events: none;
 }
@@ -383,7 +388,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 95vw;
+  width: 100%;
   height: 100%;
   margin: auto;
 }
@@ -425,7 +430,7 @@ a {
   color: #fff;
   font-weight: 800;
   width: max-content;
-  max-width: 40vw;
+  max-width: 50vw;
   height: auto;
 }
 
@@ -439,7 +444,7 @@ a {
 
 .testimonial-block {
   border-top: #7c99ff 3px dotted;
-  width: 50vw;
+  width: 80vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -606,8 +611,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+   width: 100%;
   height: 100%;
 }
 
@@ -840,8 +844,8 @@ a {
 }
 
 .about-us-h1 {
-  font-size: 10vw;
-  line-height: 60px;
+  font-size: 5rem;
+  line-height: 6rem;
   letter-spacing: 6px;
   position: absolute;
   z-index: 8;
@@ -860,61 +864,149 @@ a {
 .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: var(--dark-color);
+  align-items: start;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  flex-direction: row;
+  border-radius: 15px 15px 0 0;
 }
 
-.footer-links,
-.footer-contact {
+.footer-info-wrapper {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.our-mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
   width: 100%;
   padding: 5px;
-  height: 100%;
+  height: auto;
   color: #fff !important;
+}
+
+.footer-contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 5px;
+  height: auto;
+  color: #fff !important;
+}
+
+.footer > div > h2, .footer > div > div > h2 {
+  color: #4a8aea !important;
+  margin: 0;
+  font-weight: 600;
 }
 
 .footer-links a,
 .footer-links div {
-  color: white !important;
-  font-family: 'Gadugi-Bold';
-  width: max-content;
-  text-align: center;
+  color: #000000 !important;
+  width: fit-content;
+  text-align: start;
   font-size: 1rem;
   flex-wrap: nowrap;
   padding: 5px;
+  font-weight: 700;
 }
 
-.footer-links div:hover,
+.footer-links > div div:hover,
 .footer-contact a:hover {
   color: #333;
-  background-color: #444444;
+  background-color: #c0c0c0;
   border-radius: 10px;
 }
 
 .footer-contact p,
 .footer-contact p a {
   font-size: 14px;
-  color: var(--light-color) !important;
+  color: var(#000) !important;
   margin: 0;
-  width: max-content;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.footer-copy {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 0.7rem;
+  background-color: #dbdbdb;
+}
+
+.our-mission p {
+  font-size: 1em;
+  color: #333;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.footer-contact ul > li > a {
+  padding: 5px;
 }
 
 .eric {
   justify-content: space-around;
   align-items: center;
+  flex-wrap: nowrap;
+}
+
+.eric b {
+  padding: 2px;
+}
+
+.google-map {
+  max-width: 250px;
 }
 
 /* Media Queries */
+@media screen and (max-width: 1200px) {
+  .hero-h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+    transform: translateY(-80vh);
+  }
+
+  .hero-h2 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    transform: translateY(-40vh);
+  }
+
+  .hero-btn {
+    font-size: 2.5rem;
+    transform: translateY(-25vh);
+    max-width: 100vw;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .contact-button {
     width: 150px;
@@ -960,21 +1052,13 @@ a {
   }
 
   .hero-h1 {
-    font-size: 6rem;
-    line-height: 8rem;
-    transform: translateY(-80vh);
+    font-size: 4.5rem;
+    line-height: 6rem;
   }
 
   .hero-h2 {
-    font-size: 2rem;
-    line-height: 4rem;
-    transform: translateY(-45vh);
-  }
-
-  .hero-btn {
-    font-size: 6vw;
-    transform: translateY(-25vh);
-    max-width: 60vw;
+    font-size: 1.5rem;
+    line-height: 3rem;
   }
 }
 
@@ -1092,6 +1176,10 @@ a {
     font-size: 1.7em;
   }
 
+  .footer-links, .our-mission, .footer-contact {
+    align-items: start;
+  }
+
   .hero-h1 {
     font-size: 2.1rem;
     line-height: 2.7rem;
@@ -1110,7 +1198,8 @@ a {
     max-width: 85vw;
   }
 
-  .about-us-h1, .service-area-h1 {
+  .about-us-h1,
+  .service-area-h1 {
     font-size: 3rem;
   }
 

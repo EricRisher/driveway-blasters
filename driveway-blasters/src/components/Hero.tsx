@@ -3,7 +3,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
-
 interface HeroData {
   id: number;
   image: string;
@@ -40,13 +39,15 @@ const HeroCarousel: React.FC = () => {
               alt={`slide ${hero.id}`}
               width={1920}
               height={1080}
+              priority={hero.id === 1}
+              loading={hero.id !== 1 ? 'lazy' : undefined}
             />
           </Carousel.Item>
         ))}
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          Orange, LA and Riverside County's Best Exterior Cleaners
+          LA, Orange & Riverside County Pressure Washing Experts
         </h1>
         <h2 className="hero-h2">
           Instantly Restore The Shine of Your Home With The Click of a Button!

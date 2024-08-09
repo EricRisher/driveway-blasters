@@ -78,6 +78,7 @@ const Navbar: React.FC = () => {
       <button
         className={`nav__hamburger ${navActive ? 'active' : ''}`}
         onClick={toggleNav}
+        aria-label="Toggle navigation"
       >
         <span className="nav__hamburger__line"></span>
         <span className="nav__hamburger__line"></span>
@@ -128,24 +129,41 @@ const Navbar: React.FC = () => {
               MenuListProps={{ onMouseLeave: handleClose }}
             >
               <MenuItem onClick={closeMenu}>
-                <Link href="/driveway-deck-revival" passHref>
+                <Link href="/driveway-revival" passHref>
                   {' '}
-                  <b>Driveway & Deck Revival</b>
+                  <b>Driveway Revival</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/house-roof-care" passHref>
-                  <b>House & Roof Care</b>
+                <Link href="/deck-cleaning" passHref>
+                  {' '}
+                  <b>Deck Cleaning</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/windows" passHref>
+                <Link href="/exterior-house-washing" passHref>
+                  <b>Exterior House Washing</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/roof-cleaning" passHref>
+                  <b>Roof Cleaning</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/window-clarity" passHref>
                   {' '}
                   <b>Window Clarity</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/gutters" passHref>
+                <Link href="/solar-panel-efficiency" passHref>
+                  {' '}
+                  <b>Solar Panel Efficiency</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/gutter-cleaning" passHref>
                   {' '}
                   <b>Gutter Cleaning</b>
                 </Link>
