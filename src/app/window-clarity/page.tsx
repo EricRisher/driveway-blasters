@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title:
     'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
   description:
-    'Driveway Blasters LLC offers professional window cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance with our eco-friendly solutions. Get a free quote today!',
+    'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
   openGraph: {
     title:
       'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers professional window cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance with our eco-friendly solutions. Get a free quote today!',
+      'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/window-cleaning',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title:
       'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers professional window cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your property’s appearance with our eco-friendly solutions. Get a free quote today!',
+      'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -50,7 +50,7 @@ const WindowClarity: React.FC = () => {
         <b>exceptional</b> cleaning without the hassle of doing it yourself.
       </p>
 
-      <h2 className="mb-3">
+      <h2 className="mb-2">
         <b>Precision Window Cleaning</b>
       </h2>
       <p className="mb-4">
@@ -62,19 +62,23 @@ const WindowClarity: React.FC = () => {
       </p>
       <ul className="list-disc pl-5 mb-4">
         <li className="mt-2">
-          Comprehensive washing of window glass, frames, and tracks.
+          <b>Complete Washing of Window Glass, Frames, and Tracks:</b> Ensure
+          every part of your window is spotless, from the glass to the frames
+          and tracks, for a thoroughly clean look.
         </li>
+        {/* 
+          <b>Spot-Free Finish with Purified Water:</b> We use purified water to
+          remove mineral deposits and hard water stains, leaving your windows
+          crystal clear.
+          */}
         <li className="mt-2">
-          Use of purified water to eliminate mineral deposit buildup, ensuring a{' '}
-          <b>spot-free</b> finish.
-        </li>
-        <li className="mt-2">
-          Our meticulous cleaning process improves natural light penetration and
-          visibility, creating a brighter and more welcoming environment.
+          <b>Boost Natural Light and Visibility:</b> Our meticulous cleaning
+          enhances natural light penetration, making your space brighter and
+          more inviting.
         </li>
       </ul>
 
-      <h2 className="mb-3">
+      <h2 className="mb-2">
         <b>The Benefits of Professional Window Cleaning</b>
       </h2>
       <p className="mb-4">
@@ -84,26 +88,33 @@ const WindowClarity: React.FC = () => {
       </p>
       <ul className="list-disc pl-5 mb-4">
         <li className="mt-2">
-          <b>Enhances Curb Appeal:</b> Clean windows significantly improve the
-          overall appearance of your home or business, making a positive
-          impression on visitors and potential buyers.
+          <b>Enhance Your Home’s Curb Appeal:</b> Sparkling clean windows
+          elevate the appearance of your property, creating a positive first
+          impression on visitors, clients, and potential buyers. A
+          well-maintained exterior not only boosts your home’s aesthetic appeal
+          but also reflects the care and attention you give to your property.
         </li>
         <li className="mt-2">
-          <b>Increases Natural Light:</b> Clean windows allow more natural light
-          to enter your space, creating a brighter and more welcoming
-          environment.
+          <b>Increases Natural Light:</b> Professionally cleaned windows allow
+          maximum sunlight to flood your space, creating a brighter, more
+          cheerful atmosphere that enhances the mood and energy of your home or
+          business.
         </li>
         <li className="mt-2">
-          <b>Prolongs Window Lifespan:</b> Removing dirt, debris, and hard water
-          stains prevents damage and extends the life of your windows.
+          <b>Extend Your Window's Lifespan:</b> Regular removal of dirt, debris,
+          and hard water stains prevents long-term damage, keeping your windows
+          in excellent condition for years to come.
         </li>
         <li className="mt-2">
-          <b>Improves Energy Efficiency:</b> Clean windows reduce the need for
-          artificial lighting, helping to lower energy costs.
+          <b>Enhance Energy Efficiency:</b> Clean windows allow more natural
+          light, reducing reliance on artificial lighting and helping to lower
+          your energy bills while creating a more sustainable home environment.
         </li>
         <li className="mt-2">
-          <b>Promotes Health:</b> Removing allergens like mold and pollen from
-          window surfaces creates a healthier indoor environment.
+          <b>Create a Healthier Indoor Environment:</b> Our window cleaning
+          services remove allergens such as mold, pollen, and dust, contributing
+          to better indoor air quality and a healthier space for you and your
+          family.
         </li>
       </ul>
 
@@ -164,9 +175,14 @@ const WindowClarity: React.FC = () => {
       </section>
 
       <p className="mb-4">
-        Ready to enhance and beautify your windows? Contact Driveway Blasters
-        LLC for a free estimate and see the difference professional care can
-        make.
+        Ready to enhance and beautify your windows? At Driveway Blasters LLC,
+        our professional window cleaning services go beyond aesthetics. We
+        ensure your windows are not only spotless and streak-free but also
+        contribute to a healthier, more energy-efficient home environment. With
+        our eco-friendly cleaning solutions, you can trust that your property is
+        being cared for with the utmost respect for both your home and the
+        environment. Contact us today for a free estimate and see how our expert
+        care can transform the look and feel of your space.
       </p>
 
       <div className="d-flex justify-content-center">

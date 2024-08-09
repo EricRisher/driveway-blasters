@@ -5,14 +5,14 @@ import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title:
-    'Expert Exterior House Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+    'Professional Exterior House Cleaning Services | Driveway Blasters',
   description:
-    'Driveway Blasters LLC offers expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance and protect your home with our professional care. Contact us for a free estimate today!',
+    'Driveway Blasters provides expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
   openGraph: {
     title:
-      'Expert Exterior House Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Professional Exterior House Cleaning Services | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance and protect your home with our professional care. Contact us for a free estimate today!',
+      'Driveway Blasters provides expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/house-care',
@@ -29,25 +29,25 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Expert Exterior House Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Professional Exterior House Cleaning Services | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers expert Exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance and protect your home with our professional care. Contact us for a free estimate today!',
+      'Driveway Blasters provides expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
 
 const HouseCare: React.FC = () => {
   return (
-    <div className="container mt-3">
+    <div className="container mt-2">
       <header>
         <h1 className="mb-3 text-center">
           <b>Professional Exterior House Washing Services</b>
         </h1>
         <p className="mb-4">
           Enhance and protect your home with Driveway Blasters LLC’s expert
-          house cleaning services. Serving Orange, Riverside, and Los Angeles
-          Counties, we use advanced techniques and equipment to deliver superior
-          results.
+          exterior house cleaning services, using advanced techniques to ensure
+          your home in Orange, Riverside, and Los Angeles Counties is in
+          pristine condition.
         </p>
       </header>
 
@@ -58,7 +58,7 @@ const HouseCare: React.FC = () => {
       </div>
 
       <section>
-        <h2 className="mb-3">
+        <h2 className="mb-1">
           <b>The Importance of Exterior House Cleaning</b>
         </h2>
         <p className="mb-4">
@@ -68,26 +68,28 @@ const HouseCare: React.FC = () => {
         </p>
         <ul className="mb-4 list-disc pl-5">
           <li className="mt-2">
-            <b>Boost Curb Appeal:</b> A clean exterior makes your home more
-            attractive and welcoming.
+            <b>Boost Your Home’s Curb Appeal:</b> A clean exterior enhances your
+            home’s attractiveness and creates a welcoming environment.
           </li>
           <li className="mt-2">
-            <b>Protect Surfaces:</b> Removing dirt, grime, and organic growth
-            prevents damage and extends the life of your home's exterior.
+            <b>Protect and Preserve Your Home’s Exterior:</b> Regular cleaning
+            removes harmful dirt, grime, and organic growth, preventing damage
+            and extending the lifespan of your home’s surfaces.
           </li>
           <li className="mt-2">
-            <b>Healthier Environment:</b> Eliminating mold, mildew, and
-            allergens creates a healthier living space for you and your family.
+            <b>Create a Healthier Living Environment:</b> Removing mold, mildew,
+            and allergens through exterior cleaning ensures a safe and healthy
+            space for your family.
           </li>
           <li className="mt-2">
-            <b>Increase Property Value:</b> Regular cleaning enhances your
-            home's value, making it more appealing to potential buyers.
+            <b>Increase Your Property’s Value:</b> Regular exterior cleaning
+            boosts your home’s market value and appeal to potential buyers.
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 className="mb-3">
+        <h2 className="mb-1">
           <b>Comprehensive Exterior House Cleaning Services</b>
         </h2>
         <p className="mb-4">
@@ -132,13 +134,24 @@ const HouseCare: React.FC = () => {
           </li>
         </ul>
         <p className="mb-4">
-          Our services are tailored to meet the specific needs of your home's
-          exterior, ensuring a thorough and effective clean.
+          Our comprehensive exterior house cleaning services are designed to
+          address the unique needs of every home. Whether you’re dealing with
+          tough stains, accumulated dirt, or organic growth like mold and algae,
+          we have you covered.
+        </p>
+
+        <p className="mb-4">
+          We understand that every home in Orange, Riverside, and Los Angeles
+          Counties is different, which is why we customize our approach to
+          ensure the most effective and efficient cleaning possible. From the
+          delicate surfaces of your windows to the structure of your driveway,
+          our team uses advanced pressure washing and soft washing techniques to
+          achieve a deep, lasting clean.
         </p>
       </section>
 
       <section>
-        <h2 className="mb-3">
+        <h2 className="mb-1">
           <b>Why Choose Driveway Blasters?</b>
         </h2>
         <ul className="mb-5 list-disc pl-5">

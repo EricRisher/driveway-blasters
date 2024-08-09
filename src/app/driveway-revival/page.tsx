@@ -1,16 +1,17 @@
 import type { Metadata } from 'next';
-import React from 'react';
+import React, { lazy } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - Driveway Revival Services',
+  title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
   description:
-    'Driveway Blasters LLC offers top-notch driveway cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+    'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
   openGraph: {
-    title: 'Driveway Blasters LLC - Driveway Revival Services',
+    title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers top-notch driveway cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/driveway-deck-revival',
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Driveway Blasters LLC - Driveway Revival Services',
+    title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers top-notch driveway cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -40,11 +41,21 @@ const DrivewayRevival: React.FC = () => {
         <b>Expert Driveway Cleaning Services</b>
       </h2>
       <p className="mb-4">
-        Revitalize your outdoor spaces with Driveway Blasters LLC’s professional
-        driveway cleaning services. Serving Riverside, Los Angeles, and
-        Orange Counties, we specialize in removing tough stains and restoring
-        your property’s curb appeal.
+        At Driveway Blasters LLC, we specialize in professional driveway
+        cleaning services, enhancing your property’s curb appeal across
+        Riverside, Los Angeles, and Orange Counties. Our advanced pressure
+        washing techniques remove stubborn stains, ensuring your driveway looks
+        brand new.
       </p>
+
+      <Image
+        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        src="/images/sidebysidedriveway.png"
+        alt="Professional Driveway Cleaning in Riverside County"
+        width={2000}
+        height={2000}
+        loading="lazy"
+      />
 
       <Link href="/contact" className="button btn-primary mb-5">
         Get Your Free Quote!
@@ -54,31 +65,35 @@ const DrivewayRevival: React.FC = () => {
         <b>Why Regular Driveway Cleaning Matters</b>
       </h2>
       <p className="mb-4">
-        Regular cleaning of your driveway not only boosts curb appeal
-        but also extends the lifespan of these surfaces. By preventing the
-        accumulation of harmful materials, you can avoid costly repairs and
-        maintain a beautiful, safe environment.
+        Regular cleaning of your driveway not only boosts curb appeal but also
+        extends the lifespan of these surfaces. By preventing the accumulation
+        of harmful materials, you can avoid costly repairs and maintain a
+        beautiful, safe environment.
       </p>
       <p className="mb-4">
         Our professional cleaning services offer numerous benefits:
       </p>
       <ul className="mb-4 list-disc pl-5">
         <li className="mt-2">
-          <b>Enhanced Safety:</b> Reduce the risk of slips and falls by removing
-          slippery algae and mold from your driveway.
+          <b>Enhanced Safety:</b> Protect your family and guests by removing
+          hazardous algae and mold, reducing the risk of slips and falls on your
+          driveway.
         </li>
         <li className="mt-2">
-          <b>Increase Property Value:</b> A well-maintained driveway
-          can significantly boost your home’s market value.
+          <b>Increase Property Value:</b> A clean, well-maintained driveway can
+          significantly boost your home’s market value and curb appeal, making
+          it more attractive to potential buyers.
         </li>
 
         <li className="mt-2">
-          <b>Increased Durability:</b> Regular maintenance prevents damage and
-          extends the life of your surfaces, saving you money in the long run.
+          <b>Boost Driveway Durability:</b> Our professional cleaning services
+          prevent costly damage and extend the lifespan of your driveway
+          surfaces, saving you money over time.
         </li>
         <li className="mt-2">
-          <b>Improved Aesthetics:</b> A clean exterior enhances property value
-          and creates a welcoming environment for guests and customers.
+          <b>Improved Aesthetics:</b> A spotless driveway not only enhances your
+          property’s value but also creates a welcoming environment for family,
+          guests, and customers.
         </li>
       </ul>
 
@@ -90,19 +105,21 @@ const DrivewayRevival: React.FC = () => {
       </p>
       <ul className="mb-4 list-disc pl-5">
         <li className="mt-2">
-          <b>Algae:</b> Eliminate slippery surfaces caused by algae growth.
+          <b>Dangerous Algae Growth:</b> Keep your driveway safe and slip-free
+          by eliminating harmful algae buildup.
         </li>
         <li className="mt-2">
-          <b>Mold and Mildew:</b> Prevent health issues and surface degradation
-          with our thorough cleaning techniques.
+          <b>Mold and Mildew:</b> Prevent health risks and surface damage by
+          removing mold and mildew from your driveway.
         </li>
         <li className="mt-2">
-          <b>Oil and Vehicle Fluid Stains:</b> Remove stubborn stains that can
-          damage your driveway’s appearance.
+          <b>Tough Oil and Vehicle Fluid Stains:</b> Restore your driveway’s
+          appearance and prevent long-term damage with our expert cleaning
+          services.
         </li>
         <li className="mt-2">
           <b>Rust and Mineral Deposits:</b> Protect your surfaces from etching
-          and weakening caused by rust and mineral buildup.
+          and weakening caused by corrosive rust and mineral buildup.
         </li>
       </ul>
       <p className="mb-4">
@@ -196,8 +213,8 @@ const DrivewayRevival: React.FC = () => {
 
       <p className="mb-4">
         Contact Driveway Blasters LLC for a free quote and discover the impact
-        of our professional driveway cleaning services. Our team is
-        ready to help you achieve a pristine and safe outdoor space.
+        of our professional driveway cleaning services. Our team is ready to
+        help you achieve a pristine and safe outdoor space.
       </p>
 
       <div className="d-flex justify-content-center">

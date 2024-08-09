@@ -42,7 +42,7 @@ const Footer: React.FC = () => {
   return (
     <div className="footer-container" id="Footer">
       <div className="footer">
-        <div className="footer-info-wrapper flex flex-nowrap justify-around w-100">
+        <div className="footer-info-wrapper">
           <Image
             src={logo}
             alt="Driveway Blasters Logo"
@@ -72,6 +72,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-links">
+          <div className='wrapper' >
           <h2>Services</h2>
           <div style={{ cursor: 'pointer' }}>
             <KeyboardDoubleArrowRightIcon style={{ color: '#4a8aea' }} />
@@ -115,50 +116,47 @@ const Footer: React.FC = () => {
               Gutters
             </Link>
           </div>
+          </div>
         </div>
 
         <div className="footer-contact">
-          <h2>Contact Us</h2>
+          <h2 className="pb-4">Contact Us</h2>
           <ul className="p-1 font-bold">
-            <p className="pb-4">
+            <p className="pb-3">
               Monday-Friday: 8:00 AM - 8:00 PM
               <br />
               Saturday: Closed
               <br />
               Sunday: 8:00 AM - 8:00 PM
             </p>
-            <li className="mt-1">
-              <a
-                href="mailto:drivewayblaster@gmail.com"
-                className="no-underline text-black fw-thin"
-              >
-                <EmailIcon /> drivewayblaster@gmail.com
-              </a>
-            </li>
-            <li className="mt-1">
-              <a
-                href="tel:+19494843698"
-                className="no-underline text-black fw-thin"
-              >
-                <PhoneIcon /> (949) 484-3698
-              </a>
-            </li>
-            <li className="mt-1">
-              <a
-                href="tel:+19495408402"
-                className="no-underline text-black fw-thin"
-              >
-                <PhoneIcon /> (949) 540-8402
-              </a>
-            </li>
+            <ul>
+              <li className="mt-1">
+                <a
+                  href="mailto:drivewayblaster@gmail.com"
+                  className="no-underline text-black"
+                >
+                  <EmailIcon /> drivewayblaster@gmail.com
+                </a>
+              </li>
+              <li className="mt-1">
+                <a href="tel:+19494843698" className="no-underline text-black">
+                  <PhoneIcon /> (949) 484-3698
+                </a>
+              </li>
+              <li className="mt-1">
+                <a href="tel:+19495408402" className="no-underline text-black">
+                  <PhoneIcon /> (949) 540-8402
+                </a>
+              </li>
+            </ul>
           </ul>
         </div>
       </div>
       <div className="footer-copy">
-        <p className="pr-4">
+        <p>
           <b>© 2024 Driveway Blasters LLC</b>
         </p>
-        <p className="eric pl-4">
+        <p className="eric">
           Website by{' '}
           <Link
             href="https://www.ericrisher.com"

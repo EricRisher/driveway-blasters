@@ -2,15 +2,16 @@ import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - Deck Revival Services',
+  title: 'Top-Rated Deck Cleaning & Pressure Washing | Driveway Blasters',
   description:
-    'Driveway Blasters LLC offers top-notch deck cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+    'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
   openGraph: {
-    title: 'Driveway Blasters LLC - Deck Revival Services',
+    title: 'Top-Rated Deck Cleaning & Pressure Washing | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers top-notch deck cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+      'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/deck-cleaning',
@@ -26,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Driveway Blasters LLC - Deck Revival Services',
+    title: 'Top-Rated Deck Cleaning & Pressure Washing | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers top-notch deck cleaning services using advanced pressure washing techniques. Enhance the appearance and safety of your property with our professional services in Riverside, LA, and Orange County. Get a free quote today!',
+      'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -46,6 +47,15 @@ const DeckRevival: React.FC = () => {
         beauty of your deck.
       </p>
 
+      <Image
+        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        src="/images/beforeafterdeck.jpg"
+        alt="Professional Driveway Cleaning in Riverside County"
+        width={2000}
+        height={2000}
+        loading="lazy"
+      />
+
       <Link href="/contact" className="button btn-primary mb-5">
         Get Your Free Quote!
       </Link>
@@ -60,24 +70,28 @@ const DeckRevival: React.FC = () => {
         beautiful, safe environment.
       </p>
       <p className="mb-4">
-        Our professional deck cleaning services offer numerous benefits:
+        Our professional deck cleaning and pressure washing services offer
+        numerous benefits:
       </p>
       <ul className="mb-4 list-disc pl-5">
         <li className="mt-2">
-          <b>Enhanced Safety:</b> Remove slippery algae and mold to reduce the
-          risk of accidents.
+          <b>Enhanced Safety with Professional Deck Cleaning:</b> Protect your
+          family and guests by removing slippery algae and mold, reducing the
+          risk of accidents on your deck.
         </li>
         <li className="mt-2">
-          <b>Increased Property Value:</b> A well-maintained deck can
-          significantly boost your home’s market value.
+          <b>Increased Property Value:</b> A clean, well-maintained deck
+          significantly enhances your home’s market value and appeal.
         </li>
         <li className="mt-2">
-          <b>Extended Longevity:</b> Regular maintenance prevents damage and
-          prolongs the life of your deck, saving you money in the long run.
+          <b>Extend the Life of Your Deck:</b> Regular maintenance prevents
+          damage and prolongs the life of your deck, saving you money in the
+          long run.
         </li>
         <li className="mt-2">
-          <b>Improved Aesthetics:</b> A clean deck enhances the overall look of
-          your property, making it more inviting for family and guests.
+          <b>Improved Aesthetics:</b> A professionally cleaned deck enhances
+          your property’s appearance, creating a more inviting space for family
+          and guests.
         </li>
       </ul>
 
@@ -89,19 +103,21 @@ const DeckRevival: React.FC = () => {
       </p>
       <ul className="mb-4 list-disc pl-5">
         <li className="mt-2">
-          <b>Algae:</b> Eliminate slippery surfaces caused by algae growth.
+          <b>Remove Algae Buildup with Deck Pressure Washing:</b> Eliminate
+          slippery surfaces caused by algae growth and keep your deck safe.
         </li>
         <li className="mt-2">
-          <b>Mold and Mildew:</b> Prevent health issues and surface degradation
-          with our thorough cleaning techniques.
+          <b>Combat Mold and Mildew with Professional Deck Cleaning:</b> Prevent
+          health risks and surface damage by eliminating harmful mold and
+          mildew.
         </li>
         <li className="mt-2">
-          <b>Dirt and Grime:</b> Remove deep-seated dirt that can make your deck
-          look aged and worn.
+          <b>Deep Clean Your Deck:</b> Remove embedded dirt and grime to restore
+          your deck’s fresh, vibrant look.”
         </li>
         <li className="mt-2">
-          <b>Stains:</b> Eliminate stubborn stains from food, drinks, and other
-          spills.
+          <b>Erase Stubborn Stains:</b> Get rid of tough stains from food,
+          drinks, and spills, rejuvenating your deck’s appearance.”
         </li>
       </ul>
       <p className="mb-4">
@@ -124,6 +140,16 @@ const DeckRevival: React.FC = () => {
         <li className="mt-2">Stone</li>
         <li className="mt-2">Pavers</li>
       </ul>
+
+      <Image
+        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        src="/images/beforeafterbrick.jpg"
+        alt="Before and After Brick Cleaning in Orange County"
+        width={2000}
+        height={2000}
+        loading="lazy"
+      />
+
       <p className="mb-4">
         Whether your deck is made of traditional wood or modern composite
         materials, our advanced cleaning techniques are{' '}

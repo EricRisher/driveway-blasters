@@ -47,7 +47,7 @@ const HeroCarousel: React.FC = () => {
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          Top Pressure Washing Services in Orange, Riverside, and LA Counties
+          LA, Orange & Riverside County Pressure Washing Experts
         </h1>
         <h2 className="hero-h2">
           Instantly Restore The Shine of Your Home With The Click of a Button!

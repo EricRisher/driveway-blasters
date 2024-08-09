@@ -38,7 +38,6 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family: 'Stint' !important;
   font-family:
     'Gadugi',
     Raleway Dots,
@@ -50,15 +49,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 h5 {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 h6 {
@@ -66,10 +65,10 @@ h6 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.1rem;
   color: #333;
-  line-height: 34px;
-  letter-spacing: 1.5px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -431,7 +430,7 @@ a {
   color: #fff;
   font-weight: 800;
   width: max-content;
-  max-width: 40vw;
+  max-width: 50vw;
   height: auto;
 }
 
@@ -612,8 +611,7 @@ a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  width: 100%;
+   width: 100%;
   height: 100%;
 }
 
@@ -846,8 +844,8 @@ a {
 }
 
 .about-us-h1 {
-  font-size: 10vw;
-  line-height: 60px;
+  font-size: 5rem;
+  line-height: 6rem;
   letter-spacing: 6px;
   position: absolute;
   z-index: 8;
@@ -875,11 +873,31 @@ a {
   border-radius: 15px 15px 0 0;
 }
 
+.footer-info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.our-mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
 .footer-links {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: start;
+  align-items: center;
   width: 100%;
   padding: 5px;
   height: auto;
@@ -887,18 +905,18 @@ a {
 }
 
 .footer-contact {
-  flex-wrap: wrap;
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: start;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   padding: 5px;
   height: auto;
   color: #fff !important;
 }
 
-.footer > div > h2 {
+.footer > div > h2, .footer > div > div > h2 {
   color: #4a8aea !important;
   margin: 0;
   font-weight: 600;
@@ -907,15 +925,15 @@ a {
 .footer-links a,
 .footer-links div {
   color: #000000 !important;
-  font-family: 'Gadugi-Bold';
-  width: max-content;
-  text-align: center;
+  width: fit-content;
+  text-align: start;
   font-size: 1rem;
   flex-wrap: nowrap;
   padding: 5px;
+  font-weight: 700;
 }
 
-.footer-links div:hover,
+.footer-links > div div:hover,
 .footer-contact a:hover {
   color: #333;
   background-color: #c0c0c0;
@@ -935,25 +953,12 @@ a {
   gap: 5px;
 }
 
-.footer-info-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 33vw;
-  margin: 0 auto;
-}
-
 .footer-copy {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   font-size: 0.7rem;
   background-color: #dbdbdb;
-}
-
-.our-mission {
-  padding: 5px;
 }
 
 .our-mission p {
@@ -963,7 +968,7 @@ a {
   letter-spacing: 2px;
 }
 
-.footer-contact ul > li > a{
+.footer-contact ul > li > a {
   padding: 5px;
 }
 
@@ -1169,6 +1174,10 @@ a {
 
   .testimonial-cta {
     font-size: 1.7em;
+  }
+
+  .footer-links, .our-mission, .footer-contact {
+    align-items: start;
   }
 
   .hero-h1 {

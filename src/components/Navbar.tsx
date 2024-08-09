@@ -151,7 +151,7 @@ const Navbar: React.FC = () => {
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
-                <Link href="/windows-clarity" passHref>
+                <Link href="/window-clarity" passHref>
                   {' '}
                   <b>Window Clarity</b>
                 </Link>

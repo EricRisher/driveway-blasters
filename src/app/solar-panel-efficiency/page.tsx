@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title:
     'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
   description:
-    'Driveway Blasters LLC offers professional solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your solar panel efficiency with our eco-friendly solutions. Get a free quote today!',
+    'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
   openGraph: {
     title:
       'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers professional solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your solar panel efficiency with our eco-friendly solutions. Get a free quote today!',
+      'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/solar-panel-cleaning',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     title:
       'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
     description:
-      'Driveway Blasters LLC offers professional solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Enhance your solar panel efficiency with our eco-friendly solutions. Get a free quote today!',
+      'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -44,10 +44,10 @@ const SolarPanelCleaning: React.FC = () => {
       </h1>
 
       <p className="lead mb-4">
-        Driveway Blasters LLC provides <b>top-tier</b> solar panel cleaning
-        services across Orange, Riverside, and Los Angeles County. Emphasizing{' '}
-        <b>safety</b> and <b>efficiency</b>, our team delivers{' '}
-        <b>exceptional</b> cleaning without the hassle of doing it yourself.
+        Driveway Blasters LLC provides top-tier solar panel cleaning services
+        across Orange, Riverside, and Los Angeles Counties. Our expert team
+        ensures that your solar panels are spotless and efficient, maximizing
+        solar energy production.
       </p>
 
       <h2 className="mb-3">
@@ -62,16 +62,19 @@ const SolarPanelCleaning: React.FC = () => {
       </p>
       <ul className="list-disc pl-5 mb-4">
         <li className="mt-2">
-          Removal of dust, dirt, and bird droppings that can block sunlight and
-          reduce efficiency.
+          <b>Thorough Removal of Dust, Dirt, and Bird Droppings:</b> We ensure
+          that all debris is eliminated from your solar panels, maximizing
+          sunlight exposure and boosting energy efficiency.
         </li>
         <li className="mt-2">
-          Use of eco-friendly cleaning solutions that are safe for your panels
-          and the environment.
+          <b>Eco-Friendly Cleaning Solutions:</b> Our biodegradable cleaning
+          products are safe for both your solar panels and the environment,
+          ensuring a sustainable approach to maintenance.
         </li>
         <li className="mt-2">
-          Inspection and cleaning to ensure all panels are functioning at peak
-          efficiency.
+          <b>Detailed Inspection and Cleaning:</b> We thoroughly inspect and
+          clean each panel to ensure your solar system operates at peak
+          efficiency, preventing potential issues and maximizing energy output.
         </li>
       </ul>
 
@@ -80,18 +83,21 @@ const SolarPanelCleaning: React.FC = () => {
       </h2>
       <ul className="list-disc pl-5 mb-4">
         <li className="mt-2">
-          <b>Maintaining Peak Efficiency:</b> Regular cleaning removes debris
-          that blocks sunlight, ensuring your panels operate at maximum
-          efficiency.
+          <b>Maintain Peak Solar Efficiency:</b> Regular cleaning is essential
+          to remove debris that obstructs sunlight, allowing your solar panels
+          to operate at their maximum potential. This ensures you’re getting the
+          most out of your solar investment every day.
         </li>
         <li className="mt-2">
-          <b>Prolonging Panel Lifespan:</b> Clean panels are less likely to
-          suffer from damage, prolonging their useful life.
+          <b>Extend the Lifespan of Your Solar Panels:</b> Regular cleaning
+          prevents damage from dirt and debris buildup, significantly extending
+          the lifespan of your solar panels and protecting your investment.
         </li>
         <li className="mt-2">
-          <b>Enhancing Return on Investment:</b> Clean panels operate at peak
-          efficiency, ensuring you get the best return on your solar energy
-          investment.
+          <b>“Maximize Your Return on Solar Investment:</b> By keeping your
+          panels clean and efficient, you ensure the highest return on your
+          solar energy investment, allowing you to save more on energy costs
+          over time.
         </li>
       </ul>
 
@@ -153,9 +159,14 @@ const SolarPanelCleaning: React.FC = () => {
       </section>
 
       <p className="mb-4">
-        Ready to maximize the efficiency of your solar panels? Contact Driveway
-        Blasters LLC for a free estimate and see the difference professional
-        care can make.
+        Ready to maximize the efficiency of your solar panels and protect your
+        investment? At Driveway Blasters LLC, we combine expert care with
+        eco-friendly solutions to ensure your solar panels operate at peak
+        performance year-round. By choosing our professional solar panel
+        cleaning services, you’re not only enhancing energy production but also
+        extending the lifespan of your panels. Contact us today for a free
+        estimate and experience the difference that professional maintenance can
+        make for your solar energy system.
       </p>
 
       <div className="d-flex justify-content-center">

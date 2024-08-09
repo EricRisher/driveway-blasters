@@ -2,17 +2,18 @@ import type { Metadata } from 'next';
 import React from 'react';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title:
-    'Expert Roof Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+    'Top-Rated Roof Cleaning Services | Driveway Blasters',
   description:
-    'Driveway Blasters LLC offers professional roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and extend the life of your roof with our expert care. Contact us for a free estimate today!',
+    'Driveway Blasters LLC provides expert roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your roof and extend its lifespan with our professional care. Contact us for a free estimate today!',
   openGraph: {
     title:
-      'Expert Roof Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Top-Rated Roof Cleaning Services | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers professional roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and extend the life of your roof with our expert care. Contact us for a free estimate today!',
+      'Driveway Blasters LLC provides expert roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your roof and extend its lifespan with our professional care. Contact us for a free estimate today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblasters.com/roof-care',
@@ -29,9 +30,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Expert Roof Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Top-Rated Roof Cleaning Services | Driveway Blasters',
     description:
-      'Driveway Blasters LLC offers professional roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and extend the life of your roof with our expert care. Contact us for a free estimate today!',
+      'Driveway Blasters LLC provides expert roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your roof and extend its lifespan with our professional care. Contact us for a free estimate today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
 };
@@ -46,10 +47,19 @@ const RoofCare: React.FC = () => {
         <p className="mb-4">
           Protect and extend the life of your roof with Driveway Blasters LLC’s
           expert roof cleaning services. Serving Orange, Riverside, and Los
-          Angeles Counties, we use advanced techniques and equipment to deliver
-          outstanding results.
+          Angeles Counties, we provide top-notch professional roof maintenance
+          using advanced techniques.
         </p>
       </header>
+
+      <Image
+        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        src="/images/beforeafterroof.jpg"
+        alt="Professional Driveway Cleaning in Riverside County"
+        width={2000}
+        height={2000}
+        loading="lazy"
+      />
 
       <div className="d-flex justify-content-center">
         <Link href="/contact" className="button btn-primary mb-5" passHref>
@@ -68,33 +78,33 @@ const RoofCare: React.FC = () => {
         </p>
         <ul className="mb-4 list-disc pl-5">
           <li className="mt-2">
-            <b>Prevent Water Damage:</b> Removing moss, algae, and debris helps
-            prevent water from seeping into your roof, avoiding significant
-            damage over time.
+            <b>Prevent Water Damage with Professional Roof Cleaning:</b>{' '}
+            Eliminate moss, algae, and debris to protect your roof from water
+            infiltration and costly long-term damage.
           </li>
           <li className="mt-2">
-            <b>Improve Energy Efficiency:</b> A clean roof reflects sunlight
-            better, helping to keep your home cooler in the summer and reducing
-            energy costs.
+            <b>Boost Energy Efficiency:</b> A clean roof reflects sunlight
+            effectively, keeping your home cooler during summer and lowering
+            energy bills.
           </li>
           <li className="mt-2">
-            <b>Promote Health and Safety:</b> Eliminating mold, mildew, and
-            other allergens from your roof creates a healthier environment for
-            you and your family.
+            <b>Promote Health and Safety:</b> Removing mold, mildew, and
+            allergens from your roof ensures a safer, healthier environment for
+            your family.
           </li>
           <li className="mt-2">
-            <b>Increase Property Value:</b> Regular cleaning enhances your
-            home's curb appeal, making it more attractive to potential buyers.
+            <b>Increase Your Home’s Value:</b> Regular roof cleaning boosts curb
+            appeal, making your property more appealing to potential buyers.
           </li>
           <li className="mt-2">
-            <b>Extend Roof Life:</b> Proper maintenance can add years to the
-            life of your roof, saving you money on early replacements.
+            <b>Extend Your Roof’s Lifespan:</b> Proper maintenance can add years
+            to the life of your roof, saving you money on early replacements.
           </li>
         </ul>
       </section>
 
       <section>
-        <h2 className="mb-3">
+        <h2 className="mb-2">
           <b>Comprehensive Roof Cleaning Services</b>
         </h2>
         <p className="mb-4">
@@ -185,9 +195,14 @@ const RoofCare: React.FC = () => {
       </section>
 
       <p className="mb-4">
-        Ready to protect and enhance your roof? Contact Driveway Blasters LLC
-        for a free estimate and experience the difference our professional care
-        can make.
+        Ready to protect and enhance your roof? With Driveway Blasters LLC,
+        you’re not just getting a roof cleaning service you’re investing in the
+        longevity and safety of your home. Whether you’re preparing your home
+        for sale, addressing potential issues, or simply maintaining its beauty,
+        our comprehensive roof care services are tailored to meet your specific
+        needs. Don’t wait until problems arise; contact us today for a free
+        estimate and discover how our professional care can make a lasting
+        difference to your home’s value and safety.
       </p>
 
       <div className="d-flex justify-content-center">
