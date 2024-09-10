@@ -3,84 +3,63 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import ReactCompareImage from 'react-compare-image';
-
-import drivewayBefore from '../../public/images/drivewaybefore.webp';
-import drivewayAfter from '../../public/images/drivewayafter.webp';
-
-import housewashBefore from '../../public/images/housewashbefore.webp';
-import housewashAfter from '../../public/images/housewashafter.webp';
-
-import guttersBefore from '../../public/images/beforegutters.webp';
-import guttersAfter from '../../public/images/aftergutters.webp';
-
-import windowBefore from '../../public/images/windowbefore.webp';
-import windowAfter from '../../public/images/windowafter.webp';
-
-import deckBefore from '../../public/images/deckbefore.webp';
-import deckAfter from '../../public/images/deckafter.webp';
-
-import roofBefore from '../../public/images/roofbefore.webp';
-import roofAfter from '../../public/images/roofafter.webp';
-
-import solarPanelBefore from '../../public/images/solarpanelbefore.webp';
-import solarPanelAfter from '../../public/images/solarpanelafter.webp';
+import Image from 'next/image';
 
 const services = [
   {
     title: 'Driveway Revival',
     description:
       "Don't have the right tools or time? Our specialized high-quality equipment and expertise can handle even the toughest stains. Our commercial pressure washing services will rejuvenate your driveway, making it look like new.",
-    before: drivewayBefore,
-    after: drivewayAfter,
+    before: '/images/drivewaybefore.webp',
+    after: '/images/drivewayafter.webp',
     href: '/driveway-revival',
   },
   {
     title: 'Deck Cleaning',
     description:
       "Is your deck in need of a thorough cleaning? Our team effectively removes dirt, grime, and tough stains. With our expert deck cleaning services, we'll revitalize your outdoor area, significantly improving its look and durability. Enjoy a fresh, clean deck without the hassle.",
-    before: deckBefore,
-    after: deckAfter,
+    before: '/images/deckbefore.webp',
+    after: '/images/deckafter.webp',
     href: '/deck-cleaning',
   },
   {
     title: 'Exterior House Washing',
     description:
       "Is your home's exterior looking dull and weathered? Maintaining a clean house exterior is essential for preserving your home's value and curb appeal. Trust us to bring a fresh, revitalized look to your property, enhancing its beauty and longevity.",
-    before: housewashBefore,
-    after: housewashAfter,
+    before: '/images/housewashbefore.webp',
+    after: '/images/housewashafter.webp',
     href: '/exterior-house-washing',
   },
   {
     title: 'Roof Cleaning',
     description:
       'Cleaning your roof is never an easy job but, that’s why you should trust us to bring your home a top-to-bottom shine! Our soft wash services are tailored to protect your home!',
-    before: roofBefore,
-    after: roofAfter,
+    before: '/images/roofbefore.webp',
+    after: '/images/roofafter.webp',
     href: '/roof-cleaning',
   },
   {
     title: 'Window Clarity',
     description:
       'With our advanced and thorough cleaning of window sills, frames, and tracks not only delivers a brilliant reflective shine but also ensures lasting cleanliness that resists the first signs of rain.',
-    before: windowBefore,
-    after: windowAfter,
+    before: '/images/windowbefore.webp',
+    after: '/images/windowafter.webp',
     href: '/window-clarity',
   },
   {
     title: 'Solar Panel Efficiency',
     description:
       'Keep your solar panels clean to boost their performance and efficiency. Our specialized cleaning services remove dirt and grime, ensuring your panels operate at peak efficiency.',
-    before: solarPanelBefore,
-    after: solarPanelAfter,
+    before: '/images/solarpanelbefore.webp',
+    after: '/images/solarpanelafter.webp',
     href: '/solar-panel-efficiency',
   },
-
   {
     title: 'Gutter Cleaning',
     description:
       "Without regularly cleaned gutters they won't function properly and will lead to costly repairs. So let us leave you with clean, good-looking, and functional gutters.",
-    before: guttersBefore,
-    after: guttersAfter,
+    before: '/images/beforegutters.webp',
+    after: '/images/aftergutters.webp',
     href: '/gutter-cleaning',
   },
 ];
@@ -115,8 +94,8 @@ function Services() {
             </h2>
             <div className="imageWrapper">
               <ReactCompareImage
-                leftImage={service.before.src}
-                rightImage={service.after.src}
+                leftImage={service.before} 
+                rightImage={service.after}
                 leftImageAlt={`Before ${service.title}`}
                 rightImageAlt={`After ${service.title}`}
               />
