@@ -13,19 +13,19 @@ interface HeroData {
 const heroData: HeroData[] = [
   {
     id: 1,
-    image: '/images/hero1.webp',
+    image: '/images/hero1.jpg',
   },
   {
     id: 2,
-    image: '/images/hero2.webp',
+    image: '/images/hero2.jpg',
   },
   {
     id: 3,
-    image: '/images/hero3.webp',
+    image: '/images/hero3.jpeg',
   },
   {
     id: 4,
-    image: '/images/hero4.webp',
+    image: '/images/hero4.jpeg',
   },
 ];
 
@@ -52,8 +52,7 @@ const HeroCarousel: React.FC = () => {
           Orange & Riverside County Pressure Washing Experts
         </h1>
         <h2 className="hero-h2">
-          <span className="divider"></span>
-          Instantly Restore The Shine of Your Home With The Click of a Button!
+          Instantly Restore The Shine With The Click of a Button!
         </h2>
 
         <div
