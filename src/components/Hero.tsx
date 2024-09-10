@@ -27,6 +27,14 @@ const heroData: HeroData[] = [
     id: 4,
     image: '/images/hero4.jpeg',
   },
+  {
+    id: 5,
+    image: '/images/hero5.jpeg',
+  },
+  {
+    id: 6,
+    image: '/images/hero6.jpeg',
+  },
 ];
 
 const HeroCarousel: React.FC = () => {

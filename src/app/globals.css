@@ -56,9 +56,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family:
-    'Oswald',
-    sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
@@ -410,7 +408,6 @@ a {
   font-size: 6.5rem;
   line-height: 6rem;
   letter-spacing: -1px;
-  max-width: 50vw;
   position: absolute;
   transform: translateY(-90vh);
   z-index: 8;
@@ -488,6 +485,7 @@ a {
   padding: 10px;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  transform: translateY(-10vh);
 }
 
 .testimonial-card {
@@ -503,7 +501,7 @@ a {
   font-size: 1.2em;
   color: #333;
   line-height: 28px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .testimonial-name {
@@ -521,7 +519,6 @@ a {
   width: 100%;
   height: 100%;
   transition: all 2s ease;
-  transform: translateY(-10vh);
 }
 
 .service-text-container {
@@ -535,6 +532,7 @@ a {
   padding: 50px;
   border-bottom: #7c99ff 3px dotted;
   transition: all 2s ease;
+  transform: translateY(-10vh);
 }
 
 .service-area-image {
@@ -640,6 +638,7 @@ a {
   height: 100%;
   padding: 0;
   overflow: hidden;
+  transform: translateY(-10vh);
 }
 
 .services {
@@ -712,6 +711,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transform: translateY(-10vh);
 }
 .accordion {
   width: 50%;
@@ -931,6 +931,8 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 5px;
+  gap: 40px;
+
 }
 
 .our-mission {
@@ -994,7 +996,7 @@ a {
 .footer-contact p,
 .footer-contact p a {
   font-size: 14px;
-  color: var(#000) !important;
+  color: #000 !important;
   margin: 0;
   width: auto;
   display: flex;
@@ -1008,8 +1010,14 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-size: 0.7rem;
   background-color: #dbdbdb;
+}
+
+.footer-copy p {
+  font-size: 0.8em;
+  color: #333;
+  line-height: 3em;
+  letter-spacing: 0px;
 }
 
 .our-mission p {
@@ -1017,10 +1025,6 @@ a {
   color: #333;
   line-height: 28px;
   letter-spacing: 2px;
-}
-
-.footer-contact ul > li > a {
-  padding: 5px;
 }
 
 .eric {
@@ -1034,14 +1038,16 @@ a {
 }
 
 .google-map {
-  max-width: 250px;
+  max-width: 350px;
+
+
 }
 
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   .hero-h1 {
     font-size: 5rem;
-    line-height: 7rem;
+    line-height: 6rem;
     transform: translateY(-80vh);
   }
 
@@ -1102,13 +1108,8 @@ a {
     width: 100%;
   }
 
-  .hero-h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-
   .hero-h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2rem;
   }
 }
@@ -1132,6 +1133,10 @@ a {
 
   .button-container {
     flex-direction: column;
+  }
+
+  .hero-h2 {
+    transform: translateY(-45vh);
   }
 }
 
@@ -1208,11 +1213,11 @@ a {
   }
 
   .testimonial-block {
-    width: 95vw;
+    width: 97vw;
   }
 
   .testimonial-description {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .testimonial-name {
@@ -1247,7 +1252,7 @@ a {
   }
 
   .hero-btn {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     transform: translateY(-40vh);
     max-width: 85vw;
   }
