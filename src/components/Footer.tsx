@@ -123,11 +123,11 @@ const Footer: React.FC = () => {
           <h2 className="pb-4">Contact Us</h2>
           <ul className="p-1 font-bold">
             <p className="pb-3">
-              Monday-Friday: 8:00 AM - 8:00 PM
+              Monday-Friday: 10:00 AM - 8:00 PM
               <br />
               Saturday: Closed
               <br />
-              Sunday: 8:00 AM - 8:00 PM
+              Sunday: 10:00 AM - 8:00 PM
             </p>
             <ul>
               <li className="mt-1">

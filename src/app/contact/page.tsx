@@ -139,13 +139,12 @@ const ContactMe: React.FC = () => {
       </Head>
       <div className="contact--container">
         <div className="contact-text">
-          <h2>Contact Us for Expert Pressure Washing Services!</h2>
+          <h2>Get a Free Quote!</h2>
           <p>
-            Ready for a cleaner property? Contact Driveway Blasters LLC today!
-            Call us or fill out our online form to get a free quote and see how
-            we can make your space shine. We’re here to help with all your
-            pressure washing needs in <b>Los Angeles County</b>,{' '}
-            <b>Orange County</b>, and <b>Riverside County</b>.
+            Ready for a cleaner property? Call us or fill out our online form to
+            see how we can make your space shine. We’re here to help with all
+            your pressure washing needs in <b>Orange County</b>, and{' '}
+            <b>Riverside County</b>.
           </p>
           <p>
             <b>Eric: </b> (949) 484-3698 <br />
@@ -161,6 +160,7 @@ const ContactMe: React.FC = () => {
           className="contact--form--container"
         >
           <div className="contact-details">
+            <span className="text-md input-text">Contact Details</span>
             <label htmlFor="name" className="contact--label">
               <input
                 type="text"
@@ -212,11 +212,11 @@ const ContactMe: React.FC = () => {
                 closeMenuOnSelect={false}
                 onChange={handleSelectChange}
                 placeholder="Select one or more services..."
-                className="basic-multi-select"
+                className="basic-multi-select pt-1"
                 classNamePrefix="select"
               />
             </label>
-            <label htmlFor="service-date" className="contact--label">
+            <label htmlFor="service-date" className="contact--label pt-2">
               <span className="text-md input-text">Preferred Service Date</span>
               <input
                 type="date"
@@ -226,12 +226,12 @@ const ContactMe: React.FC = () => {
                 required
               />
             </label>
-            <label htmlFor="message" className="contact--label-message">
+            <label htmlFor="message" className="contact--label-message pt-3">
               <textarea
                 className="contact--input text-md"
                 id="message"
-                rows={3}
-                placeholder="Type your message..."
+                rows={5}
+                placeholder="Additional Details..."
                 name="message"
                 required
               />
@@ -241,7 +241,7 @@ const ContactMe: React.FC = () => {
           <input
             type="submit"
             value="Submit"
-            className="button btn-primary w-50 align-self-center"
+            className="button btn-primary form-btn align-self-center"
           />
         </form>
       </div>
