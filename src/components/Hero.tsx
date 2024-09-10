@@ -3,8 +3,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import PhoneIcon from '../../public/icons/phone-icon.png';
 interface HeroData {
   id: number;
   image: string;
@@ -51,6 +49,7 @@ const HeroCarousel: React.FC = () => {
               height={1080}
               priority={hero.id === 1}
               loading={hero.id !== 1 ? 'lazy' : undefined}
+              placeholder="blur"
             />
           </Carousel.Item>
         ))}
