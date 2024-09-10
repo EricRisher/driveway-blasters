@@ -80,8 +80,8 @@ a {
   background-color: #4a8aea !important;
   color: white !important;
   padding: 10px 20px !important;
-  border: none !important;
-  border-radius: 20px !important;
+  border: 2px solid white !important;
+  border-radius: 15px !important;
   cursor: pointer !important;
   width: max-content;
   font-size: 30px;
@@ -89,6 +89,7 @@ a {
   font-weight: bold;
   display: block !important;
   text-decoration: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.589) !important;
 }
 
 .pagesQuoteBtn {
@@ -385,26 +386,22 @@ a {
 }
 
 .hero-text-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100%;
   margin: auto;
+  display: inline;
 }
 
 .hero-h1 {
-  font-size: 7rem;
+  font-size: 6rem;
   line-height: 10rem;
-  letter-spacing: 2px;
+  letter-spacing: -2px;
   position: absolute;
   transform: translateY(-90vh);
   z-index: 8;
-  text-align: center;
+  text-align: start;
   color: #fff;
   text-shadow: 0 -1px 10px #000;
   font-weight: 900;
-  padding: 0 5px 0 5px;
+  padding: 0 5px 0 25px;
 }
 
 .hero-h2 {
@@ -412,26 +409,37 @@ a {
   line-height: 5rem;
   letter-spacing: 2px;
   position: absolute;
-  transform: translateY(-40vh);
+  transform: translateY(-60vh);
   z-index: 8;
-  text-align: center;
+  text-align: start;
   color: #fff;
   text-shadow: 0 -1px 10px #000;
   font-weight: 800;
-  padding: 0 5px 0 5px;
+  padding: 0 5px 0 25px;
 }
 
 .hero-btn {
   font-size: 3rem;
-  position: absolute;
-  transform: translateY(-20vh);
+  transform: translateY(-40vh);
   z-index: 8;
   text-align: center;
   color: #fff;
   font-weight: 800;
-  width: max-content;
   max-width: 50vw;
   height: auto;
+  right: 10vw;
+}
+
+.btn-secondary {
+  background-color: #102641 !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Aligns the buttons in the center horizontally */
+  align-items: center;
+  gap: 20px; /* Adds space between the buttons */
+  width: 100%;
 }
 
 .testimonial-block .carousel > a,
@@ -486,6 +494,7 @@ a {
   width: 100%;
   height: 100%;
   transition: all 2s ease;
+  transform: translateY(-10vh);
 }
 
 .service-text-container {
@@ -550,11 +559,11 @@ a {
 }
 
 .service-feature-desc {
-  font-size: 1.1em;
+  font-size: 1.08rem;
   color: #333;
-  line-height: 28px;
-  letter-spacing: 1px;
-  padding: 10px;
+  line-height: 1.4rem;
+  letter-spacing: 0px;
+  padding: 8px;
   font-weight: 500;
   margin-bottom: 0;
 }
@@ -1010,9 +1019,9 @@ a {
   }
 
   .hero-h2 {
-    font-size: 1.8rem;
+    font-size: 3rem;
     line-height: 3rem;
-    transform: translateY(-40vh);
+    transform: translateY(-50vh);
   }
 
   .hero-btn {
@@ -1067,13 +1076,13 @@ a {
   }
 
   .hero-h1 {
-    font-size: 4.5rem;
-    line-height: 6rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
 
   .hero-h2 {
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1.8rem;
+    line-height: 2rem;
   }
 }
 
@@ -1092,6 +1101,10 @@ a {
 
   .contact--container {
     max-width: 90vw;
+  }
+
+  .button-container {
+    flex-direction: column;
   }
 }
 
@@ -1194,8 +1207,8 @@ a {
   }
 
   .hero-h1 {
-    font-size: 2.1rem;
-    line-height: 2.7rem;
+    font-size: 3rem;
+    line-height: 3.3rem;
     transform: translateY(-80vh);
   }
 

@@ -47,11 +47,8 @@ function WhyChooseUs() {
             </div>
           ))}
         </div>
-        <Link href="/contact" className="button btn-primary mt-3 mb-4" passHref>
-          Get Your Free Quote!
-        </Link>
 
-        <section className="d-flex flex-column align-items-center">
+        <section className="d-flex flex-column align-items-center pt-4">
           <p>
             At{' '}
             <a
@@ -87,6 +84,13 @@ function WhyChooseUs() {
             </a>{' '}
             we tackle every challenge with expertise and a smile.{' '}
           </p>
+          <Link
+            href="/contact"
+            className="button btn-primary mt-3 mb-4"
+            passHref
+          >
+            Get Your Free Quote!
+          </Link>
         </section>
       </div>
     </div>

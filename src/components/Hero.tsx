@@ -3,6 +3,8 @@
 import Carousel from 'react-bootstrap/Carousel';
 import Image from 'next/image';
 import Link from 'next/link';
+
+import PhoneIcon from '../../public/icons/phone-icon.png';
 interface HeroData {
   id: number;
   image: string;
@@ -47,14 +49,25 @@ const HeroCarousel: React.FC = () => {
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          LA, Orange & Riverside County Pressure Washing Experts
+          Orange & Riverside County Pressure Washing Experts
         </h1>
         <h2 className="hero-h2">
+          <span className="divider"></span>
           Instantly Restore The Shine of Your Home With The Click of a Button!
         </h2>
-        <Link href="/contact" className="button btn-primary hero-btn" passHref>
-          Get Your Free Quote!
-        </Link>
+
+        <div
+          className="button-container"
+          style={{ display: 'flex', gap: '20px' }}
+        >
+          <Link href="/contact" className="button btn-primary hero-btn">
+            Get Your Free Quote!
+          </Link>
+
+          <Link href="tel:9494843698" className="button btn-secondary hero-btn">
+            (949) 484-3698
+          </Link>
+        </div>
       </div>
     </section>
   );
