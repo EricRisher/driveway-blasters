@@ -49,7 +49,6 @@ const HeroCarousel: React.FC = () => {
               height={1080}
               priority={hero.id === 1}
               loading={hero.id !== 1 ? 'lazy' : undefined}
-              placeholder="blur"
             />
           </Carousel.Item>
         ))}

@@ -1,11 +1,14 @@
+import { Inter } from 'next/font/google';
 import { Oswald } from 'next/font/google';
-
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+
+const inter = Inter({ subsets: ['latin'] });
+const oswald = Oswald({ subsets: ['latin'] });
 
 export const metadata = {
   metadataBase: new URL('https://www.drivewayblasters.com/'),
@@ -28,8 +31,6 @@ export const metadata = {
   },
 };
 
-const oswald = Oswald({ subsets: ['latin'] });
-
 export default function RootLayout({
   children,
 }: {
@@ -37,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
+      <body className={inter.className}>
         <Navbar />
         <main>{children}</main>
         <Footer />

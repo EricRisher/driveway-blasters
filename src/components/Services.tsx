@@ -16,14 +16,14 @@ import guttersAfter from '../../public/images/aftergutters.webp';
 import windowBefore from '../../public/images/windowbefore.webp';
 import windowAfter from '../../public/images/windowafter.webp';
 
-import deckBefore from '../../public/images/deckbefore.png';
-import deckAfter from '../../public/images/deckafter.png';
+import deckBefore from '../../public/images/deckbefore.webp';
+import deckAfter from '../../public/images/deckafter.webp';
 
-import roofBefore from '../../public/images/roofbefore.png';
-import roofAfter from '../../public/images/roofafter.png';
+import roofBefore from '../../public/images/roofbefore.webp';
+import roofAfter from '../../public/images/roofafter.webp';
 
-import solarPanelBefore from '../../public/images/solarpanelbefore.png';
-import solarPanelAfter from '../../public/images/solarpanelafter.png';
+import solarPanelBefore from '../../public/images/solarpanelbefore.webp';
+import solarPanelAfter from '../../public/images/solarpanelafter.webp';
 
 const services = [
   {
