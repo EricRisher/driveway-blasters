@@ -25,6 +25,7 @@
     "react-compare-image": "^3.4.0",
     "react-dom": "^18",
     "react-select": "^5.8.0",
+    "schema-dts": "^1.1.2",
     "sharp": "^0.33.4"
   },
   "devDependencies": {

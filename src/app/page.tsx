@@ -11,7 +11,6 @@ import Head from 'next/head';
 export default async function Home() {
   return (
     <>
-      <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -38,16 +37,12 @@ export default async function Home() {
                 {
                   '@type': 'Question',
                   name: 'Can pressure washing remove all stains?',
-                  acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: 'Pressure washing is highly effective for most dirt, mold, mildew, and algae. However, some stains like oil or rust may require additional treatments or specialized cleaning agents.',
-                  },
+                  
                 },
               ],
             }),
           }}
         />
-      </Head>
       <Hero />
       <WhyChooseUs />
       <Services />
