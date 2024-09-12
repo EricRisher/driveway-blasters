@@ -1,5 +1,7 @@
 import { Inter } from 'next/font/google';
 import { Oswald } from 'next/font/google';
+import Head from 'next/head';
+
 import './globals.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '@/components/Navbar';
@@ -38,6 +40,39 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'LocalBusiness',
+              name: 'Driveway Blasters LLC',
+              url: 'https://www.drivewayblasters.com',
+              logo: 'https://www.drivewayblasters.com/favicon.ico', // update if needed
+              telephone: '+1-949-484-3698', // update to your actual phone number
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Aliso Viejo',
+                addressRegion: 'CA',
+                postalCode: '92656',
+                addressCountry: 'US',
+              },
+              aggregateRating: {
+                '@type': 'AggregateRating',
+                ratingValue: '5',
+                reviewCount: '2', // Update with real data
+              },
+              priceRange: '$',
+              openingHours: 'Mo,Tu,We,Th,Fr 10:00-20:00',
+              description:
+                'Top-rated pressure washing services in Orange, Riverside, and LA counties.',
+              image: 'https://www.drivewayblasters.com/hero1.jpg', // Update to your hero image
+              serviceType: 'Pressure Washing',
+            }),
+          }}
+        />
+      </Head>
       <body className={inter.className}>
         <Navbar />
         <main>{children}</main>
