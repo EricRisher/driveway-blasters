@@ -37,6 +37,10 @@ export default async function Home() {
                 {
                   '@type': 'Question',
                   name: 'Can pressure washing remove all stains?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'While pressure washing is highly effective at removing dirt, grime, and most stains, some stubborn stains may require additional treatment. We offer a range of cleaning solutions to tackle even the toughest stains.',
+                  },
                   
                 },
               ],
