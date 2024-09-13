@@ -10,6 +10,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 const oswald = Oswald({ subsets: ['latin'], weight: '400' });
 
+
 // Metadata API for Next.js 14
 export const metadata = {
   title: 'Top-Rated Pressure Washing & Softwash Services - Driveway Blasters',
