@@ -99,7 +99,8 @@ a {
   border-radius: 15px !important;
   cursor: pointer !important;
   width: max-content;
-  font-size: 30px;
+  max-width: 80vw;
+  font-size: 28px;
   margin: 0 auto !important;
   font-weight: bold;
   display: block !important;
@@ -401,7 +402,6 @@ a {
 
 .hero-text-block {
   margin: auto;
-  display: inline;
 }
 
 .hero-h1 {
@@ -540,7 +540,7 @@ a {
   width: 100%;
   height: auto;
   max-width: 550px;
-  max-height: 100%;
+  max-height: 50vh;
   border-radius: 50%;
   margin: 50px auto;
   object-fit: contain;
@@ -549,7 +549,7 @@ a {
 }
 
 .service-area-bg-img {
-  height: 90vh;
+  height: 50vh;
   width: 100%;
   max-width: 100%;
   margin-left: auto;
@@ -598,11 +598,10 @@ a {
 }
 
 .service-area-h1 {
-  font-size: 10vw;
+  font-size: 7rem;
   line-height: 60px;
   letter-spacing: 6px;
-  position: absolute;
-  transform: translateY(-65vh);
+  transform: translateY(-40vh);
   z-index: 8;
   text-align: center;
   color: #fff;
@@ -612,7 +611,7 @@ a {
 }
 
 .locations-btn {
-  transform: translateY(-50vh);
+  transform: translateY(-25vh);
   z-index: 8;
 }
 
@@ -931,7 +930,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 5px;
-  gap: 40px;
+  gap: 25px;
 }
 
 .our-mission {
@@ -939,9 +938,8 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
+  max-width: 350px;
   margin: 0 auto;
-  padding: 5px;
 }
 
 .footer-links {
@@ -949,8 +947,7 @@ a {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 5px;
+  max-width: 350px;
   height: auto;
   color: #fff !important;
 }
@@ -961,8 +958,7 @@ a {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 5px;
+  max-width: 350px;
   height: auto;
   color: #fff !important;
 }
@@ -1144,6 +1140,10 @@ a {
     width: 125px;
   }
 
+  .button {
+    max-width: 85vw;
+  }
+
   .contact-container {
     margin-right: 0px;
   }
@@ -1180,6 +1180,10 @@ a {
   .footer-contact {
     align-items: start;
     padding-left: 10px;
+  }
+
+  .google-map {
+    max-height: 250px;
   }
 }
 

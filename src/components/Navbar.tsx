@@ -94,9 +94,9 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
-            <Link href="/locations" passHref>
+            <Link href="/service-areas" passHref>
               <span className="navbar--content" onClick={closeMenu}>
-                Locations
+                Service Areas
               </span>
             </Link>
           </li>

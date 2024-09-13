@@ -57,7 +57,7 @@ const Faq: React.FC = () => {
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
-      <Link href="/contact" className="button btn-primary btn-faq mb-5" passHref>Get Your Free Quote!
+      <Link href="/contact" className="button btn-primary btn-faq" passHref>Get Your Free Quote!
       </Link>
     </section>
   );

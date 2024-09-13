@@ -48,7 +48,6 @@ const Footer: React.FC = () => {
             alt="Driveway Blasters Logo"
             width={100}
             height={100}
-            className="ml-3 mt-2 mb-1"
           />
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1697788.5733075673!2d-116.693335!3d33.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaed09da580eccaff%3A0x61efb731b8fe4787!2sDriveway%20Blasters%20LLC!5e0!3m2!1sen!2sus!4v1718763313824!5m2!1sen!2sus"
@@ -57,7 +56,7 @@ const Footer: React.FC = () => {
             style={{ border: '0' }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="google-map pt-3 mb-5"
+            className="google-map mb-3"
           ></iframe>
         </div>
 
@@ -121,11 +120,10 @@ const Footer: React.FC = () => {
 
         <div className="footer-contact">
           <h2>Contact Us</h2>
-          <ul className="pl-0 font-bold ">
-            <li className="text-black">
-              Monday - Sunday: <span>10:00 AM - 8:00 PM</span>
+            <li className="text-black list-none text-start mb-3 font-bold">
+              Monday - Sunday: <br /> 10:00 AM - 8:00 PM PST 
             </li>
-          </ul>
+
           <ul className="pl-0 font-bold">
             <li className="mt-1">
               <a
