@@ -14,11 +14,11 @@ export const metadata: Metadata = {
       'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.drivewayblasters.com/driveway-deck-revival',
+    url: 'https://www.drivewayblaster.com/driveway-deck-revival',
     siteName: 'Driveway Blasters LLC',
     images: [
       {
-        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Driveway Blasters LLC',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
     description:
       'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
-    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
   },
 };
 
@@ -50,7 +50,7 @@ const DrivewayRevival: React.FC = () => {
 
       <Image
         className="d-block w-50 items-center mx-auto mb-5 rounded-3"
-        src="/images/sidebysidedriveway.png"
+        src="/images/sidebysidedriveway.webp"
         alt="Professional Driveway Cleaning in Riverside County"
         width={2000}
         height={2000}

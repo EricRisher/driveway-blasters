@@ -3,7 +3,6 @@
 import { useEffect } from 'react';
 import Link from 'next/link';
 import ReactCompareImage from 'react-compare-image';
-import Image from 'next/image';
 
 const services = [
   {

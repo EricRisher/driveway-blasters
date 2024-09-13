@@ -14,11 +14,11 @@ export const metadata: Metadata = {
       'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.drivewayblasters.com/deck-cleaning',
+    url: 'https://www.drivewayblaster.com/deck-cleaning',
     siteName: 'Driveway Blasters LLC',
     images: [
       {
-        url: 'https://www.drivewayblasters.com/opengraph-image.png',
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
         width: 1200,
         height: 630,
         alt: 'Driveway Blasters LLC',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'Top-Rated Deck Cleaning & Pressure Washing | Driveway Blasters',
     description:
       'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
-    images: ['https://www.drivewayblasters.com/opengraph-image.png'],
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
   },
 };
 
