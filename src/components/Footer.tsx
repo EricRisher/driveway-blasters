@@ -41,14 +41,7 @@ const Footer: React.FC = () => {
   }
   return (
     <div className="footer-container" id="Footer">
-      <div className="footer">
-        <div className="footer-info-wrapper">
-          <Image
-            src={logo}
-            alt="Driveway Blasters Logo"
-            width={100}
-            height={100}
-          />
+      <div className="footer flex flex-wrap gap-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1697788.5733075673!2d-116.693335!3d33.786671!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xaed09da580eccaff%3A0x61efb731b8fe4787!2sDriveway%20Blasters%20LLC!5e0!3m2!1sen!2sus!4v1718763313824!5m2!1sen!2sus"
             width="350"
@@ -56,21 +49,38 @@ const Footer: React.FC = () => {
             style={{ border: '0' }}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            className="google-map mb-3"
+            className="google-map mb-3  basis-1/4 m-auto"
           ></iframe>
+
+        <div className="footer-contact basis-1/4 m-auto">
+          <h2>Contact Us</h2>
+          <li className="text-black list-none text-start mb-3 font-bold">
+            Monday - Sunday: <br /> 10:00 AM - 8:00 PM PST
+          </li>
+
+          <ul className="pl-0 font-bold">
+            <li className="mt-1">
+              <a
+                href="mailto:drivewayblaster@gmail.com"
+                className="no-underline text-black"
+              >
+                <EmailIcon /> drivewayblaster@gmail.com
+              </a>
+            </li>
+            <li className="mt-1">
+              <a href="tel:+19494843698" className="no-underline text-black">
+                <PhoneIcon /> (949) 484-3698
+              </a>
+            </li>
+            <li className="mt-1">
+              <a href="tel:+19495408402" className="no-underline text-black">
+                <PhoneIcon /> (949) 540-8402
+              </a>
+            </li>
+          </ul>
         </div>
 
-        <div className="our-mission">
-          <h2>Our Mission</h2>
-          <p className="p-2">
-            We're dedicated to providing the best cleaning services in Orange,
-            Riverside and Los Angeles County. We are committed to providing the
-            highest quality service to our customers and ensuring that they are
-            completely satisfied with the results.
-          </p>
-        </div>
-
-        <div className="footer-links">
+        <div className="footer-links basis-1/4 m-auto">
           <div className="wrapper">
             <h2>Services</h2>
             <div style={{ cursor: 'pointer' }}>
@@ -118,34 +128,17 @@ const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="footer-contact">
-          <h2>Contact Us</h2>
-            <li className="text-black list-none text-start mb-3 font-bold">
-              Monday - Sunday: <br /> 10:00 AM - 8:00 PM PST 
-            </li>
-
-          <ul className="pl-0 font-bold">
-            <li className="mt-1">
-              <a
-                href="mailto:drivewayblaster@gmail.com"
-                className="no-underline text-black"
-              >
-                <EmailIcon /> drivewayblaster@gmail.com
-              </a>
-            </li>
-            <li className="mt-1">
-              <a href="tel:+19494843698" className="no-underline text-black">
-                <PhoneIcon /> (949) 484-3698
-              </a>
-            </li>
-            <li className="mt-1">
-              <a href="tel:+19495408402" className="no-underline text-black">
-                <PhoneIcon /> (949) 540-8402
-              </a>
-            </li>
-          </ul>
+        <div className="our-mission flex-grow basis-1/4 m-auto">
+          <h2 className="text-left">Our Mission</h2>
+          <p className="p-2">
+            We're dedicated to providing the best cleaning services in Orange,
+            Riverside and Los Angeles County. We are committed to providing the
+            highest quality service to our customers and ensuring that they are
+            completely satisfied with the results.
+          </p>
         </div>
       </div>
+
       <div className="footer-copy">
         <p>
           <b>© 2024 Driveway Blasters LLC</b>

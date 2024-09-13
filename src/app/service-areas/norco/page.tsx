@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
 import image from '../../../../public/images/hero3.jpeg';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title: 'Top-Rated Pressure Washing Services in Norco | Driveway Blasters LLC',
@@ -38,8 +39,11 @@ export const metadata: Metadata = {
 };
 
 const ServiceAreaPage: React.FC = () => {
+  const city = 'Norco';
+
   return (
     <div className="container mt-3">
+      <Breadcrumb city={city} />
       <h1 className="mb-3 text-center text-4xl font-bold">
         Pressure Washing & Soft Washing Services in Norco
       </h1>

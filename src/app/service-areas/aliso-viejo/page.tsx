@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 };
 
 const ServiceAreaPage: React.FC = () => {
-  const city = 'Mission Viejo'; // Define the city for the current page
+  const city = 'Aliso Viejo'; // Define the city for the current page
 
   return (
     <div className="container mt-3">

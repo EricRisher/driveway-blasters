@@ -45,7 +45,7 @@ const orangeCountyCities = [
   { name: 'Aliso Viejo, CA', link: '/service-areas/aliso-viejo' },
   { name: 'Mission Viejo, CA', link: '/service-areas/mission-viejo' },
   { name: 'San Clemente, CA', link: '/service-areas/san-clemente' },
-  { name: 'Tustin', link: '/service-areas/tustin' },
+  { name: 'Tustin, CA', link: '/service-areas/tustin' },
   'Anaheim, CA',
   'Santa Ana, CA',
   'Huntington Beach, CA',
@@ -92,12 +92,11 @@ const renderCities = (cities: (string | { name: string; link?: string })[]) => {
   });
 };
 
-
 const Locations: React.FC = () => {
   return (
     <section className="location-container">
       {/* Header Section with Hero Image */}
-      <header>
+      <header className='service-header'>
         <div className="bg-wrapper">
           <Image
             src={serviceAreas}
@@ -163,19 +162,17 @@ const Locations: React.FC = () => {
           <Testimonials />
 
           {/* Call to Action */}
-          <h2 className="text-center mt-5">Transform Your Property Today!</h2>
-          <p className="text-center">
-            Driveway Blasters LLC offers reliable and affordable pressure
-            washing services for homes and businesses in Orange and Riverside
-            Counties. Get started with a free quote and see the difference for
-            yourself!
-          </p>
-          <Link
-            href="/contact"
-            className="button btn-primary mt-5 mb-4 text-center"
-          >
-            Request Your Free Quote
-          </Link>
+          <section className="wrapper bg-blue-300 w-full flex flex-col items-center justify-center">
+            <h2 className="text-center mt-5 font-extrabold text-6xl cta-service">
+              CALL FOR A FREE QUOTE FROM DRIVEWAY BLASTERS TODAY!
+            </h2>
+            <Link
+              href="/contact"
+              className="button btn-primary mt-5 mb-4 text-center"
+            >
+              Click Here to Get Started!
+            </Link>
+          </section>
         </article>
       </section>
     </section>

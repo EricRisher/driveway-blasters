@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
 import image from '../../../../public/images/hero3.jpeg';
+import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title:
@@ -39,8 +40,11 @@ export const metadata: Metadata = {
 };
 
 const ServiceAreaPage: React.FC = () => {
+  const city = 'Eastvale';
+
   return (
     <div className="container mt-3">
+      <Breadcrumb city={city} />
       <h1 className="mb-3 text-center text-4xl font-bold">
         Pressure Washing & Soft Washing Services in Eastvale
       </h1>
@@ -69,7 +73,7 @@ const ServiceAreaPage: React.FC = () => {
             href="/contact"
             className="button btn-primary mt-5 inline-block"
           >
-            Click Me To Get Your Free Quote!
+            Get Your Free Quote!
           </Link>
         </div>
         <Image

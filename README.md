@@ -12,10 +12,10 @@
     <!-- - San Clemente -->
 
 TODO:
-    - Add unique text to each city page
+    <!-- - Add unique text to each city page -->
     - Make page responsive and mobile friendly
     - Check and make sure each pages metadata is optimized
-    - Talk about each cities communities.
+    <!-- - Talk about each cities communities. -->
     - Specific FAQ
     - Update hero pictures
     - 

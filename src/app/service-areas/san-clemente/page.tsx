@@ -40,11 +40,10 @@ export const metadata: Metadata = {
 };
 
 const ServiceAreaPage: React.FC = () => {
-  const city = 'San Clemente'; // Define the city for the current page
+  const city = 'San Clemente'; 
 
   return (
     <div className="container mt-3">
-      {/* Add the breadcrumb component here */}
       <Breadcrumb city={city} />
 
       <h1 className="mb-3 text-center text-4xl font-bold">
@@ -76,7 +75,7 @@ const ServiceAreaPage: React.FC = () => {
             href="/contact"
             className="button btn-primary mt-5 inline-block"
           >
-            Get Your Free Quote Today!
+            Get Your Free Quote!
           </Link>
         </div>
         <Image
