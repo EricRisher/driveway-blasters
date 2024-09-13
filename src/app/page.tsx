@@ -1,4 +1,4 @@
-'use server';
+'use client';
 
 import WhyChooseUs from '../components/WhyChooseUs';
 import Hero from '../components/Hero';
@@ -50,6 +50,21 @@ export default async function Home() {
         as="font"
         type="font/woff2"
       ></link>
+      <style jsx global>{`
+        .hero-h1 {
+          font-size: 6.5rem;
+          line-height: 6rem;
+          letter-spacing: -1px;
+          position: absolute;
+          transform: translateY(-90vh);
+          z-index: 8;
+          text-align: start;
+          color: #fff;
+          text-shadow: 0 5px 15px #000;
+          font-weight: 900;
+          padding: 0 0 0 10px;
+        }
+      `}</style>
       <Hero />
       <WhyChooseUs />
       <Services />
