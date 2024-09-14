@@ -10,7 +10,6 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 const inter = Inter({ subsets: ['latin'] });
 const oswald = Oswald({ subsets: ['latin'], weight: '400' });
 
-
 // Metadata API for Next.js 14
 export const metadata = {
   title: 'Top-Rated Pressure Washing & Softwash Services - Driveway Blasters',
@@ -54,40 +53,112 @@ export const metadata = {
 // JSON-LD structured data for LocalBusiness
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Driveway Blasters LLC',
-  url: 'https://www.drivewayblaster.com',
-  logo: 'https://www.drivewayblaste.com/favicon.ico',
-  telephone: '+1-949-484-3698',
-  address: {
-    '@type': 'PostalAddress',
-    addressLocality: 'Aliso Viejo',
-    addressRegion: 'CA',
-    postalCode: '92656',
-    addressCountry: 'US',
-  },
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5',
-    reviewCount: '2',
-  },
-  priceRange: '$',
-  openingHours: 'Mo,Tu,We,Th,Fr,Sat,Sun 10:00-20:00',
-  description:
-    'Top-rated pressure washing services in Orange and Riverside counties.',
-  image:
-    'https://www.drivewayblaster.com/_next/image?url=%2Fimages%2Fhero3.jpg&w=1920&q=75',
-  makesOffer: {
-    '@type': 'Offer',
-    url: 'https://www.drivewayblaster.com/services/pressure-washing',
-    priceCurrency: 'USD',
-    itemOffered: {
-      '@type': 'Service',
-      name: 'Pressure Washing',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      '@id': 'https://www.drivewayblaster.com/#business',
+      name: 'Driveway Blasters',
+      url: 'https://www.drivewayblaster.com',
+      logo: {
+        '@type': 'ImageObject',
+        '@id': 'https://www.drivewayblaster.com/#logo',
+        url: 'https://www.drivewayblaster.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo%20and%20name.f199d656.png&w=3840&q=75',
+        caption: 'Driveway Blasters',
+      },
+      image: {
+        '@id': 'https://www.drivewayblaster.com/#logo',
+      },
       description:
-        'We provide professional pressure washing services for driveways, decks, and building exteriors.',
+        'Professional pressure washing and roof cleaning services in Riverside, and Orange County. Eco-friendly and safe techniques.',
+      telephone: '949-484-3698',
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: 'Aliso Viejo',
+        addressRegion: 'CA',
+        postalCode: '92656',
+      },
+      areaServed: ['Riverside', 'Orange County'],
+      priceRange: '$',
+      openingHours: 'Mo-Sun 10:00-20:00',
+      aggregateRating: {
+        '@type': 'AggregateRating',
+        ratingValue: '5.0',
+        reviewCount: '5',
+      },
     },
-  },
+    {
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: 'Ahmed Zahran',
+      },
+      reviewRating: {
+        '@type': 'Rating',
+        ratingValue: '5',
+      },
+      reviewBody:
+        "Very satisfied customer here! I had terrible oil stains from my old truck, some of them fresh - a couple of months old, and some were from two years back. The older stains specifically are too hard to remove. There were also a couple of gums that made my driveway look really ugly. Jeremy and Eric came on time as promised and did a great job. The driveway looks way better now, and the toughest stains can hardly be noticed. They make up a good team, they don't other reviews yet as of the time of my review, but they are definitely worth trying them out!",
+      itemReviewed: {
+        '@id': 'https://www.drivewayblaster.com/#business',
+      },
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://www.drivewayblaster.com/#website',
+      url: 'https://www.drivewayblaster.com',
+      name: 'Driveway Blasters',
+      publisher: {
+        '@id': 'https://www.drivewayblaster.com/#business',
+      },
+      inLanguage: 'en-US',
+    },
+    {
+      '@type': 'BreadcrumbList',
+      '@id': 'https://www.drivewayblaster.com/#breadcrumb',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: '1',
+          item: {
+            '@id': 'https://www.drivewayblaster.com',
+            name: 'Home',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: '2',
+          item: {
+            '@id': 'https://www.drivewayblaster.com/roof-cleaning/',
+            name: 'Roof Cleaning',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: '3',
+          item: {
+            '@id': 'https://www.drivewayblaster.com/driveway-revival/',
+            name: 'Expert Driveway Cleaning Services',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: '4',
+          item: {
+            '@id': 'https://www.drivewayblaster.com/service-areas',
+            name: 'Service Areas',
+          },
+        },
+        {
+          '@type': 'ListItem',
+          position: '5',
+          item: {
+            '@id': 'https://www.drivewayblaster.com/contact',
+            name: 'Contact Us',
+          },
+        },
+      ],
+    },
+  ],
 };
 
 // RootLayout component with Metadata API

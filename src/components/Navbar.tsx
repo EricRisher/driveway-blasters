@@ -72,6 +72,7 @@ const Navbar: React.FC = () => {
           src={logo}
           alt="portfolio logo"
           className="logo"
+          id='logo'
           style={{ cursor: 'pointer' }}
         />
       </div>
