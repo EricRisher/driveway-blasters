@@ -17,7 +17,7 @@ export const metadata = {
     'Top-rated pressure washing services in Orange, Riverside, and LA counties. Expert driveway, deck, house, roof, window, and gutter cleaning by Driveway Blasters LLC.',
   keywords:
     'pressure washing, soft washing, driveway cleaning, roof cleaning, deck cleaning, gutter cleaning, window cleaning, Riverside, Orange County',
-  viewport: 'width=device-width, initial-scale=1',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes',
   charset: 'UTF-8',
   icons: {
     icon: '/favicon.ico',

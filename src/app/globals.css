@@ -424,12 +424,12 @@ a {
 
 .divider {
   display: block;
-  height: 4px; /* Thickness of the line */
-  background-color: #ffffff; /* Subtle color */
-  width: 40vw; /* Length of the line, adjust as needed */
-  margin: 20px auto 50px; /* Space between the divider and the next element */
-  opacity: 0.8; /* Subtle look */
-  border-radius: 4px; /* Optional: rounded corners */
+  height: 4px; 
+  background-color: #ffffff;
+  width: 40vw; 
+  margin: 20px auto 50px; 
+  opacity: 0.8;
+  border-radius: 4px; 
 }
 
 .hero-h2 {
