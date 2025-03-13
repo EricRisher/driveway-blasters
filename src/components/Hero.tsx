@@ -29,10 +29,6 @@ const heroData: HeroData[] = [
     id: 5,
     image: '/images/hero5.jpeg',
   },
-  {
-    id: 6,
-    image: '/images/hero6.jpeg',
-  },
 ];
 
 const HeroCarousel: React.FC = () => {
@@ -54,18 +50,13 @@ const HeroCarousel: React.FC = () => {
         ))}
       </Carousel>
       <div className="hero-text-block">
-        <h1 className="hero-h1">
-          Orange & Riverside County Pressure Washing Experts
-        </h1>
+        <h1 className="hero-h1">Orange & Riverside County Pressure Washing</h1>
         <h2 className="hero-h2">
           Instantly Restore The Shine With The Click of a Button!
         </h2>
 
-        <div
-          className="button-container"
-          style={{ display: 'flex', gap: '20px' }}
-        >
-          <Link href="/contact" className="button btn-primary hero-btn">
+        <div className="button-container">
+          <Link href="/contact" className="button  hero-btn">
             Get Your Free Quote!
           </Link>
 
@@ -73,6 +64,13 @@ const HeroCarousel: React.FC = () => {
             (949) 484-3698
           </Link>
         </div>
+        <Image
+          src="/icons/arrow-64.png"
+          alt="arrow"
+          width={48}
+          height={48}
+          className="arrow-icon"
+        />
       </div>
     </section>
   );

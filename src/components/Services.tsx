@@ -8,15 +8,14 @@ const services = [
   {
     title: 'Driveway Revival',
     description:
-      "Don't have the right tools or time? Our specialized high-quality equipment and expertise can handle even the toughest stains. Our commercial pressure washing services will rejuvenate your driveway, making it look like new.",
+      'Tired of stubborn stains and a worn-out driveway? Our professional pressure washing restores your driveway’s original look, removing grime, oil stains, and dirt in no time.',
     before: '/images/drivewaybefore.webp',
     after: '/images/drivewayafter.webp',
     href: '/driveway-revival',
   },
   {
     title: 'Deck Cleaning',
-    description:
-      "Is your deck in need of a thorough cleaning? Our team effectively removes dirt, grime, and tough stains. With our expert deck cleaning services, we'll revitalize your outdoor area, significantly improving its look and durability. Enjoy a fresh, clean deck without the hassle.",
+    description: `Is your deck in need of a thorough cleaning? Our team effectively removes dirt, grime, and tough stains. With our expert deck cleaning services, we'll revitalize your outdoor area, significantly improving its look and durability. Enjoy a fresh, clean deck without the hassle.`,
     before: '/images/deckbefore.webp',
     after: '/images/deckafter.webp',
     href: '/deck-cleaning',
@@ -24,7 +23,7 @@ const services = [
   {
     title: 'Exterior House Washing',
     description:
-      "Is your home's exterior looking dull and weathered? Maintaining a clean house exterior is essential for preserving your home's value and curb appeal. Trust us to bring a fresh, revitalized look to your property, enhancing its beauty and longevity.",
+      'A cleaner home exterior boosts curb appeal and property value. Our soft wash method safely removes dirt, mold, and grime, making your home look fresh and well-maintained.',
     before: '/images/housewashbefore.webp',
     after: '/images/housewashafter.webp',
     href: '/exterior-house-washing',
@@ -32,7 +31,7 @@ const services = [
   {
     title: 'Roof Cleaning',
     description:
-      'Cleaning your roof is never an easy job but, that’s why you should trust us to bring your home a top-to-bottom shine! Our soft wash services are tailored to protect your home!',
+      'Protect your roof and extend its life! Our soft wash service eliminates moss, algae, and stains without damage, keeping your home looking great while preventing costly repairs.',
     before: '/images/roofbefore.webp',
     after: '/images/roofafter.webp',
     href: '/roof-cleaning',
@@ -40,7 +39,7 @@ const services = [
   {
     title: 'Window Clarity',
     description:
-      'With our advanced and thorough cleaning of window sills, frames, and tracks not only delivers a brilliant reflective shine but also ensures lasting cleanliness that resists the first signs of rain.',
+      'Dirty windows ruin a view. Our streak-free window cleaning brightens your home, removes buildup, and helps glass stay cleaner longer even after rain.',
     before: '/images/windowbefore.webp',
     after: '/images/windowafter.webp',
     href: '/window-clarity',
@@ -48,7 +47,7 @@ const services = [
   {
     title: 'Solar Panel Efficiency',
     description:
-      'Keep your solar panels clean to boost their performance and efficiency. Our specialized cleaning services remove dirt and grime, ensuring your panels operate at peak efficiency.',
+      'Maximize your solar power! Dust and dirt can reduce efficiency by up to 30%. Our expert cleaning keeps your panels performing at peak levels, saving you money.',
     before: '/images/solarpanelbefore.webp',
     after: '/images/solarpanelafter.webp',
     href: '/solar-panel-efficiency',
@@ -56,7 +55,7 @@ const services = [
   {
     title: 'Gutter Cleaning',
     description:
-      "Without regularly cleaned gutters they won't function properly and will lead to costly repairs. So let us leave you with clean, good-looking, and functional gutters.",
+      'Clogged gutters lead to costly damage. We clear out leaves, debris, and buildup, keeping your gutters flowing properly and protecting your home from water damage.',
     before: '/images/beforegutters.webp',
     after: '/images/aftergutters.webp',
     href: '/gutter-cleaning',
@@ -81,10 +80,15 @@ function Services() {
   }, []);
 
   return (
-    <div className="services-container mt-3" id="Services">
+    <div className="services-container mt-8" id="Services">
       <h2 className="services-h1">
         <b>Services</b>
       </h2>
+      <p className="services-summary text-start px-4 ">
+        Transform your home or business with our professional pressure washing &
+        soft washing services. We eliminate dirt, grime, and stains, restoring
+        your property's beauty while protecting its value.
+      </p>
       <div className="services">
         {services.map((service, index) => (
           <section className="service" key={index}>
@@ -93,7 +97,7 @@ function Services() {
             </h2>
             <div className="imageWrapper">
               <ReactCompareImage
-                leftImage={service.before} 
+                leftImage={service.before}
                 rightImage={service.after}
                 leftImageAlt={`Before ${service.title}`}
                 rightImageAlt={`After ${service.title}`}
@@ -113,5 +117,4 @@ function Services() {
     </div>
   );
 }
-
 export default Services;

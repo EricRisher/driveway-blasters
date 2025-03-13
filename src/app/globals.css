@@ -409,41 +409,51 @@ a {
 }
 
 .hero-h1 {
-  font-size: 6.5rem;
-  line-height: 6rem;
+  font-size: 7rem;
+  line-height: 8rem;
   letter-spacing: -1px;
   position: absolute;
   transform: translateY(-90vh);
   z-index: 8;
   text-align: start;
   color: #fff;
-  text-shadow: 0 5px 15px #000;
+  text-shadow:
+    6px 6px 0 #000,
+    1px 6px 0 #000,
+    6px 1px 0 #000,
+    1px 1px 0 #000;
   font-weight: 900;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 1rem;
+  text-wrap: balance;
 }
 
 .divider {
   display: block;
-  height: 4px; 
+  height: 4px;
   background-color: #ffffff;
-  width: 40vw; 
-  margin: 20px auto 50px; 
+  width: 40vw;
+  margin: 20px auto 50px;
   opacity: 0.8;
-  border-radius: 4px; 
+  border-radius: 4px;
 }
 
 .hero-h2 {
   font-size: 3rem;
-  line-height: 5rem;
-  letter-spacing: 2px;
+  line-height: 4rem;
+  letter-spacing: 1px;
   position: absolute;
+  max-width: 80vw;
   transform: translateY(-60vh);
   z-index: 8;
   text-align: start;
-  color: #fff;
-  text-shadow: 0 5px 15px #000;
+  color: #eeeeee;
+  text-shadow:
+    4px 4px 0 #000,
+    1px 4px 0 #000,
+    4px 1px 0 #000,
+    1px 1px 0 #000;
   font-weight: 800;
-  padding: 0 5px 0 10px;
+  padding: 0 5px 0 1.5rem;
 }
 
 .hero-btn {
@@ -455,7 +465,32 @@ a {
   font-weight: 800;
   max-width: 50vw;
   height: auto;
-  right: 10vw;
+  margin: 0 !important;
+}
+
+.arrow-icon {
+  display: block;
+  position: absolute;
+  left: calc(100vw/2 - 24px);
+  opacity: 0.8;
+  top: 50%;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  animation: arrowBounce 6s infinite ease-in-out 0.5s;
+}
+
+/* Animted hover effect with frames for up and down movement for the arrow button */
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(40vh);
+  }
+  50% {
+    transform: translateY(42vh);
+  }
+  100% {
+    transform: translateY(40vh);
+  }
 }
 
 .btn-secondary {
@@ -464,13 +499,12 @@ a {
 
 .button-container {
   display: flex;
-  justify-content: center; /* Aligns the buttons in the center horizontally */
-  align-items: center;
-  gap: 20px; /* Adds space between the buttons */
-  width: 100%;
+  align-items: start;
+  gap: 4rem; /* Adds space between the buttons */
+  margin: 0 0 0 2rem;
 }
 
-.testimonial-block .carousel > a,
+.carousel > a,
 .carousel-control-next-icon,
 .carousel-control-prev-icon,
 .carousel-indicators > button {
@@ -480,7 +514,7 @@ a {
 
 .testimonial-block {
   border-top: #7c99ff 3px dotted;
-  width: 40vw;
+  width: 90vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -532,7 +566,6 @@ a {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px;
   padding: 50px;
   border-bottom: #7c99ff 3px dotted;
   transition: all 2s ease;
@@ -656,17 +689,19 @@ a {
 .service {
   display: grid;
   place-items: center;
-  width: 400px;
+  width: 380px;
+  max-width: 90%;
   height: max-content;
-  margin: 25px;
+  margin: 20px;
   padding: 15px;
   background-color: #d7d7d7;
-  border-radius: 5px;
+  border-radius: 20px;
   transform: translateX(100px);
   opacity: 0;
   transition:
-    transform 0.5s,
-    opacity 0.5s;
+    transform 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .imageWrapper {
@@ -676,13 +711,15 @@ a {
   justify-self: center;
   align-content: center;
   justify-content: center;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 [data-testid='container'] {
-  min-width: 300px;
-  max-height: 400px;
-  width: 100%;
+  min-width: 200px;
+  max-height: 350px;
   border-radius: 10px;
+  overflow: hidden;
 }
 
 .service.show {
@@ -694,18 +731,7 @@ a {
   font-size: 26px;
   color: #333;
   justify-self: center;
-}
-
-.contentWrapper {
-  height: 90%;
-  width: 90%;
-  align-self: center;
-  justify-self: center;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-  align-content: center;
-  justify-content: center;
+  text-align: center;
 }
 
 /* FAQ Styling */
@@ -1043,9 +1069,9 @@ a {
 /* Media Queries */
 @media screen and (max-width: 1200px) {
   .hero-h1 {
-    font-size: 5rem;
-    line-height: 6rem;
-    transform: translateY(-80vh);
+    font-size: 3.5rem;
+    line-height: 4rem;
+    transform: translateY(-85vh);
   }
 
   .hero-h2 {
@@ -1108,6 +1134,7 @@ a {
   .hero-h2 {
     font-size: 2rem;
     line-height: 2rem;
+    transform: translateY(-42vh);
   }
 }
 
@@ -1130,10 +1157,9 @@ a {
 
   .button-container {
     flex-direction: column;
-  }
-
-  .hero-h2 {
-    transform: translateY(-45vh);
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
   }
 }
 
@@ -1142,10 +1168,6 @@ a {
     font-size: 16px;
     padding: 0;
     width: 125px;
-  }
-
-  .button {
-    max-width: 90vw;
   }
 
   .contact-container {
@@ -1249,9 +1271,9 @@ a {
   }
 
   .hero-h1 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     line-height: 3rem;
-    transform: translateY(-85vh);
+    transform: translateY(-86vh);
     max-width: 100vw;
   }
 
@@ -1263,7 +1285,7 @@ a {
 
   .hero-btn {
     font-size: 1.6rem;
-    transform: translateY(-40vh);
+    transform: translateY(-35vh);
     max-width: 85vw;
   }
 
