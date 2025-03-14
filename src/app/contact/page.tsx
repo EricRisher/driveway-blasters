@@ -342,7 +342,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
                 Notes <span style={{ color: 'red' }}>*</span>
               </span>
               <textarea
-                className="contact--input text-md"
+                className="contact--input text-md contact-message"
                 id="message"
                 rows={5}
                 placeholder="Additional Details..."

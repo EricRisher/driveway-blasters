@@ -928,6 +928,11 @@ a {
   letter-spacing: 1px;
 }
 
+.contact-message {
+  min-height: 132px;
+  resize: vertical;
+}
+
 .loader-container {
   display: flex;
   flex-direction: column;
