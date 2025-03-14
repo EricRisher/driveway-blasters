@@ -471,7 +471,7 @@ a {
 .arrow-icon {
   display: block;
   position: absolute;
-  left: calc(100vw/2 - 24px);
+  left: calc(100vw / 2 - 24px);
   opacity: 0.8;
   top: 50%;
   font-size: 2rem;
@@ -585,6 +585,27 @@ a {
   align-self: center;
 }
 
+.image-preview {
+  display: flex;
+  flex-direction: column; /* ✅ Ensure "Image Preview" text is above */
+  align-items: start;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.preview-container {
+  display: flex;
+  flex-wrap: wrap; /* ✅ Ensure images wrap when necessary */
+  gap: 10px; /* ✅ Add spacing between images */
+  justify-content: start; /* ✅ Center images */
+}
+
+.preview-image {
+  max-width: 200px;
+  border-radius: 8px;
+  margin: 5px;
+  object-fit: cover;
+}
 .service-area-bg-img {
   height: 50vh;
   width: 100%;
@@ -766,6 +787,7 @@ a {
 
 .form-btn {
   width: 13em;
+  margin-bottom: 32px !important;
 }
 
 /* Contact Me Styling */
@@ -789,7 +811,7 @@ a {
   align-items: flex-start;
   height: 100%;
   width: 100%;
-  margin: 25px 5px;
+  margin-top: 8px;
 }
 
 .contact--container {
@@ -802,16 +824,25 @@ a {
   align-items: center;
   justify-content: center;
   max-width: 50vw;
-  margin: 25px;
+  margin: 20px;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  margin: 5px auto;
+  margin: auto;
   justify-content: space-around;
   width: 95%;
   padding: 0 10px;
+}
+
+.service-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 .contact--label {
@@ -821,6 +852,17 @@ a {
   margin-bottom: 25px;
   flex-direction: column;
   margin: 5px;
+}
+
+.city-state-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.city-state-container input {
+  flex: 1;
+  min-width: 0;
 }
 
 .contact--label-message {
@@ -840,7 +882,7 @@ a {
 .contact-text {
   max-width: 95%;
   text-align: start;
-  margin: 5px;
+  margin: 10px;
 }
 
 .contact-text p {
@@ -848,13 +890,20 @@ a {
   color: #242424;
   line-height: 27px;
   letter-spacing: 1px;
-  padding: 10px;
+  padding-top: 6px;
+}
+
+.contact-text span {
+  font-size: 1.2em;
+  color: #242424;
+  font-weight: bold;
+  padding: 6px;
 }
 
 .contact-text h2 {
   font-size: 2em;
   color: #242424;
-  padding: 10px;
+  padding-top: 14px;
 }
 
 .contact-wrapper {
@@ -866,7 +915,7 @@ a {
   width: 95%;
   height: 100%;
   margin: 5px auto;
-  padding: 25px 10px;
+  padding: 10px 8px;
 }
 
 .contact--input {
@@ -877,6 +926,34 @@ a {
   padding: 5px;
   border: #bdbdbd 1px solid;
   letter-spacing: 1px;
+}
+
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #3498db; /* ✅ Blue spinner */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 5px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.disabled {
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .input-text {

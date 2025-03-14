@@ -11,15 +11,15 @@ interface HeroData {
 const heroData: HeroData[] = [
   {
     id: 1,
-    image: '/images/hero1.jpg',
-  },
-  {
-    id: 2,
     image: '/images/hero2.jpg',
   },
   {
-    id: 3,
+    id: 2,
     image: '/images/hero3.jpeg',
+  },
+  {
+    id: 3,
+    image: '/images/hero6.webp',
   },
   {
     id: 4,
@@ -28,6 +28,10 @@ const heroData: HeroData[] = [
   {
     id: 5,
     image: '/images/hero5.jpeg',
+  },
+  {
+    id: 7,
+    image: '/images/hero7.webp',
   },
 ];
 
