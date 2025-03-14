@@ -144,61 +144,67 @@ const ContactMe: React.FC = () => {
     setIsUploading(false); // ✅ Hide loader after all uploads complete
   };
 
-  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
 
-    if (!recaptchaToken) {
-      alert('Please complete the reCAPTCHA before submitting.');
-      return;
-    }
+  if (!recaptchaToken) {
+    alert('Please complete the reCAPTCHA before submitting.');
+    return;
+  }
 
-    console.log('📩 Preparing Email...');
-    console.log('🛠 Checking Image Uploads:', fileBase64List);
+  console.log('📩 Preparing Email...');
 
-    if (fileBase64List.length === 0) {
-      alert('❌ Image upload failed. Please wait for the upload to complete.');
-      console.error('❌ No images uploaded.');
-      return;
-    }
+  if (!form.current) {
+    console.error('❌ Form reference is null.');
+    return;
+  }
 
-    console.log('🚀 Sending Email with Image URLs:', fileBase64List);
-
-    try {
-      const emailParams: any = {
-        name: form.current?.name.value,
-        email: form.current?.email.value,
-        number: form.current?.number.value,
-        address: form.current?.address.value,
-        services: selectedOptions.map((option) => option.label).join(', '),
-        service_date: form.current?.['service-date'].value,
-        message: form.current?.message.value,
-        // ✅ Convert each URL into an <img> tag for preview
-        attachments: fileBase64List
-          .map(
-            (url) =>
-              `<img src="${url}" alt="Uploaded Image" style="max-width: 500px; height: auto; border-radius: 8px;"/>`,
-          )
-          .join('<br/>'),
-        'g-recaptcha-response': recaptchaToken,
-      };
-
-      const response = await emailjs.send(
-        'service_qhq2uzo',
-        'template_uw8hc8c',
-        emailParams,
-        '2f33Ymo02d8DFKvSh',
-      );
-
-      if (response.status === 200) {
-        alert('✅ Message sent successfully!');
-      } else {
-        alert('❌ Failed to send the message. Please try again later.');
-      }
-    } catch (error) {
-      console.error('❌ Email send error:', error);
-      alert('❌ Failed to send the message. Please refresh and try again.');
-    }
+  // ✅ Ensure correct type when accessing form fields
+  const getInputValue = (name: string) => {
+    const input = form.current?.elements.namedItem(
+      name,
+    ) as HTMLInputElement | null;
+    return input?.value || ''; // Return value or empty string to avoid undefined
   };
+
+  const emailParams = {
+    name: getInputValue('name'),
+    email: getInputValue('email'),
+    number: getInputValue('number'),
+    address: getInputValue('address'),
+    services: selectedOptions.map((option) => option.label).join(', '),
+    service_date: getInputValue('service-date'),
+    message: getInputValue('message'),
+    attachments: fileBase64List
+      .map(
+        (url) =>
+          `<img src="${url}" alt="Uploaded Image" style="max-width: 500px; height: auto; border-radius: 8px;"/>`,
+      )
+      .join('<br/>'),
+    'g-recaptcha-response': recaptchaToken,
+  };
+
+  console.log('🚀 Sending Email with Data:', emailParams);
+
+  try {
+    const response = await emailjs.send(
+      'service_qhq2uzo',
+      'template_uw8hc8c',
+      emailParams,
+      '2f33Ymo02d8DFKvSh',
+    );
+
+    if (response.status === 200) {
+      alert('✅ Message sent successfully!');
+    } else {
+      alert('❌ Failed to send the message. Please try again later.');
+    }
+  } catch (error) {
+    console.error('❌ Email send error:', error);
+    alert('❌ Failed to send the message. Please refresh and try again.');
+  }
+};
+
 
   return (
     <section id="Contact" className="contact--section">
