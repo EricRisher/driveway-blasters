@@ -1,10 +1,51 @@
-'use client';
-
 import WhyChooseUs from '../components/WhyChooseUs';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
 import Testimonials from '../components/Testimonials';
 import Faq from '@/components/Faq';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Top-Rated Pressure Washing in Orange County | Driveway Blasters',
+  description:
+    'Driveway Blasters LLC has delivered countless pressure washing serives to our customers. Serving Riverside, Los Angeles, and Orange County. Get a free quote today!',
+  openGraph: {
+    title: 'Top-Rated Pressure Washing in Orange County | Driveway Blasters',
+    description:
+      'Driveway Blasters LLC has delivered countless pressure washing serives to our customers. Serving Riverside, LA, and Orange County. Get a free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblaster.com/deck-cleaning',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Top-Rated Pressure Washing in Orange County | Driveway Blasters',
+    description:
+      'Driveway Blasters LLC has delivered countless pressure washing serives to our customers. Serving Riverside, LA, and Orange County. Get a free quote today!',
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
+  },
+  keywords: [
+    'pressure washing',
+    'deck cleaning',
+    'driveway cleaning',
+    'house washing',
+    'roof cleaning',
+    'concrete cleaning',
+    'pressure washing near me',
+    'pressure washing in Orange County',
+    'pressure washing in Riverside County',
+    'pressure washing in Los Angeles County',
+  ],
+};
 
 export default async function Home() {
   return (

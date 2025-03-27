@@ -35,6 +35,14 @@ export const metadata: Metadata = {
       'Driveway Blasters LLC provides expert roof cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your roof and extend its lifespan with our professional care. Contact us for a free estimate today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
+  keywords: [
+    'roof cleaning',
+    'roof cleaning services',
+    'roof cleaning near me',
+    'roof cleaning in Orange County',
+    'roof cleaning in Riverside County',
+    'roof cleaning in Los Angeles County',
+  ],
 };
 
 const RoofCare: React.FC = () => {

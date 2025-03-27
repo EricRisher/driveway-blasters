@@ -8,12 +8,12 @@ import Breadcrumb from '@/components/Breadcrumb';
 
 export const metadata: Metadata = {
   title:
-    'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters LLC',
+    'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters',
   description:
     'Driveway Blasters LLC offers expert pressure washing services in Irvine. Boost your curb appeal with eco-friendly cleaning solutions. Call now for a free quote!',
   openGraph: {
     title:
-      'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters LLC',
+      'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert pressure washing services in Irvine. Boost your curb appeal with eco-friendly cleaning solutions. Call now for a free quote!',
     type: 'website',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters LLC',
+      'Top-Rated Pressure Washing Services in Irvine | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert pressure washing services in Irvine. Boost your curb appeal with eco-friendly cleaning solutions. Call now for a free quote!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],

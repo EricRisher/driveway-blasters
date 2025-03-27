@@ -17,6 +17,20 @@ export const metadata: Metadata = {
     url: 'https://www.drivewayblasters.com/about-us',
     siteName: 'Driveway Blasters LLC',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Driveway Blasters LLC | Expert Pressure Washing Team',
+    description:
+      'Learn about the expert team behind Driveway Blasters LLC. Our skilled professionals provide top-notch pressure washing services in Orange, Riverside, and LA counties.',
+  },
+  keywords: [
+    'pressure washing',
+    'pressure washing services',
+    'pressure washing near me',
+    'pressure washing in Orange County',
+    'pressure washing in Riverside County',
+    'pressure washing in Los Angeles County',
+  ],
 
 };
 

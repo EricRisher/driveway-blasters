@@ -5,12 +5,12 @@ import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title:
-    'Professional Gutter Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+    'Professional Gutter Cleaning in Orange County | Driveway Blasters',
   description:
     'Driveway Blasters LLC offers expert gutter cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your home from water damage with our reliable, eco-friendly solutions. Get a free quote today!',
   openGraph: {
     title:
-      'Professional Gutter Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Professional Gutter Cleaning in Orange County | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert gutter cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your home from water damage with our reliable, eco-friendly solutions. Get a free quote today!',
     type: 'website',
@@ -29,11 +29,19 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Professional Gutter Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Professional Gutter Cleaning in Orange County | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert gutter cleaning services in Orange, Riverside, and Los Angeles Counties. Protect your home from water damage with our reliable, eco-friendly solutions. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
+  keywords: [
+    'gutter cleaning',
+    'gutter cleaning services',
+    'gutter cleaning near me',
+    'gutter cleaning in Orange County',
+    'gutter cleaning in Riverside County',
+    'gutter cleaning in Los Angeles County',
+  ],
 };
 
 const Gutters: React.FC = () => {

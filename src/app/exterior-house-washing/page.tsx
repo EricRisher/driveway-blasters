@@ -34,6 +34,15 @@ export const metadata: Metadata = {
       'Driveway Blasters provides expert exterior house cleaning services in Orange, Riverside, and Los Angeles Counties. Protect and enhance your home with our professional care. Contact us for a free estimate today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
+  keywords: [
+    'exterior house cleaning',
+    'house washing',
+    'house cleaning services',
+    'house cleaning near me',
+    'house cleaning in Orange County',
+    'house cleaning in Riverside County',
+    'house cleaning in Los Angeles County',
+  ],
 };
 
 const HouseCare: React.FC = () => {

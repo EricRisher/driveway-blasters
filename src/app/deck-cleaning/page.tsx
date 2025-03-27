@@ -5,7 +5,7 @@ import Testimonials from '@/components/Testimonials';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Top-Rated Deck Cleaning & Pressure Washing | Driveway Blasters',
+  title: 'Top-Rated Deck Cleaning in Orange County | Driveway Blasters',
   description:
     'Expert deck cleaning services by Driveway Blasters LLC using advanced pressure washing. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
   openGraph: {

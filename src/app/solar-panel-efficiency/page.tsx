@@ -5,12 +5,12 @@ import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title:
-    'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+    'Expert Solar Panel Cleaning in Orange County | Driveway Blasters',
   description:
     'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
   openGraph: {
     title:
-      'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Expert Solar Panel Cleaning in Orange County | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
     type: 'website',
@@ -29,11 +29,19 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Expert Solar Panel Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Expert Solar Panel Cleaning in Orange County | Driveway Blasters',
     description:
       'Driveway Blasters LLC offers expert solar panel cleaning services in Orange, Riverside, and Los Angeles Counties. Boost your solar efficiency with our eco-friendly solutions. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
+  keywords: [
+    'solar panel cleaning',
+    'solar panel cleaning services',
+    'solar panel cleaning near me',
+    'solar panel cleaning in Orange County',
+    'solar panel cleaning in Riverside County',
+    'solar panel cleaning in Los Angeles County',
+  ],
 };
 
 const SolarPanelCleaning: React.FC = () => {

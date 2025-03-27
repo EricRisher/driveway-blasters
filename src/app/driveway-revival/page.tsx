@@ -5,13 +5,13 @@ import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
-  title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
+  title: 'Top-Rated Driveway Cleaning in Orange County | Driveway Blasters',
   description:
-    'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
+    'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, Los Angeles, and Orange County. Get a free quote today!',
   openGraph: {
-    title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
+    title: 'Top-Rated Driveway Cleaning | Driveway Blasters',
     description:
-      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
+      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, Los Angeles, and Orange County. Get a free quote today!',
     type: 'website',
     locale: 'en_US',
     url: 'https://www.drivewayblaster.com/driveway-deck-revival',
@@ -27,11 +27,20 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Top-Rated Driveway Cleaning & Pressure Washing | Driveway Blasters',
+    title: 'Top-Rated Driveway Cleaning | Driveway Blasters',
     description:
-      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, LA, and Orange County. Enhance curb appeal and safety. Get a free quote today!',
+      'Expert driveway cleaning services by Driveway Blasters LLC using advanced pressure washing techniques. Serving Riverside, Los Angeles, and Orange County. Get a free quote today!',
     images: ['https://www.drivewayblaster.com/opengraph-image.png'],
   },
+  keywords: [
+    'driveway cleaning',
+    'pressure washing',
+    'driveway cleaning services',
+    'driveway cleaning near me',
+    'driveway cleaning in Orange County',
+    'driveway cleaning in Riverside County',
+    'driveway cleaning in Los Angeles County',
+  ],
 };
 
 const DrivewayRevival: React.FC = () => {

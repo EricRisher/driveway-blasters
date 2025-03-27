@@ -476,7 +476,6 @@ a {
   top: 50%;
   font-size: 2rem;
   color: #fff;
-  cursor: pointer;
   animation: arrowBounce 6s infinite ease-in-out 0.5s;
 }
 

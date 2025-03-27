@@ -5,12 +5,12 @@ import Testimonials from '@/components/Testimonials';
 
 export const metadata: Metadata = {
   title:
-    'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+    'Expert Window Cleaning in Orange County | Driveway Blasters LLC',
   description:
     'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
   openGraph: {
     title:
-      'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Expert Window Cleaning in Orange County | Driveway Blasters LLC',
     description:
       'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
     type: 'website',
@@ -29,11 +29,19 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title:
-      'Expert Window Cleaning Services in Orange, Riverside, and LA | Driveway Blasters LLC',
+      'Expert Window Cleaning in Orange County | Driveway Blasters LLC',
     description:
       'Driveway Blasters LLC offers expert window cleaning services in Orange, Riverside, and Los Angeles Counties. Our eco-friendly methods ensure streak-free, spotless windows that enhance your property’s appearance. Get a free quote today!',
     images: ['https://www.drivewayblasters.com/opengraph-image.png'],
   },
+  keywords: [
+    'window cleaning',
+    'window cleaning services',
+    'window cleaning near me',
+    'window cleaning in Orange County',
+    'window cleaning in Riverside County',
+    'window cleaning in Los Angeles County',
+  ],
 };
 
 const WindowClarity: React.FC = () => {
