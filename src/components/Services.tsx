@@ -82,7 +82,7 @@ function Services() {
   return (
     <div className="services-container mt-8" id="Services">
       <h2 className="services-h1">
-        <b>Services</b>
+        <b>Explore Our Comprehensive Exterior Cleaning Services</b>
       </h2>
       <p className="services-summary text-start px-4 ">
         Transform your home or business with our professional pressure washing &
@@ -106,7 +106,7 @@ function Services() {
             <p className="mt-2">{service.description}</p>
             <Link
               href={service.href}
-              className="button btn-primary w-100 text-center"
+              className="button btn-primary services-btn w-100 text-center"
               passHref
             >
               Learn More!

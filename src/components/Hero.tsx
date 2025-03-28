@@ -21,10 +21,7 @@ const heroData: HeroData[] = [
     id: 3,
     image: '/images/hero6.webp',
   },
-  {
-    id: 4,
-    image: '/images/hero4.jpeg',
-  },
+
   {
     id: 5,
     image: '/images/hero5.jpeg',
@@ -38,11 +35,11 @@ const heroData: HeroData[] = [
 const HeroCarousel: React.FC = () => {
   return (
     <section id="home" className="hero-block">
-      <Carousel>
+      <Carousel className="hero-carousel">
         {heroData.map((hero) => (
           <Carousel.Item key={hero.id}>
             <Image
-              className="d-block w-100"
+              className="d-block w-100 hero-carousel"
               src={hero.image}
               alt={`slide ${hero.id}`}
               width={1920}
@@ -54,20 +51,33 @@ const HeroCarousel: React.FC = () => {
         ))}
       </Carousel>
       <div className="hero-text-block">
-        <h1 className="hero-h1">Orange & Riverside County Pressure Washing</h1>
+        <h1 className="hero-h1">
+          LA, Orange, Riverside County Pressure Washing
+        </h1>
         <h2 className="hero-h2">
-          Instantly Restore The Shine With The Click of a Button!
+          Instantly restore your home's curb appeal and shine with a single
+          click. Get fast, reliable, and spotless pressure washing services in
+          seconds!
         </h2>
 
-        <div className="button-container">
-          <Link href="/contact" className="button  hero-btn">
-            Get Your Free Quote!
-          </Link>
-
-          <Link href="tel:9494843698" className="button btn-secondary hero-btn">
-            (949) 484-3698
-          </Link>
-        </div>
+        <Link href="/contact" className="button hero-btn">
+          Get A Free Quote!
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="26"
+            viewBox="0 0 20 19"
+            fill="none"
+          >
+            <path
+              d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+              stroke="currentColor"
+              stroke-width="2.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+        </Link>
         <Image
           src="/icons/arrow-64.png"
           alt="arrow"

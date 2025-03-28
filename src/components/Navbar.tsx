@@ -72,10 +72,41 @@ const Navbar: React.FC = () => {
           src={logo}
           alt="portfolio logo"
           className="logo"
-          id='logo'
+          id="logo"
           style={{ cursor: 'pointer' }}
         />
       </div>
+      <div className="navbar-desktop">
+        <Link href="/service-areas" passHref>
+          <span
+            className="navbar-desktop-content logo-text"
+            onClick={closeMenu}
+          >
+            <b>Service Areas</b>
+          </span>
+        </Link>
+
+        <Link href="/about-us" passHref>
+          <span
+            className="navbar-desktop-content logo-text"
+            onClick={closeMenu}
+          >
+            <b>Company</b>
+          </span>
+        </Link>
+
+        <Link href="/contact" passHref>
+          <span
+            className="navbar-desktop-content contact-us logo-text"
+            onClick={closeMenu}
+          >
+            <b>Contact Us</b>
+          </span>
+        </Link>
+      </div>
+
+      {/* Hamburger Menu for Mobile Devices */}
+
       <button
         className={`nav__hamburger ${navActive ? 'active' : ''}`}
         onClick={toggleNav}

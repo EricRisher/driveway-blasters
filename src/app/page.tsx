@@ -92,8 +92,8 @@ export default async function Home() {
         type="font/woff2"
       ></link>
       <Hero />
-      <WhyChooseUs />
       <Services />
+      <WhyChooseUs />
       <Testimonials />
       <Faq />
     </>
