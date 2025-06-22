@@ -58,6 +58,12 @@ const WindowClarity: React.FC = () => {
         <b>exceptional</b> cleaning without the hassle of doing it yourself.
       </p>
 
+      <div className="d-flex justify-content-center">
+        <Link href="/contact" className="button btn-primary mb-4" passHref>
+          Get Your Free Quote!
+        </Link>
+      </div>
+
       <h2 className="mb-2">
         <b>Precision Window Cleaning</b>
       </h2>
@@ -199,7 +205,6 @@ const WindowClarity: React.FC = () => {
         </Link>
       </div>
 
-      <Testimonials />
     </div>
   );
 };

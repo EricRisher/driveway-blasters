@@ -230,7 +230,6 @@ const HouseCare: React.FC = () => {
         </Link>
       </div>
 
-      <Testimonials />
     </div>
   );
 };

@@ -58,7 +58,7 @@ const DrivewayRevival: React.FC = () => {
       </p>
 
       <Image
-        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        className="d-block w-50 items-center mx-auto mb-4 rounded-3"
         src="/images/sidebysidedriveway.webp"
         alt="Professional Driveway Cleaning in Riverside County"
         width={2000}
@@ -66,9 +66,11 @@ const DrivewayRevival: React.FC = () => {
         loading="lazy"
       />
 
-      <Link href="/contact" className="button btn-primary mb-5">
-        Get Your Free Quote!
-      </Link>
+      <div className="d-flex justify-content-center">
+        <Link href="/contact" className="button btn-primary mb-4" passHref>
+          Get Your Free Quote!
+        </Link>
+      </div>
 
       <h2 className="mb-3">
         <b>Why Regular Driveway Cleaning Matters</b>
@@ -232,7 +234,6 @@ const DrivewayRevival: React.FC = () => {
         </Link>
       </div>
 
-      <Testimonials />
     </div>
   );
 };

@@ -57,9 +57,11 @@ const Gutters: React.FC = () => {
         protect your home’s foundation.
       </p>
 
-      <Link href="/contact" className="button btn-primary mb-5" passHref>
-        Get Your Free Quote!
-      </Link>
+      <div className="d-flex justify-content-center">
+        <Link href="/contact" className="button btn-primary mb-4" passHref>
+          Get Your Free Quote!
+        </Link>
+      </div>
 
       <h2 className="mb-3">
         <b>Protect Your Property with Expert Gutter Cleaning</b>
@@ -224,8 +226,6 @@ const Gutters: React.FC = () => {
           Get Your Free Quote!
         </Link>
       </div>
-
-      <Testimonials />
     </div>
   );
 };

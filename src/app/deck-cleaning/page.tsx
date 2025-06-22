@@ -48,17 +48,18 @@ const DeckRevival: React.FC = () => {
       </p>
 
       <Image
-        className="d-block w-50 items-center mx-auto mb-5 rounded-3"
+        className="d-block w-50 items-center mx-auto mb-4 rounded-3"
         src="/images/beforeafterdeck.jpg"
         alt="Professional Driveway Cleaning in Riverside County"
         width={2000}
         height={2000}
         loading="lazy"
       />
-
-      <Link href="/contact" className="button btn-primary mb-5">
-        Get Your Free Quote!
-      </Link>
+      <div className="d-flex justify-content-center">
+        <Link href="/contact" className="button btn-primary mb-4" passHref>
+          Get Your Free Quote!
+        </Link>
+      </div>
 
       <h2 className="mb-3">
         <b>The Importance of Regular Deck Cleaning</b>
@@ -228,8 +229,6 @@ const DeckRevival: React.FC = () => {
           Get Your Free Quote!
         </Link>
       </div>
-
-      <Testimonials />
     </div>
   );
 };

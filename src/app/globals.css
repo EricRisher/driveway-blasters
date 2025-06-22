@@ -68,7 +68,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 h5 {
@@ -94,13 +94,13 @@ a {
 .button {
   background-color: #4a8aea !important;
   color: white !important;
-  padding: 18px 48px !important;
+  padding: 16px 32px !important;
   border: 2px solid white !important;
   border-radius: 50px !important;
   cursor: pointer !important;
   width: max-content;
-  max-width: 80vw;
-  font-size: 28px;
+  max-width: 88vw;
+  font-size: 26px;
   margin: 0 auto !important;
   font-weight: bold;
   text-decoration: none !important;
@@ -186,7 +186,7 @@ a {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  gap: 22px;
   margin-right: 120px;
 }
 
@@ -201,7 +201,7 @@ a {
 
 .navbar-desktop-content {
   color: #f2f2f2;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .contact-us {
@@ -224,7 +224,7 @@ a {
 }
 
 .navbar-colored {
-  background-color: #102641; /* or any color you prefer */
+  background-color: #102641;
   transition: background-color 0.5s ease-in-out;
   border-radius: 0 0 10px 10px;
 }
@@ -349,8 +349,8 @@ a {
 }
 
 .hero-h1 {
-  font-size: clamp(2.2rem, 3.3vw, 8rem);
-  max-width: clamp(350px, 60vw, 2000px);
+  font-size: clamp(1.8rem, 3.7vw, 8rem);
+  max-width: clamp(320px, 60vw, 2000px);
   line-height: 105%;
   letter-spacing: -1px;
   position: static;
@@ -358,9 +358,9 @@ a {
   text-align: center;
   color: #fff;
   text-shadow:
-    4px 8px 0 #000,
-    1px 6px 0 #000,
-    6px 1px 0 #000,
+    4px 4px 0 #000,
+    1px 4px 0 #000,
+    4px 1px 0 #000,
     1px 1px 0 #000;
   font-weight: 900;
   text-wrap: wrap;
@@ -391,21 +391,22 @@ a {
     1px 1px 0 #000;
   font-weight: 800;
   height: 3em;
+  margin-bottom: 2rem;
 }
 
 .hero-btn {
-  width: clamp(260px, 40vw, 50vw);
+  width: clamp(340px, 70vw, 500px);
   display: inline-flex;
-  font-size: 3vw;
+  font-size: clamp(1rem, 1.5rem, 6rem);
   z-index: 8;
   text-align: center;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   color: #fff;
   font-weight: 800;
   height: auto;
   margin: auto;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 @keyframes in {
@@ -429,6 +430,7 @@ a {
 .hero-btn svg {
   width: 30px;
   animation: in 0.3s forwards;
+  margin-left: 20px;
 }
 
 .hero-btn:hover svg {
@@ -466,7 +468,7 @@ a {
 .button-container {
   display: flex;
   align-items: start;
-  gap: 4rem; /* Adds space between the buttons */
+  gap: 4rem;
   margin: 0 0 0 2rem;
 }
 
@@ -544,7 +546,6 @@ a {
   justify-content: flex-start;
   align-items: center;
   padding: 50px;
-  border-bottom: #7c99ff 3px dotted;
   transition: all 2s ease;
 }
 
@@ -666,12 +667,17 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   width: 98%;
   height: 100%;
   margin: auto;
   padding-top: 90px;
   overflow: hidden;
+}
+
+.services-wrapper {
+  width: clamp(340px, 75%, 1200px);
+  margin-left: 2em;
 }
 
 .services {
@@ -683,6 +689,10 @@ a {
   height: 100%;
 }
 
+.services-h1 {
+  text-align: left;
+}
+
 .services-btn {
   border-radius: 16px !important;
 }
@@ -690,7 +700,7 @@ a {
 .service {
   display: grid;
   place-items: center;
-  width: 380px;
+  width: 360px;
   max-width: 90%;
   height: max-content;
   margin: 20px;
@@ -924,7 +934,7 @@ a {
   width: 40px;
   height: 40px;
   border: 5px solid rgba(0, 0, 0, 0.1);
-  border-top-color: #3498db; /* ✅ Blue spinner */
+  border-top-color: #3498db;
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: 5px;
@@ -1129,8 +1139,154 @@ a {
   max-height: 250px;
 }
 
+/* Blog Styling */
+.blog-post-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+}
+
+.blog-article {
+  margin-bottom: 4rem;
+}
+
+.blog-article ul {
+  margin: 20px 0;
+}
+
+.blog-faq > li {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  
+}
+
+.blog-hero-image {
+  width: 100%;
+  height: 30vh;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  background: url(/images/lakewood.webp);
+}
+
+.image-caption > p {
+  width: 30vw;
+}
+
+.blog-h1,
+.blog-h1 > span {
+  font-size: clamp(1.7rem, 3.7vw, 8rem);
+  width: 96vw;
+  line-height: 105%;
+  letter-spacing: 0px;
+  transform: translateY(12vh);
+  z-index: 8;
+  text-align: start;
+  color: #fff;
+  text-shadow: 4px 4px #000;
+  font-weight: 800;
+  margin: auto;
+}
+
+.blog-h1 span {
+  color: #4a8aea;
+  font-weight: bold;
+}
+
+.blog-post-title {
+  font-size: 1.4rem;
+  text-align: start;
+  font-weight: bold;
+}
+
+.blog-post-info {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  color: #666;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-right: 8px;
+}
+
+.blog-post-info > h4 {
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.blog-post-excerpt {
+  font-size: 1rem;
+}
+
+.blog-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.blog-post {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.blog-post-title {
+  margin-bottom: 2px;
+}
+
+.blog-post-image {
+  max-width: 250px;
+  height: auto;
+  margin-right: 20px;
+  aspect-ratio: 1/1;
+}
+
+.blog-image {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.blog-post-link {
+  text-decoration: none;
+  color: #f3f3f3;
+  background-color: #102641;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-desktop {
+    opacity: 1;
+  }
+}
+
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+  .navbar-desktop {
+    opacity: 0;
+  }
   .contact-button {
     width: 150px;
     font-size: 20px;

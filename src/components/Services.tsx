@@ -81,14 +81,21 @@ function Services() {
 
   return (
     <div className="services-container mt-8" id="Services">
-      <h2 className="services-h1">
-        <b>Explore Our Comprehensive Exterior Cleaning Services</b>
-      </h2>
-      <p className="services-summary text-start px-4 ">
-        Transform your home or business with our professional pressure washing &
-        soft washing services. We eliminate dirt, grime, and stains, restoring
-        your property's beauty while protecting its value.
-      </p>
+      <div className="services-wrapper">
+        <h2 className="services-h1">
+          <b>Explore Our Comprehensive Exterior Cleaning Services</b>
+        </h2>
+        <p className="services-summary text-start">
+          At Driveway Blasters LLC, we revitalize residential and commercial
+          properties across Orange, Riverside, and Los Angeles Counties. Our
+          expert exterior cleaning services include pressure washing, soft
+          washing, window cleaning, and more. From oil-stained driveways to
+          moss-covered roofs and dusty solar panels, we remove dirt, grime, and
+          buildup that boosts your curb appeal and extends the life of your
+          surfaces.
+        </p>
+      </div>
+
       <div className="services">
         {services.map((service, index) => (
           <section className="service" key={index}>

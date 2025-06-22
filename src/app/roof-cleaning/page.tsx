@@ -219,7 +219,6 @@ const RoofCare: React.FC = () => {
         </Link>
       </div>
 
-      <Testimonials />
     </div>
   );
 };

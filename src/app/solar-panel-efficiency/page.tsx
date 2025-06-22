@@ -58,6 +58,12 @@ const SolarPanelCleaning: React.FC = () => {
         solar energy production.
       </p>
 
+      <div className="d-flex justify-content-center">
+        <Link href="/contact" className="button btn-primary mb-4" passHref>
+          Get Your Free Quote!
+        </Link>
+      </div>
+
       <h2 className="mb-3">
         <b>Maximize Solar Panel Efficiency</b>
       </h2>
@@ -182,8 +188,6 @@ const SolarPanelCleaning: React.FC = () => {
           Get Your Free Quote!
         </Link>
       </div>
-
-      <Testimonials />
     </div>
   );
 };

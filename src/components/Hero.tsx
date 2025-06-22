@@ -52,7 +52,7 @@ const HeroCarousel: React.FC = () => {
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          LA, Orange, Riverside County Pressure Washing
+          LA, Orange & Riverside County Pressure Washing
         </h1>
         <h2 className="hero-h2">
           Instantly restore your home's curb appeal and shine with a single
@@ -72,9 +72,9 @@ const HeroCarousel: React.FC = () => {
             <path
               d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
               stroke="currentColor"
-              stroke-width="2.66667"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeWidth="2.66667"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></path>
           </svg>
         </Link>

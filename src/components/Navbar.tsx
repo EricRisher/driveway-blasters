@@ -77,6 +77,14 @@ const Navbar: React.FC = () => {
         />
       </div>
       <div className="navbar-desktop">
+        <Link href="/blog" passHref>
+          <span
+            className="navbar-desktop-content logo-text"
+            onClick={closeMenu}
+          >
+            <b>Projects</b>
+          </span>
+        </Link>
         <Link href="/service-areas" passHref>
           <span
             className="navbar-desktop-content logo-text"
