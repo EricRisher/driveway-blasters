@@ -14,7 +14,7 @@ function Blog1() {
         <p>
           A clean driveway not only enhances your home's curb appeal but also
           contributes significantly to its overall value. Yet, many homeowners
-          in Los Angeles underestimate just how transformative professional
+          in Orange County underestimate just how transformative professional
           driveway cleaning services can be. In this article, we'll showcase
           real examples of driveway cleaning before and after transformations,
           highlighting the dramatic results and explaining why professional
@@ -23,7 +23,7 @@ function Blog1() {
         <article className="blog-article">
           <h2>Why Driveway Cleaning Matters</h2>
           <p>
-            Los Angeles driveways frequently suffer from exposure to harsh
+            Orange County driveways frequently suffer from exposure to harsh
             elements such as UV rays, dirt, oil stains, and grime. Over time,
             these elements create unsightly appearances, reducing the aesthetic
             and potentially damaging the concrete or asphalt surface. Regular
@@ -146,7 +146,7 @@ function Blog1() {
         <section className="blog-article">
           <h3>The Professional Advantage</h3>
           <p>
-            Hiring a professional driveway cleaning service in Los Angeles
+            Hiring a professional driveway cleaning service in Orange County
             offers several advantages. Professionals have access to high-grade
             equipment, environmentally friendly cleaning solutions, and the
             expertise needed to handle various types of stains and surfaces.

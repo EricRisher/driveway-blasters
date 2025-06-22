@@ -3,6 +3,15 @@ import BlogHero from '@/components/BlogHero';
 
 const posts = [
   {
+    title: 'How Much Does It Cost to Pressure Wash Your Driveway?',
+    date: 'June 22, 2025',
+    city: 'Corona, CA',
+    excerpt:
+      'Wondering about the cost of pressure washing your driveway? In this blog post, we break down the factors that influence the price, including size, condition, and location. Get a clear understanding of what to expect when budgeting for this essential home maintenance service.',
+    image: '/images/drivewayclean-blog.webp',
+    link: '/blog/cost-to-pressure-wash-driveway',
+  },
+  {
     title:
       'Stunning Pressure Washing Before and After Transformations Near You!',
     date: 'September 10, 2024',
@@ -10,8 +19,8 @@ const posts = [
     excerpt:
       "Explore the stunning transformations achieved through our driveway cleaning services. See how we turn grimy, stained driveways into spotless surfaces that enhance your home's curb appeal.",
     image: '/images/beforeafterconcrete.jpeg',
-    link: '/blog/driveway-cleaning-before-after-transformations-los-angeles',
-  }
+    link: '/blog/driveway-cleaning-before-after-transformations-orange-county',
+  },
 ];
 
 const wipPosts = [
@@ -61,15 +70,6 @@ const wipPosts = [
     link: '/blog/business-pressure-washing',
   },
   {
-    title: 'How Much Does It Cost to Pressure Wash Your Driveway?',
-    date: 'October 10, 2023',
-    city: 'Los Angeles, CA',
-    excerpt:
-      'Wondering about the cost of pressure washing your driveway? In this blog post, we break down the factors that influence the price, including size, condition, and location. Get a clear understanding of what to expect when budgeting for this essential home maintenance service.',
-    image: '/images/driveway-cost.jpg',
-    link: '/blog/cost-to-pressure-wash-driveway',
-  },
-  {
     title: 'The Ultimate Guide to Pressure Washing Your Home',
     date: 'October 10, 2023',
     city: 'Los Angeles, CA',
@@ -106,7 +106,6 @@ function BlogPage() {
           Project <span>Showcase</span>{' '}
         </h1>
       </div>
-
 
       <section className="blog-content">
         <h2>Out Latest Projects</h2>

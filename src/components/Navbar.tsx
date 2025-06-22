@@ -141,6 +141,13 @@ const Navbar: React.FC = () => {
             </Link>
           </li>
           <li>
+            <Link href="/blog" passHref>
+              <span className="navbar--content" onClick={closeMenu}>
+                Projects
+              </span>
+            </Link>
+          </li>
+          <li>
             <Link href="/contact" passHref>
               <span className="navbar--content" onClick={closeMenu}>
                 Contact Us
