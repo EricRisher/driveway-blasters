@@ -83,16 +83,17 @@ function Services() {
     <div className="services-container mt-8" id="Services">
       <div className="services-wrapper">
         <h2 className="services-h1">
-          <b>Explore Our Comprehensive Exterior Cleaning Services</b>
+          <b>
+            The Best Exterior Cleaning Service in LA, Orange & Riverside County
+          </b>
         </h2>
         <p className="services-summary text-start">
-          At Driveway Blasters LLC, we revitalize residential and commercial
-          properties across Orange, Riverside, and Los Angeles Counties. Our
+          At Driveway Blasters LLC, we help our residential and commercial
+          customers across Orange, Riverside, and Los Angeles Counties. Our
           expert exterior cleaning services include pressure washing, soft
           washing, window cleaning, and more. From oil-stained driveways to
-          moss-covered roofs and dusty solar panels, we remove dirt, grime, and
-          buildup that boosts your curb appeal and extends the life of your
-          surfaces.
+          moss-covered roofs and dusty solar panels, we guarantee you'll love
+          our results!
         </p>
       </div>
 

@@ -85,12 +85,6 @@ export default async function Home() {
           }),
         }}
       />
-      <link
-        rel="preload"
-        href="/public/fonts/Oswald-VariableFont_wght.ttf"
-        as="font"
-        type="font/woff2"
-      ></link>
       <Hero />
       <Services />
       <WhyChooseUs />

@@ -1279,6 +1279,7 @@ a {
 @media screen and (min-width: 1024px) {
   .navbar-desktop {
     opacity: 1;
+    display: flex;
   }
 }
 
@@ -1286,6 +1287,7 @@ a {
 @media screen and (max-width: 1023px) {
   .navbar-desktop {
     opacity: 0;
+    display: none;
   }
   .contact-button {
     width: 150px;
