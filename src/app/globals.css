@@ -1150,6 +1150,10 @@ a {
   text-align: center;
 }
 
+.blog-post {
+  gap: 20px;
+}
+
 .blog-article {
   margin-bottom: 4rem;
 }
@@ -1240,9 +1244,16 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: start;
+  height: 100%;
   width: 100%;
   padding: 20px;
   border-bottom: 1px solid #ccc;
+}
+
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .blog-post-title {
@@ -1252,7 +1263,6 @@ a {
 .blog-post-image {
   max-width: 250px;
   height: auto;
-  margin-right: 20px;
   aspect-ratio: 1/1;
 }
 
@@ -1290,6 +1300,7 @@ a {
     opacity: 0;
     display: none;
   }
+
   .contact-button {
     width: 150px;
     font-size: 20px;
@@ -1360,6 +1371,16 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+  .blog-post {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .blog-post-image {
+    max-width: 60%;
+    ;
+  }
   .contact-button {
     font-size: 16px;
     padding: 0;

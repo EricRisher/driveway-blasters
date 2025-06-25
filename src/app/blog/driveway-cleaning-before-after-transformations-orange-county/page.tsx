@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 function Blog1() {
   return (
@@ -162,7 +163,11 @@ function Blog1() {
             button below to contact our professional pressure washing team to
             schedule your appointment today.
           </p>
-          <button className="button btn-primary">Get a Free Quote</button>
+          <div className="d-flex justify-content-center">
+            <Link href="/contact" className="button btn-primary mb-4" passHref>
+              Get Your Free Quote!
+            </Link>
+          </div>{' '}
         </div>
       </section>
     </div>
