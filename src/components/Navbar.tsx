@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
           </span>
         </Link>
 
-        <Link href="/areas" passHref>
+        <Link href="/service-areas" passHref>
           <span
             className="navbar-desktop-content logo-text"
             onClick={closeMenu}
