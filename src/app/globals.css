@@ -493,39 +493,62 @@ a {
 
 .testimonial-block {
   border-top: #7c99ff 3px dotted;
-  width: 90vw;
+  border-bottom: #7c99ff 3px dotted;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   flex-direction: column;
-  padding: 10px;
   margin-top: 5vh;
   margin-bottom: 5vh;
   transform: translateY(-2vh);
 }
 
-.testimonial-card {
+.testimonial-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 94%;
+  height: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.testimonial {
   background-color: var(--light-color);
+  display: flex;
+  width: 400px;
   border-radius: 10px;
+  flex-wrap: wrap;
+  flex: 1 0 400px;
   padding: 10px;
   margin: 10px;
   box-shadow: 10px 10px 1px rgb(41, 41, 41);
   height: max-content;
 }
 
-.testimonial-description {
-  font-size: 1.2em;
-  color: #333;
-  line-height: 28px;
-  letter-spacing: 1px;
+.testimonial-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
 }
 
-.testimonial-name {
-  font-size: 1.2em;
-  color: #333;
-  line-height: 28px;
-  letter-spacing: 2px;
+.testimonial-button-container button {
+  border: #7c99ff 2px solid;
+  color: #0e33bb;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
 
 /* Service Area Styling */
