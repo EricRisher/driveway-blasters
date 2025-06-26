@@ -10,8 +10,8 @@ const services = [
     title: 'Driveway Cleaning',
     description:
       "Tired of stubborn stains and a worn-out driveway? Our professional pressure washing restores your driveway's original look, removing grime, oil stains, and dirt quickly. Guaranteed results that boost your home's curb appeal and property value instantly.",
-    before: '/images/drivewaydirty.jpg',
-    after: '/images/drivewayclean.jpg',
+    before: '/images/drivewaydirty.webp',
+    after: '/images/drivewayclean.webp',
     href: '/driveway-revival',
   },
   {
