@@ -25,7 +25,8 @@
     "react-compare-image": "^3.4.0",
     "react-dom": "^18",
     "react-google-recaptcha": "^3.1.0",
-    "react-select": "^5.8.0"
+    "react-select": "^5.8.0",
+    "sharp": "^0.34.2"
   },
   "devDependencies": {
     "@types/node": "^20.14.2",
