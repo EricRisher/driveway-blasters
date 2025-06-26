@@ -20,9 +20,9 @@ function Testimonials() {
             minutes and was able to do the job the next day. Service and quality
             are great. I would recommend to anyone that needs this service.
           </p>
-          <span className="flex flex-row items-center gap-2">
+          <span className="flex flex-row items-center gap-2 mt-3">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
-            by <b>Patrick J.</b> in Corona, CA
+            by <b>Patrick J.</b> Corona, CA
           </span>
         </article>
 
@@ -33,9 +33,9 @@ function Testimonials() {
             work, you can't even tell there ever was any. Will definitely be
             recommending them to others.
           </p>
-          <span className="flex flex-row items-center gap-2">
+          <span className="flex flex-row items-center gap-2 mt-3">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
-            by <b>David M.</b> in Claremont, CA
+            by <b>David M.</b> Claremont, CA
           </span>
         </article>
         <article className="testimonial">
@@ -49,9 +49,9 @@ function Testimonials() {
             stains can hardly be noticed. They make up a good team, they are
             definitely worth trying them out!
           </p>
-          <span className="flex flex-row items-center gap-2">
+          <span className="flex flex-row items-center gap-2 mt-3">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
-            by <b>Ahmed Z.</b> in Irvine, CA
+            by <b>Ahmed Z.</b> Irvine, CA
           </span>
         </article>
       </section>
