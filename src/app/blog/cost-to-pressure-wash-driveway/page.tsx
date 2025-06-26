@@ -2,6 +2,54 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'How Much Does It Cost to Pressure Wash My Driveway? | Driveway Blasters',
+  description:
+    'Discover the cost of pressure washing your driveway with Driveway Blasters. Get transparent pricing, expert service, and a clean driveway that enhances your home’s curb appeal.',
+  openGraph: {
+    title: 'How Much Does It Cost to Pressure Wash My Driveway? | Driveway Blasters',
+    description:
+      'Discover the cost of pressure washing your driveway with Driveway Blasters. Get transparent pricing, expert service, and a clean driveway that enhances your home’s curb appeal.',
+    type: 'article',
+    locale: 'en_US',
+    url: 'https://www.drivewayblaster.com/blog/cost-to-pressure-wash-driveway',
+    siteName: 'Driveway Blasters',
+    images: [
+      {
+        url: '/images/drivewayclean-blog.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters - Cost to Pressure Wash Driveway',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'How Much Does It Cost to Pressure Wash My Driveway? | Driveway Blasters',
+    description:
+      'Discover the cost of pressure washing your driveway with Driveway Blasters. Get transparent pricing, expert service, and a clean driveway that enhances your home’s curb appeal.',
+    images: ['/images/drivewayclean-blog.webp'],
+  },
+  keywords: [
+    'pressure washing cost',
+    'driveway cleaning price',
+    'professional pressure washing',
+    'driveway maintenance',
+    'driveway pressure washing',
+    'driveway cleaning services',
+    'cost to pressure wash driveway',
+    'driveway cleaning Corona CA',
+    'driveway pressure washing Corona',
+    'Driveway Blasters',
+    'pressure washing services',
+    'driveway cleaning experts',
+    'driveway cleaning pricing',
+    'driveway pressure washing cost',
+    'driveway cleaning estimate',
+  ],
+};
 
 function Blog1() {
   return (

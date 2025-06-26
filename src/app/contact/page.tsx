@@ -6,6 +6,52 @@ import emailjs from '@emailjs/browser';
 import Select from 'react-select';
 import Head from 'next/head';
 import axios from 'axios';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Driveway Blasters LLC - Contact Us',
+  description:
+    'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
+  openGraph: {
+    title: 'Driveway Blasters LLC - Contact Us',
+    description:
+      'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblaster.com/contact',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Driveway Blasters LLC - Contact Us',
+    description:
+      'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
+  },
+  keywords: [
+    'contact us',
+    'pressure washing contact',
+    'get a quote',
+    'pressure washing services',
+    'Driveway Blasters LLC contact',
+    'free quote pressure washing',
+    'pressure washing Orange County',
+    'pressure washing Riverside County',
+    'pressure washing Los Angeles County',
+    'pressure washing near me',
+    'pressure washing customer service',
+    'pressure washing inquiries',
+    'pressure washing support',
+  ],
+};
 
 const ContactMe: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);

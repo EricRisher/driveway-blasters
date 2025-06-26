@@ -1,6 +1,57 @@
 import React from 'react';
 import Link from 'next/link';
 import Testimonials from '@/components/Testimonials';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Stunning Pressure Washing Before and After Transformations in Orange County | Driveway Blasters LLC',
+  description:
+    'Explore stunning before and after transformations of driveway cleaning services in Orange County. See how Driveway Blasters LLC revitalizes driveways with professional pressure washing.',
+  openGraph: {
+    title: 'Stunning Pressure Washing Before and After Transformations in Orange County | Driveway Blasters LLC',
+    description:
+      'Explore stunning before and after transformations of driveway cleaning services in Orange County. See how Driveway Blasters LLC revitalizes driveways with professional pressure washing.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblaster.com/blog/driveway-cleaning-before-after-transformations-orange-county',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Stunning Pressure Washing Before and After Transformations in Orange County | Driveway Blasters LLC',
+    description:
+      'Explore stunning before and after transformations of driveway cleaning services in Orange County. See how Driveway Blasters LLC revitalizes driveways with professional pressure washing.',
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
+  },
+  keywords: [
+    'pressure washing',
+    'driveway cleaning',
+    'before and after transformations',
+    'Orange County pressure washing',
+    'Driveway Blasters LLC',
+    'driveway cleaning services',
+    'professional driveway cleaning',
+    'driveway pressure washing',
+    'driveway cleaning before and after',
+    'driveway cleaning transformations',
+    'driveway cleaning Orange County',
+    'driveway cleaning services Orange County',
+    'driveway pressure washing Orange County',
+    'driveway cleaning professionals',
+    'driveway cleaning experts',
+    'driveway cleaning results',
+    'driveway cleaning testimonials',
+    'driveway cleaning reviews',
+  ],
+};
 
 function Blog1() {
   return (

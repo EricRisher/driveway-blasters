@@ -1,6 +1,47 @@
 import React from 'react';
 import BlogHero from '@/components/BlogHero';
 import Link from 'next/link';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Project Showcase Blog | Driveway Blasters LLC',
+  description:
+    'Explore our project showcase blog to see stunning before and after transformations of pressure washing services. From driveways to roofs, discover how Driveway Blasters LLC revitalizes surfaces across Orange County, Los Angeles, and Riverside.',
+  openGraph: {
+    title: 'Project Showcase Blog | Driveway Blasters LLC',
+    description:
+      'Explore our project showcase blog to see stunning before and after transformations of pressure washing services. From driveways to roofs, discover how Driveway Blasters LLC revitalizes surfaces across Orange County, Los Angeles, and Riverside.',
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://www.drivewayblaster.com/blog',
+    siteName: 'Driveway Blasters LLC',
+    images: [
+      {
+        url: 'https://www.drivewayblaster.com/opengraph-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Driveway Blasters LLC',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Project Showcase Blog | Driveway Blasters LLC',
+    description:
+      'Explore our project showcase blog to see stunning before and after transformations of pressure washing services. From driveways to roofs, discover how Driveway Blasters LLC revitalizes surfaces across Orange County, Los Angeles, and Riverside.',
+    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
+  },
+  keywords: [
+    'project showcase',
+    'pressure washing blog',
+    'before and after transformations',
+    'driveway cleaning',
+    'roof cleaning',
+    'concrete cleaning',
+    'pressure washing services',
+    'Driveway Blasters LLC',
+  ],
+}
 
 const posts = [
   {
@@ -119,7 +160,7 @@ function BlogPage() {
                 alt={post.title}
                 className="blog-post-image mr-4"
               ></img>
-              <article className='flex flex-col justify-between pb-4'>
+              <article className="flex flex-col justify-between pb-4">
                 <h3 className="blog-post-title">{post.title}</h3>
                 <span className="blog-post-info">
                   <h4 className="blog-post-date">{post.date}</h4>
