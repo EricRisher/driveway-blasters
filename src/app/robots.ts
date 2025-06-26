@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://www.drivewayblasters.com/sitemap.xml',
+        sitemap: 'https://www.drivewayblasters.com/sitemap-0.xml',
     }
 }

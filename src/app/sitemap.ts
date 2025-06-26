@@ -12,6 +12,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     '/contact',
     '/windows-solar-panels',
     '/driveway-deck-revival',
+    '/blog',
+    '/blog/cost-to-pressure-wash-driveway',
+    '/blog/stunning-pressure-washing-transformations',
+    
   ];
 
   const sitemapEntries = routes.map((route) => ({
