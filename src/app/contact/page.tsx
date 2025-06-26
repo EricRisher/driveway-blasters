@@ -8,51 +8,6 @@ import Head from 'next/head';
 import axios from 'axios';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Driveway Blasters LLC - Contact Us',
-  description:
-    'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
-  openGraph: {
-    title: 'Driveway Blasters LLC - Contact Us',
-    description:
-      'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://www.drivewayblaster.com/contact',
-    siteName: 'Driveway Blasters LLC',
-    images: [
-      {
-        url: 'https://www.drivewayblaster.com/opengraph-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Driveway Blasters LLC',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Driveway Blasters LLC - Contact Us',
-    description:
-      'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
-    images: ['https://www.drivewayblaster.com/opengraph-image.png'],
-  },
-  keywords: [
-    'contact us',
-    'pressure washing contact',
-    'get a quote',
-    'pressure washing services',
-    'Driveway Blasters LLC contact',
-    'free quote pressure washing',
-    'pressure washing Orange County',
-    'pressure washing Riverside County',
-    'pressure washing Los Angeles County',
-    'pressure washing near me',
-    'pressure washing customer service',
-    'pressure washing inquiries',
-    'pressure washing support',
-  ],
-};
-
 const ContactMe: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [selectedOptions, setSelectedOptions] = useState<
@@ -71,25 +26,6 @@ const ContactMe: React.FC = () => {
   const handleSelectChange = (selected: any) => {
     setSelectedOptions(selected);
   };
-
-  useEffect(() => {
-    document.title = 'Driveway Blasters LLC - Contact Us';
-
-    // Set the meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        'content',
-        'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!',
-      );
-    } else {
-      const newMetaDescription = document.createElement('meta');
-      newMetaDescription.name = 'description';
-      newMetaDescription.content =
-        'Get in touch with Driveway Blasters LLC for all your pressure washing needs. Contact us for a free quote today!';
-      document.head.appendChild(newMetaDescription);
-    }
-  }, []);
 
   const options = [
     { value: 'driveway-cleaning', label: 'Driveway Cleaning' },
@@ -190,67 +126,66 @@ const ContactMe: React.FC = () => {
     setIsUploading(false); // ✅ Hide loader after all uploads complete
   };
 
-const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
-  e.preventDefault();
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
 
-  if (!recaptchaToken) {
-    alert('Please complete the reCAPTCHA before submitting.');
-    return;
-  }
-
-  console.log('📩 Preparing Email...');
-
-  if (!form.current) {
-    console.error('❌ Form reference is null.');
-    return;
-  }
-
-  // ✅ Ensure correct type when accessing form fields
-  const getInputValue = (name: string) => {
-    const input = form.current?.elements.namedItem(
-      name,
-    ) as HTMLInputElement | null;
-    return input?.value || ''; // Return value or empty string to avoid undefined
-  };
-
-  const emailParams = {
-    name: getInputValue('name'),
-    email: getInputValue('email'),
-    number: getInputValue('number'),
-    address: getInputValue('address'),
-    services: selectedOptions.map((option) => option.label).join(', '),
-    service_date: getInputValue('service-date'),
-    message: getInputValue('message'),
-    attachments: fileBase64List
-      .map(
-        (url) =>
-          `<img src="${url}" alt="Uploaded Image" style="max-width: 500px; height: auto; border-radius: 8px;"/>`,
-      )
-      .join('<br/>'),
-    'g-recaptcha-response': recaptchaToken,
-  };
-
-  console.log('🚀 Sending Email with Data:', emailParams);
-
-  try {
-    const response = await emailjs.send(
-      'service_qhq2uzo',
-      'template_uw8hc8c',
-      emailParams,
-      '2f33Ymo02d8DFKvSh',
-    );
-
-    if (response.status === 200) {
-      alert('✅ Message sent successfully!');
-    } else {
-      alert('❌ Failed to send the message. Please try again later.');
+    if (!recaptchaToken) {
+      alert('Please complete the reCAPTCHA before submitting.');
+      return;
     }
-  } catch (error) {
-    console.error('❌ Email send error:', error);
-    alert('❌ Failed to send the message. Please refresh and try again.');
-  }
-};
 
+    console.log('📩 Preparing Email...');
+
+    if (!form.current) {
+      console.error('❌ Form reference is null.');
+      return;
+    }
+
+    // ✅ Ensure correct type when accessing form fields
+    const getInputValue = (name: string) => {
+      const input = form.current?.elements.namedItem(
+        name,
+      ) as HTMLInputElement | null;
+      return input?.value || ''; // Return value or empty string to avoid undefined
+    };
+
+    const emailParams = {
+      name: getInputValue('name'),
+      email: getInputValue('email'),
+      number: getInputValue('number'),
+      address: getInputValue('address'),
+      services: selectedOptions.map((option) => option.label).join(', '),
+      service_date: getInputValue('service-date'),
+      message: getInputValue('message'),
+      attachments: fileBase64List
+        .map(
+          (url) =>
+            `<img src="${url}" alt="Uploaded Image" style="max-width: 500px; height: auto; border-radius: 8px;"/>`,
+        )
+        .join('<br/>'),
+      'g-recaptcha-response': recaptchaToken,
+    };
+
+    console.log('🚀 Sending Email with Data:', emailParams);
+
+    try {
+      const response = await emailjs.send(
+        'service_qhq2uzo',
+        'template_uw8hc8c',
+        emailParams,
+        '2f33Ymo02d8DFKvSh',
+      );
+
+      if (response.status === 200) {
+        alert('✅ Message sent successfully!');
+      } else {
+        alert('❌ Failed to send the message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('❌ Email send error:', error);
+      alert('❌ Failed to send the message. Please refresh and try again.');
+    }
+  };
 
   return (
     <section id="Contact" className="contact--section">
@@ -275,7 +210,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
             <b>Eric: </b> (949) 484-3698 <br />
             <b>Jeremy:</b> (949) 540-8402
           </p>
-          <h4 className='mt-3'>
+          <h4 className="mt-3">
             <b>Or fill out the form below:</b>
           </h4>
         </div>
