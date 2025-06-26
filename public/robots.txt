@@ -6,4 +6,4 @@ Allow: /
 Host: https://www.drivewayblaster.com
 
 # Sitemaps
-Sitemap: https://www.drivewayblaster.com/sitemap.xml
+Sitemap: https://www.drivewayblaster.com/sitemap-0.xml
