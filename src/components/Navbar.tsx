@@ -77,20 +77,68 @@ const Navbar: React.FC = () => {
         />
       </div>
       <div className="navbar-desktop">
+        <span onClick={handleMenu} className="">
+          <div className="navbar-desktop-content cursor-pointer">
+            <b>Services</b>{' '}
+            <ExpandMoreIcon
+              className={isOpen ? 'icon-rotate service-svg' : 'service-svg'}
+            />
+          </div>
+          <Menu
+            id="services-menu"
+            anchorEl={anchorEl}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={closeMenu}>
+              <Link href="/driveway-revival" passHref>
+                {' '}
+                <b>Driveway Cleaning</b>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href="/roof-cleaning" passHref>
+                <b>Roof Cleaning</b>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href="/deck-cleaning" passHref>
+                {' '}
+                <b>Deck Cleaning</b>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href="/exterior-house-washing" passHref>
+                <b>House Washing</b>
+              </Link>
+            </MenuItem>
+
+            <MenuItem onClick={closeMenu}>
+              <Link href="/window-clarity" passHref>
+                {' '}
+                <b>Window Cleaning</b>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href="/solar-panel-efficiency" passHref>
+                {' '}
+                <b>Solar Panel Cleaning</b>
+              </Link>
+            </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href="/gutter-cleaning" passHref>
+                {' '}
+                <b>Gutter Cleaning</b>
+              </Link>
+            </MenuItem>
+          </Menu>
+        </span>
         <Link href="/blog" passHref>
           <span
             className="navbar-desktop-content logo-text"
             onClick={closeMenu}
           >
             <b>Projects</b>
-          </span>
-        </Link>
-        <Link href="/service-areas" passHref>
-          <span
-            className="navbar-desktop-content logo-text"
-            onClick={closeMenu}
-          >
-            <b>Service Areas</b>
           </span>
         </Link>
 
@@ -173,12 +221,16 @@ const Navbar: React.FC = () => {
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleClose}
-              MenuListProps={{ onMouseLeave: handleClose }}
             >
               <MenuItem onClick={closeMenu}>
                 <Link href="/driveway-revival" passHref>
                   {' '}
-                  <b>Driveway Revival</b>
+                  <b>Driveway Cleaning</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href="/roof-cleaning" passHref>
+                  <b>Roof Cleaning</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
@@ -189,24 +241,20 @@ const Navbar: React.FC = () => {
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link href="/exterior-house-washing" passHref>
-                  <b>Exterior House Washing</b>
+                  <b>House Washing</b>
                 </Link>
               </MenuItem>
-              <MenuItem onClick={closeMenu}>
-                <Link href="/roof-cleaning" passHref>
-                  <b>Roof Cleaning</b>
-                </Link>
-              </MenuItem>
+
               <MenuItem onClick={closeMenu}>
                 <Link href="/window-clarity" passHref>
                   {' '}
-                  <b>Window Clarity</b>
+                  <b>Window Cleaning</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>
                 <Link href="/solar-panel-efficiency" passHref>
                   {' '}
-                  <b>Solar Panel Efficiency</b>
+                  <b>Solar Panel Cleaning</b>
                 </Link>
               </MenuItem>
               <MenuItem onClick={closeMenu}>

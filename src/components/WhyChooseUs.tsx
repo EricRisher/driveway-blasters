@@ -93,7 +93,7 @@ function WhyChooseUs() {
           </p>
           <Link
             href="/contact"
-            className="button btn-primary mt-3 mb-4"
+            className="button btn-primary mt-3 mb-4 m-auto"
             passHref
           >
             Get Your Free Quote!

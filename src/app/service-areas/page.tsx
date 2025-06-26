@@ -114,7 +114,7 @@ const Locations: React.FC = () => {
             className="service-area-bg-img"
             placeholder="blur"
           />
-          <div className="hero-text-block">
+          <div className="hero-text-block-services">
             <h1 className="service-area-h1 text-center m-auto">
               Areas We Serve
             </h1>
@@ -133,7 +133,7 @@ const Locations: React.FC = () => {
         <article className="service-area-article">
           {/* Orange County Section */}
           <div className="service-areas">
-            <h3 className="service-counties-h3 mt-3 text-center">
+            <h3 className="service-counties-h3 mt-5 text-center">
               Pressure Washing Services in Orange County
             </h3>
             <p className="service-cities text-center m-auto">

@@ -25,7 +25,6 @@ Key features include:
 - Next.js
 - React
 - Axios
-- Sharp
 - TypeScript
 
 ## Installation

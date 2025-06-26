@@ -347,6 +347,20 @@ a {
   z-index: 2;
 }
 
+.hero-text-block-services {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  transform: translateY(-40vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  gap: 40px;
+  z-index: 2;
+  width: 100%;
+}
+
 .hero-h1 {
   font-size: clamp(1.8rem, 3.7vw, 8rem);
   max-width: clamp(320px, 60vw, 2000px);
@@ -656,8 +670,7 @@ a {
 .service-area-h1 {
   font-size: 7rem;
   line-height: 60px;
-  letter-spacing: 6px;
-  transform: translateY(-40vh);
+  letter-spacing: 2px;
   z-index: 8;
   text-align: center;
   color: #fff;
@@ -667,7 +680,6 @@ a {
 }
 
 .locations-btn {
-  transform: translateY(-35vh);
   z-index: 8;
 }
 
@@ -1308,13 +1320,16 @@ a {
   font-weight: bold;
   width: 150px;
   margin-top: 24px;
-
 }
 
 @media screen and (min-width: 1024px) {
   .navbar-desktop {
     opacity: 1;
     display: flex;
+    margin-right: 0;
+  }
+  .nav__hamburger {
+    display: none;
   }
 }
 
@@ -1403,7 +1418,6 @@ a {
 
   .blog-post-image {
     max-width: 60%;
-    ;
   }
   .contact-button {
     font-size: 16px;
