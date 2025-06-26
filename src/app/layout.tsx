@@ -20,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="canonical" href="https://www.drivewayblaster.com" />
+
       </head>
       <body className={`${inter.className}`}>
         <Navbar />
