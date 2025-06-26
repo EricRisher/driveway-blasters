@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Testimonials from '@/components/Testimonials';
 
 function Blog1() {
   return (
@@ -268,6 +269,7 @@ function Blog1() {
             </Link>
           </div>{' '}
         </div>
+        <Testimonials />
       </article>
     </div>
   );

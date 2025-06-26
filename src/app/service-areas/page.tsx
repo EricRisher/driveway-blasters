@@ -172,13 +172,13 @@ const Locations: React.FC = () => {
           <Testimonials />
 
           {/* Call to Action */}
-          <section className="wrapper bg-blue-300 w-full flex flex-col items-center justify-center">
-            <h2 className="text-center mt-5 font-extrabold text-6xl cta-service">
+          <section className="wrapper bg-blue-300 w-full flex flex-col items-center justify-center py-8">
+            <h2 className="text-center font-extrabold text-6xl cta-service">
               CALL FOR A FREE QUOTE FROM DRIVEWAY BLASTERS TODAY!
             </h2>
             <Link
               href="/contact"
-              className="button btn-primary mt-5 mb-4 text-center"
+              className="button btn-primary mt-6 mb-4 text-center"
             >
               Click Here to Get Started!
             </Link>

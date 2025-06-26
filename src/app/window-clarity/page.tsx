@@ -204,7 +204,7 @@ const WindowClarity: React.FC = () => {
           Get Your Free Quote!
         </Link>
       </div>
-
+      <Testimonials />
     </div>
   );
 };

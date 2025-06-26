@@ -229,6 +229,7 @@ const HouseCare: React.FC = () => {
           Get Your Free Quote!
         </Link>
       </div>
+      <Testimonials />
 
     </div>
   );

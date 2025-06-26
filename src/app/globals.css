@@ -101,7 +101,6 @@ a {
   width: max-content;
   max-width: 88vw;
   font-size: 26px;
-  margin: 0 auto !important;
   font-weight: bold;
   text-decoration: none !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.589) !important;
@@ -405,7 +404,6 @@ a {
   color: #fff;
   font-weight: 800;
   height: auto;
-  margin: auto;
   flex-wrap: nowrap;
 }
 
@@ -1308,6 +1306,9 @@ a {
   padding: 12px 24px;
   font-size: 1.2rem;
   font-weight: bold;
+  width: 150px;
+  margin-top: 24px;
+
 }
 
 @media screen and (min-width: 1024px) {

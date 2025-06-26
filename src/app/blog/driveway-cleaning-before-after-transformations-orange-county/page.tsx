@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Testimonials from '@/components/Testimonials';
 
 function Blog1() {
   return (
@@ -169,6 +170,8 @@ function Blog1() {
             </Link>
           </div>{' '}
         </div>
+        <Testimonials />
+        
       </section>
     </div>
   );

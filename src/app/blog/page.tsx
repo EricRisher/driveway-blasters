@@ -1,5 +1,6 @@
 import React from 'react';
 import BlogHero from '@/components/BlogHero';
+import Link from 'next/link';
 
 const posts = [
   {
@@ -118,7 +119,7 @@ function BlogPage() {
                 alt={post.title}
                 className="blog-post-image mr-4"
               ></img>
-              <article>
+              <article className='flex flex-col justify-between pb-4'>
                 <h3 className="blog-post-title">{post.title}</h3>
                 <span className="blog-post-info">
                   <h4 className="blog-post-date">{post.date}</h4>
@@ -132,6 +133,17 @@ function BlogPage() {
             </div>
           ))}
         </div>
+      </section>
+      <section className="wrapper bg-blue-300 w-full flex flex-col items-center justify-center py-8">
+        <h2 className="text-center font-extrabold text-6xl cta-service">
+          CALL FOR A FREE QUOTE FROM DRIVEWAY BLASTERS TODAY!
+        </h2>
+        <Link
+          href="/contact"
+          className="button btn-primary mt-6 mb-4 text-center"
+        >
+          Click Here to Get Started!
+        </Link>
       </section>
     </div>
   );

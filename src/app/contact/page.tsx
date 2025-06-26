@@ -229,7 +229,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
             <b>Eric: </b> (949) 484-3698 <br />
             <b>Jeremy:</b> (949) 540-8402
           </p>
-          <h4>
+          <h4 className='mt-3'>
             <b>Or fill out the form below:</b>
           </h4>
         </div>
@@ -380,7 +380,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
                   {isUploading && (
                     <div className="loader-container">
                       <div className="spinner"></div>
-                      <p>Uploading images, please wait...</p>
+                      <p>Uploading...</p>
                     </div>
                   )}
                 </div>
@@ -395,7 +395,7 @@ const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
           />
           <input
             type="submit"
-            value={isUploading ? 'Uploading Images...' : 'Submit'}
+            value={isUploading ? 'Uploading...' : 'Submit'}
             className={`button btn-primary form-btn align-self-center ${isUploading ? 'disabled' : ''}`}
             disabled={isUploading}
           />
