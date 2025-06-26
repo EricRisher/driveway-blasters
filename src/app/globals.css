@@ -520,7 +520,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: start;
-  width: 94%;
+  width: 96%;
   height: 100%;
   flex-wrap: wrap;
   gap: 20px;
@@ -529,13 +529,12 @@ a {
 .testimonial {
   background-color: var(--light-color);
   display: flex;
-  width: 400px;
   border-radius: 10px;
   flex-wrap: wrap;
-  flex: 1 0 400px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 10px 10px 1px rgb(41, 41, 41);
+  flex: 1 0 350px;
+  padding: 16px;
+  margin: 4px;
+  box-shadow: 6px 6px 1px rgb(41, 41, 41);
   height: max-content;
 }
 
@@ -711,6 +710,7 @@ a {
 .services-wrapper {
   width: clamp(340px, 75%, 1200px);
   margin-left: 2em;
+  margin-bottom: 20px;
 }
 
 .services {
@@ -722,8 +722,9 @@ a {
   height: 100%;
 }
 
-.services-h1 {
+.services-h2 {
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .services-btn {
@@ -1471,6 +1472,10 @@ a {
   .cta-service {
     font-size: 1.5em;
   }
+
+  .services-h2 {
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1500,7 +1505,7 @@ a {
   }
 
   .testimonial-block {
-    width: 97vw;
+    width: 98vw;
   }
 
   .testimonial-description {
@@ -1546,4 +1551,6 @@ a {
   .footer > div {
     margin-left: 14px !important;
   }
+
+
 }

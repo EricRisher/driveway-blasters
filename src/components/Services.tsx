@@ -84,7 +84,7 @@ function Services() {
   return (
     <div className="services-container mt-8" id="Services">
       <div className="services-wrapper">
-        <h2 className="services-h1">
+        <h2 className="services-h2">
           <b>
             The Best Exterior Cleaning Service in LA, Orange & Riverside County
           </b>

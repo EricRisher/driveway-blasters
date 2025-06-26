@@ -151,6 +151,15 @@ const Navbar: React.FC = () => {
           </span>
         </Link>
 
+        <Link href="/areas" passHref>
+          <span
+            className="navbar-desktop-content logo-text"
+            onClick={closeMenu}
+          >
+            <b>Areas</b>
+          </span>
+        </Link>
+
         <Link href="/contact" passHref>
           <span
             className="navbar-desktop-content contact-us logo-text"

@@ -3,11 +3,13 @@
 function Testimonials() {
   return (
     <section className="testimonial-block bg-gray-200 w-full">
-      <h3 className="mt-4 racking-widest font-light">TESTIMONIALS</h3>
-      <h2>
+      <h3 className="mt-4 racking-widest font-light text-center">
+        TESTIMONIALS
+      </h3>
+      <h2 className="text-center">
         <b>Our clients love us</b>
       </h2>
-      <h3 className="text-md mt-2 mb-6 font-light">
+      <h3 className="text-md mt-2 mb-6 font-light text-center">
         Here's some of what they had to say
       </h3>
       <section className="testimonial-wrapper">
@@ -18,7 +20,7 @@ function Testimonials() {
             minutes and was able to do the job the next day. Service and quality
             are great. I would recommend to anyone that needs this service.
           </p>
-          <span className="flex flex-row items-center gap-1">
+          <span className="flex flex-row items-center gap-2">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
             by <b>Patrick J.</b> in Corona, CA
           </span>
@@ -31,7 +33,7 @@ function Testimonials() {
             work, you can't even tell there ever was any. Will definitely be
             recommending them to others.
           </p>
-          <span className="flex flex-row items-center gap-1">
+          <span className="flex flex-row items-center gap-2">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
             by <b>David M.</b> in Claremont, CA
           </span>
@@ -47,7 +49,7 @@ function Testimonials() {
             stains can hardly be noticed. They make up a good team, they are
             definitely worth trying them out!
           </p>
-          <span className="flex flex-row items-center gap-1">
+          <span className="flex flex-row items-center gap-2">
             <img src="/icons/5-stars.png" alt="5 stars" className="w-32" />
             by <b>Ahmed Z.</b> in Irvine, CA
           </span>
@@ -55,7 +57,7 @@ function Testimonials() {
       </section>
       <div className="testimonial-button-container">
         <button
-        className='my-4'
+          className="my-4"
           onClick={() =>
             window.open('https://g.page/r/CYdH_rgxt-9hEBM/review', '_blank')
           }
