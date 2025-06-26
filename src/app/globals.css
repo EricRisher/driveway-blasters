@@ -137,6 +137,13 @@ a {
   pointer-events: none;
 }
 
+.navbar-desktop-content:hover,
+.navbar-desktop a:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  color: #cdcdcd;
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-around;

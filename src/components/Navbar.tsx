@@ -89,6 +89,7 @@ const Navbar: React.FC = () => {
             anchorEl={anchorEl}
             open={Boolean(anchorEl)}
             onClose={handleClose}
+            disableScrollLock={true}
           >
             <MenuItem onClick={closeMenu}>
               <Link href="/driveway-revival" passHref>
@@ -230,6 +231,7 @@ const Navbar: React.FC = () => {
               anchorEl={anchorEl}
               open={Boolean(anchorEl)}
               onClose={handleClose}
+              disableScrollLock={true}
             >
               <MenuItem onClick={closeMenu}>
                 <Link href="/driveway-revival" passHref>
