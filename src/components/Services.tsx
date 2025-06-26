@@ -4,50 +4,52 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import ReactCompareImage from 'react-compare-image';
 
+
 const services = [
   {
-    title: 'Driveway Revival',
+    title: 'Driveway Cleaning',
     description:
-      'Tired of stubborn stains and a worn-out driveway? Our professional pressure washing restores your driveway’s original look, removing grime, oil stains, and dirt in no time.',
-    before: '/images/drivewaybefore.webp',
-    after: '/images/drivewayafter.webp',
+      "Tired of stubborn stains and a worn-out driveway? Our professional pressure washing restores your driveway's original look, removing grime, oil stains, and dirt quickly. Guaranteed results that boost your home's curb appeal and property value instantly.",
+    before: '/images/drivewaydirty.jpg',
+    after: '/images/drivewayclean.jpg',
     href: '/driveway-revival',
-  },
-  {
-    title: 'Deck Cleaning',
-    description: `Is your deck in need of a thorough cleaning? Our team effectively removes dirt, grime, and tough stains. With our expert deck cleaning services, we'll revitalize your outdoor area, significantly improving its look and durability. Enjoy a fresh, clean deck without the hassle.`,
-    before: '/images/deckbefore.webp',
-    after: '/images/deckafter.webp',
-    href: '/deck-cleaning',
-  },
-  {
-    title: 'Exterior House Washing',
-    description:
-      'A cleaner home exterior boosts curb appeal and property value. Our soft wash method safely removes dirt, mold, and grime, making your home look fresh and well-maintained.',
-    before: '/images/housewashbefore.webp',
-    after: '/images/housewashafter.webp',
-    href: '/exterior-house-washing',
   },
   {
     title: 'Roof Cleaning',
     description:
-      'Protect your roof and extend its life! Our soft wash service eliminates moss, algae, and stains without damage, keeping your home looking great while preventing costly repairs.',
+      'Protect your roof and extend its life with professional soft wash cleaning! We safely eliminate moss, algae, and stains without damage, preventing costly repairs while enhancing your home\'s appearance.',
     before: '/images/roofbefore.webp',
     after: '/images/roofafter.webp',
     href: '/roof-cleaning',
   },
   {
-    title: 'Window Clarity',
+    title: 'Deck Cleaning',
+    description: 
+      'Transform your weathered deck into an outdoor oasis! Our professional pressure washing removes years of dirt, grime, and tough stains, restoring natural beauty and extending your deck\'s life. Enjoy your outdoor space again with guaranteed results.',
+    before: '/images/deckbefore.webp',
+    after: '/images/deckafter.webp',
+    href: '/deck-cleaning',
+  },
+  {
+    title: 'House Washing',
     description:
-      'Dirty windows ruin a view. Our streak-free window cleaning brightens your home, removes buildup, and helps glass stay cleaner longer even after rain.',
+      'Boost your home\'s curb appeal and property value with professional house washing! Our soft wash method safely removes dirt, mold, and grime without damage, making your home look fresh and well-maintained.',
+    before: '/images/housewashbefore.webp',
+    after: '/images/housewashafter.webp',
+    href: '/exterior-house-washing',
+  },
+  {
+    title: 'Window Cleaning',
+    description:
+      'Crystal-clear windows transform your home\'s appearance and let in more natural light! Our professional streak-free cleaning removes years of buildup, enhances curb appeal, and keeps glass cleaner longer with expert techniques.',
     before: '/images/windowbefore.webp',
     after: '/images/windowafter.webp',
     href: '/window-clarity',
   },
   {
-    title: 'Solar Panel Efficiency',
+    title: 'Solar Panel Cleaning',
     description:
-      'Maximize your solar power! Dust and dirt can reduce efficiency by up to 30%. Our expert cleaning keeps your panels performing at peak levels, saving you money.',
+      'Maximize your solar investment and energy savings! Dust and debris can reduce efficiency by up to 30%. Our expert cleaning keeps panels performing at peak levels, protecting your investment while cutting energy costs and maximizing ROI.',
     before: '/images/solarpanelbefore.webp',
     after: '/images/solarpanelafter.webp',
     href: '/solar-panel-efficiency',
@@ -55,7 +57,7 @@ const services = [
   {
     title: 'Gutter Cleaning',
     description:
-      'Clogged gutters lead to costly damage. We clear out leaves, debris, and buildup, keeping your gutters flowing properly and protecting your home from water damage.',
+      'Don\'t let clogged gutters cause thousands in water damage! Our professional cleaning removes leaves, debris, and buildup that threatens your foundation, roof, and landscaping. ',
     before: '/images/beforegutters.webp',
     after: '/images/aftergutters.webp',
     href: '/gutter-cleaning',

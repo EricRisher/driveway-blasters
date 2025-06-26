@@ -1,50 +1,55 @@
-"use client";
+'use client';
 
-import Carousel from "react-bootstrap/Carousel";
+import Carousel from 'react-bootstrap/Carousel';
 
 const testimonials = [
   {
     id: 1,
     description:
-      'Driveway Blasters did a great job on my two story windows. They were very professional and I would recommend them to anyone.',
-    name: 'Brando M.',
-    city: 'Laguna Hills',
+      'They did my driveway and they did a really good job. I would recommend their services!',
+    name: 'Yodi L.',
+    city: 'Long Beach, CA',
+    source: 'Yelp',
   },
   {
     id: 2,
     description:
-      'Our patio and siding look brand new! Friendly team, added to my annual maintenance list.',
-    name: 'Sarah M.',
-    city: 'Riverside',
+      "I had a tenant's car leak oil onto the driveway. i contacted Jeremy and he did an awesome job cleaning it. He returned my call within 5 minutes and was able to do the job the next day. Service and quality are great. I would recommend to anyone that needs this service.",
+    name: 'Patrick J.',
+    city: 'Corona, CA',
+    source: 'Yelp',
   },
   {
     id: 3,
     description:
-      'I had my driveway and walkway cleaned by Driveway Blasters. They did a great job and were very professional.',
-    name: 'Michael T.',
-    city: 'Irvine',
+      "Driveway Blasters did a great job on our patio! It was covered in pigeon poop after an infestation but after these guys did their work, you can't even tell there ever was any. Will definitely be recommending them to others.",
+    name: 'David M.',
+    city: 'Claremont, CA',
+    source: 'Yelp',
   },
   {
     id: 4,
     description:
-      "They did my two story roof and gutter cleaning with, they provided many pictures after the job which was very helpful. I'm very happy with the results.",
-    name: 'Emily C.',
-    city: 'Long Beach',
+      "Very satisfied customer here! I had terrible oil stains from my old truck, some of them fresh - a couple of months old, and some were from two years back. The older stains specifically are too hard to remove. There were also a couple of gums that made my driveway look really ugly. Jeremy and Eric came on time as promised and did a great job. The driveway looks way better now, and the toughest stains can hardly be noticed. They make up a good team, they don't other reviews yet as of the time of my review, but they are definitely worth trying them out!",
+    name: 'Ahmed Z.',
+    city: 'Irvine, CA',
+    source: 'Yelp',
   },
   {
     id: 5,
     description:
-      'Tough stains? No problem for Driveway Blasters! Courteous and thorough. Definitely recommend for pressure washing needs.',
-    name: 'Will S.',
-    city: 'Aliso Viejo',
+      'I had a great experience with Driveway Blasters. They were quick to respond, professional, and did an excellent job on my driveway. The oil stains are gone!',
+    name: 'Brando M.',
+    city: 'Laguna Hills, CA',
+    source: 'Google',
   },
   {
     id: 6,
-    description:
-      'Driveway blasters really made a difference. Both punctional and professional, also great follow-up afterwards making sure I was satisfied.',
-    name: 'Jonathan R.',
-    city: 'Corona',
-  },
+    description: "They cleaned my backyard patio and we're really happy with how it turned out. They gave us the best price we could find.",
+    name: 'Will S.',
+    city: 'Aliso Viejo, CA',
+    source: 'Google',
+  }
 ];
 
 function Testimonials() {

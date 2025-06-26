@@ -5,6 +5,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 
 const inter = Inter({ subsets: ['latin'] });
 const oswald = Oswald({ subsets: ['latin'], weight: '400' });
@@ -25,6 +27,7 @@ export default function RootLayout({
         <Footer />
         <Analytics />
         <SpeedInsights />
+        <GoogleAnalytics gaId="G-13ZQ61LPRC" />
       </body>
     </html>
   );
