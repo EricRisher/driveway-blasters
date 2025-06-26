@@ -703,7 +703,7 @@ a {
   width: 98%;
   height: 100%;
   margin: auto;
-  padding-top: 90px;
+  padding-top: 40px;
   overflow: hidden;
 }
 
@@ -1482,6 +1482,10 @@ a {
   .contact-button {
     width: 100px;
     font-size: 16px;
+  }
+  
+  .services-wrapper {
+    margin-left: 20px;
   }
 
   .header-contact-container {
