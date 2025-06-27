@@ -30,6 +30,20 @@ const features = [
     description:
       'Eco-Friendly Cleaning: Tough on stains yet safe for the planet.',
   },
+  {
+    id: 6,
+    description: 'Licensed & Insured: Your property is in safe hands with us.',
+  },
+  {
+    id: 7,
+    description:
+      'Same-Day Quotes: Need a quote fast? We’ve got you covered with same-day service.',
+  },
+  {
+    id: 8,
+    description:
+      'Emergency Services: We’re here for you, offering last minute pressure washing services.',
+  },
 ];
 
 function WhyChooseUs() {

@@ -55,9 +55,10 @@ const HeroCarousel: React.FC = () => {
           LA, Orange & Riverside County Pressure Washing
         </h1>
         <h2 className="hero-h2">
-          Instantly restore your home's curb appeal and shine with a single
-          click. Get fast, reliable, and spotless pressure washing services in
-          seconds!
+          Instantly restore your home's curb appeal with Orange
+          County's most trusted pressure washing company. Get fast, reliable,
+          and spotless pressure washing services in seconds! - Insured
+          & Student Owned
         </h2>
 
         <Link href="/contact" className="button hero-btn">
