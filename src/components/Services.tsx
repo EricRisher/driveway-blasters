@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import ReactCompareImage from 'react-compare-image';
 
-
 const services = [
   {
     title: 'Driveway Cleaning',
@@ -17,15 +16,15 @@ const services = [
   {
     title: 'Roof Cleaning',
     description:
-      'Protect your roof and extend its life with professional soft wash cleaning! We safely eliminate moss, algae, and stains without damage, preventing costly repairs while enhancing your home\'s appearance.',
+      "Protect your roof and extend its life with professional soft wash cleaning! We safely eliminate moss, algae, and stains without damage, preventing costly repairs while enhancing your home's appearance.",
     before: '/images/roofbefore.webp',
     after: '/images/roofafter.webp',
     href: '/roof-cleaning',
   },
   {
     title: 'Deck Cleaning',
-    description: 
-      'Transform your weathered deck into an outdoor oasis! Our professional pressure washing removes years of dirt, grime, and tough stains, restoring natural beauty and extending your deck\'s life. Enjoy your outdoor space again with guaranteed results.',
+    description:
+      "Transform your weathered deck into an outdoor oasis! Our professional pressure washing removes years of dirt, grime, and tough stains, restoring natural beauty and extending your deck's life. Enjoy your outdoor space again with guaranteed results.",
     before: '/images/deckbefore.webp',
     after: '/images/deckafter.webp',
     href: '/deck-cleaning',
@@ -33,7 +32,7 @@ const services = [
   {
     title: 'House Washing',
     description:
-      'Boost your home\'s curb appeal and property value with professional house washing! Our soft wash method safely removes dirt, mold, and grime without damage, making your home look fresh and well-maintained.',
+      "Boost your home's curb appeal and property value with professional house washing! Our soft wash method safely removes dirt, mold, and grime without damage, making your home look fresh and well-maintained.",
     before: '/images/housewashbefore.webp',
     after: '/images/housewashafter.webp',
     href: '/exterior-house-washing',
@@ -41,7 +40,7 @@ const services = [
   {
     title: 'Window Cleaning',
     description:
-      'Crystal-clear windows transform your home\'s appearance and let in more natural light! Our professional streak-free cleaning removes years of buildup, enhances curb appeal, and keeps glass cleaner longer with expert techniques.',
+      "Crystal-clear windows transform your home's appearance and let in more natural light! Our professional streak-free cleaning removes years of buildup, enhances curb appeal, and keeps glass cleaner longer with expert techniques.",
     before: '/images/windowbefore.webp',
     after: '/images/windowafter.webp',
     href: '/window-clarity',
@@ -57,10 +56,18 @@ const services = [
   {
     title: 'Gutter Cleaning',
     description:
-      'Don\'t let clogged gutters cause thousands in water damage! Our professional cleaning removes leaves, debris, and buildup that threatens your foundation, roof, and landscaping. ',
+      "Don't let clogged gutters cause thousands in water damage! Our professional cleaning removes leaves, debris, and buildup that threatens your foundation, roof, and landscaping. ",
     before: '/images/beforegutters.webp',
     after: '/images/aftergutters.webp',
     href: '/gutter-cleaning',
+  },
+  {
+    title: 'Brick Cleaning',
+    description:
+      'Restore the beauty of your brick surfaces with our expert efflorescence removal service. We  safely remove calcium deposits, salt stains, and white chalky buildup caused by water  on brick, stone, and concrete. Perfect for residential and commercial properties, our cleaning process eliminates deep stains without damaging your masonry.',
+    before: '/images/brickdirty.jpg',
+    after: '/images/brickclean.jpg',
+    href: '/brick-cleaning',
   },
 ];
 

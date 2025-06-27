@@ -132,6 +132,12 @@ const Navbar: React.FC = () => {
                 <b>Gutter Cleaning</b>
               </Link>
             </MenuItem>
+            <MenuItem onClick={closeMenu}>
+              <Link href={'/brick-cleaning'} passHref>
+                {' '}
+                <b>Brick Cleaning</b>
+              </Link>
+            </MenuItem>
           </Menu>
         </span>
         <Link href="/blog" passHref>
@@ -272,6 +278,12 @@ const Navbar: React.FC = () => {
                 <Link href="/gutter-cleaning" passHref>
                   {' '}
                   <b>Gutter Cleaning</b>
+                </Link>
+              </MenuItem>
+              <MenuItem onClick={closeMenu}>
+                <Link href={'/brick-cleaning'} passHref>
+                  {' '}
+                  <b>Brick Cleaning</b>
                 </Link>
               </MenuItem>
             </Menu>
