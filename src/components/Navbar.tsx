@@ -66,7 +66,7 @@ const Navbar: React.FC = () => {
     >
       <div
         onClick={() => (window.location.href = '/')}
-        className="nav-header ml-5"
+        className="nav-header"
       >
         <Image
           src={logo}
@@ -175,6 +175,11 @@ const Navbar: React.FC = () => {
             <b>Contact Us</b>
           </span>
         </Link>
+        <div className="bg-[#4a8aea] rounded-3xl p-2 hover:scale-110 transition-transform duration-300 ease-in-out border-3 border-black">
+          <a href="tel:+9493570197">
+            <img src="/icons/phone-icon-w.png" height={32} width={32}/>
+          </a>
+        </div>
       </div>
 
       {/* Hamburger Menu for Mobile Devices */}

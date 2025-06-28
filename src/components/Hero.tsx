@@ -52,32 +52,38 @@ const HeroCarousel: React.FC = () => {
       </Carousel>
       <div className="hero-text-block">
         <h1 className="hero-h1">
-          Orange County & Riverside County Pressure Washing Professionals
+          Orange & Riverside County Pressure Washing Professionals
         </h1>
         <h2 className="hero-h2">
-          Instantly restore your home's curb appeal with Orange County's most
-          trusted pressure washing company. Get fast, reliable, and spotless
-          pressure washing services in seconds! - Insured & Student Owned
+          Restore your home's curb appeal with Orange County's most trusted
+          pressure washing company. From residential to commercial properties
+          you'll be happy you called Driveway Blasters!
         </h2>
-
-        <Link href="/contact" className="button hero-btn">
-          Get A Free Quote!
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="26"
-            height="26"
-            viewBox="0 0 20 19"
-            fill="none"
-          >
-            <path
-              d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-              stroke="currentColor"
-              strokeWidth="2.66667"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>
-          </svg>
-        </Link>
+        <div className="flex flex-col sm:flex-row items-center w-full sm:w-auto gap-4 sm:gap-2">
+          <Link href="/contact" className="button hero-btn">
+            Get A Free Quote!
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="26"
+              height="26"
+              viewBox="0 0 20 19"
+              fill="none"
+            >
+              <path
+                d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
+                stroke="currentColor"
+                strokeWidth="2.66667"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></path>
+            </svg>
+          </Link>
+          <div className="bg-[#4a8aea] rounded-3xl p-2 hover:scale-110 transition-transform duration-300 ease-in-out border-3 border-black">
+            <a href="tel:+9493570197">
+              <img src="/icons/phone-icon-w.png" />
+            </a>
+          </div>
+        </div>
         <Image
           src="/icons/arrow-64.png"
           alt="arrow"
