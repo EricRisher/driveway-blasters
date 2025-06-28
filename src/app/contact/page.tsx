@@ -206,10 +206,9 @@ const ContactMe: React.FC = () => {
             your pressure washing needs in <b>Orange County</b>, and{' '}
             <b>Riverside County</b>.
           </p>
-          <p>
-            <b>Eric: </b> (949) 484-3698 <br />
-            <b>Jeremy:</b> (949) 540-8402
-          </p>
+          <h3 className="pt-3">
+            Call us at <a href="tel:+19493570197">(949) 357-0197</a>
+          </h3>
           <h4 className="mt-3">
             <b>Or fill out the form below:</b>
           </h4>
