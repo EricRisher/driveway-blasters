@@ -402,7 +402,7 @@ a {
   text-align: center;
   position: static;
   height: auto;
-  max-width: clamp(400px, 60vw, 2000px);
+  max-width: clamp(350px, 60vw, 2000px);
   z-index: 8;
   color: #eeeeee;
   text-shadow:
