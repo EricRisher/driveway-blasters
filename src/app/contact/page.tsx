@@ -28,9 +28,11 @@ const ContactMe: React.FC = () => {
   };
 
   const options = [
-    { value: 'driveway-cleaning', label: 'Driveway Cleaning' },
+    { value: 'pressure-washing', label: 'Pressure Washing' },
+    { value: 'roof-cleaning', label: 'Roof Cleaning' },
     { value: 'patio-washing', label: 'Patio Washing' },
     { value: 'window-cleaning', label: 'Window Cleaning' },
+    
     { value: 'commercial-service', label: 'Commercial Service' },
     { value: 'other', label: 'Other' },
   ];

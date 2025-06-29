@@ -30,6 +30,18 @@ const heroData: HeroData[] = [
     id: 7,
     image: '/images/hero7.webp',
   },
+  {
+    id: 8,
+    image: '/images/hero8.jpg',
+  },
+  {
+    id: 9,
+    image: '/images/hero9.jpg',
+  },
+  {
+    id: 10,
+    image: '/images/hero10.jpg',
+  },
 ];
 
 const HeroCarousel: React.FC = () => {

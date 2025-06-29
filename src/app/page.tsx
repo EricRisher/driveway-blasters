@@ -1,6 +1,7 @@
 import WhyChooseUs from '../components/WhyChooseUs';
 import Hero from '../components/Hero';
 import Services from '../components/Services';
+import Offers from '../components/Offers';
 import Testimonials from '../components/Testimonials';
 import Faq from '@/components/Faq';
 import type { Metadata } from 'next';
@@ -264,6 +265,7 @@ export default async function Home() {
       <Services />
       <WhyChooseUs />
       <Testimonials />
+      <Offers />
       <Faq />
     </>
   );

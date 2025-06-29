@@ -1329,6 +1329,78 @@ a {
   margin-top: 24px;
 }
 
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #e3e3e3;
+  padding: 0 32px;
+}
+
+.offers-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px 0;
+  gap: 32px;
+}
+
+.offer-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  padding: 32px;
+  gap: 7%;
+  background-color: #ececec;
+  border-radius: 10px;
+  overflow: visible;
+  position: relative;
+}
+
+.offer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: start;
+  width: clamp(330px, 50%, 600px);
+  font-weight: 500;
+  gap: 10px;
+}
+
+.image-with-badge {
+  position: relative;
+  display: inline-block;
+}
+
+.best-value-badge {
+  position: absolute;
+  top: 20px;
+  left: -25px;
+  z-index: 100;
+  animation: badgeBounce 5s infinite ease-in-out 0.5s;
+  rotate: -6deg;
+}
+
+@keyframes badgeBounce {
+  0% {
+    transform: translateY(-110px);
+  }
+  50% {
+    transform: translateY(-85px);
+  }
+  100% {
+    transform: translateY(-110px);
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .navbar-desktop {
     opacity: 1;
@@ -1388,6 +1460,52 @@ a {
     align-items: center;
     justify-items: center;
     width: 100%;
+  }
+
+  .offer-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 18px;
+  }
+
+  .offers-container {
+    padding: 0 12px;
+  }
+
+  .offers-container h1 {
+    font-size: 2.4rem;
+    width: 100%;
+  }
+
+  .offers-container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .offers-article {
+    padding: 80px 0;
+  }
+
+  .offer-text {
+    padding: 14px 0;
+  }
+
+  .offer-text h2 {
+    font-size: 2.3rem;
+  }
+
+  .offer-text p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .offer-text a {
+    font-size: 1rem;
+  }
+
+  .testimonial-wrapper {
+    width: 92%;
   }
 }
 

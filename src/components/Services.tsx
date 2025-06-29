@@ -16,7 +16,7 @@ const services = [
   {
     title: 'Roof Cleaning',
     description:
-      "Protect your roof and extend its life with professional soft wash cleaning! We safely eliminate moss, algae, and stains without damage, preventing costly repairs while enhancing your home's appearance.",
+      "Protect your roof and extend its life with professional soft wash cleaning! We safely eliminate moss, algae, and stains without damage, preventing you from costly repairs.",
     before: '/images/roofbefore.webp',
     after: '/images/roofafter.webp',
     href: '/roof-cleaning',
@@ -57,14 +57,14 @@ const services = [
     title: 'Gutter Cleaning',
     description:
       "Don't let clogged gutters cause thousands in water damage! Our professional cleaning removes leaves, debris, and buildup that threatens your foundation, roof, and landscaping. ",
-    before: '/images/beforegutters.webp',
-    after: '/images/aftergutters.webp',
+    before: '/images/dirty-gutters.png',
+    after: '/images/clean-gutters.png',
     href: '/gutter-cleaning',
   },
   {
     title: 'Brick Cleaning',
     description:
-      'Restore the beauty of your brick surfaces with our expert efflorescence removal service. We  safely remove calcium deposits, salt stains, and white chalky buildup caused by water  on brick, stone, and concrete. Perfect for residential and commercial properties, our cleaning process eliminates deep stains without damaging your masonry.',
+      'Restore the beauty of your brick surfaces with our expert efflorescence removal service. We  safely remove calcium deposits, salt stains, and white chalky buildup caused by water  on brick, stone, and concrete. Our cleaning process eliminates deep stains without damaging your masonry.',
     before: '/images/brickdirty.jpg',
     after: '/images/brickclean.jpg',
     href: '/brick-cleaning',
