@@ -2,19 +2,27 @@ import React from 'react';
 
 function Offers() {
   return (
-    <div className="offers-container px-4" id="Offers">
+    <div className="offers-container" id="Offers">
       <h3 className="font-bold pt-10">TRANSFORM YOUR PROPERTY</h3>
       <h1 className="font-extrabold w-[90%] text-center">
         Expert Cleaning Services That Deliever Unmatched Results
       </h1>
       <article className="offers-article">
         <div className="offer-card">
-          <img
-            src="/images/house-wash-package.png"
-            width={400}
-            height={400}
-            className="rounded-lg"
-          ></img>
+          <div className="image-with-badge">
+            <img
+              src="/icons/best value.png"
+              className="best-value-badge arrowBounce"
+              width={250}
+              height={250}
+            ></img>
+            <img
+              src="/images/house-wash-package.png"
+              width={500}
+              height={500}
+              className="rounded-lg"
+            ></img>
+          </div>
           <div className="offer-text">
             <h3 className="font-bold">Complete Exterior Package</h3>
             <h2
@@ -61,8 +69,8 @@ function Offers() {
         <div className="offer-card">
           <img
             src="/images/solar-panels.png"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             className="rounded-lg"
           ></img>
           <div className="offer-text">
@@ -117,8 +125,8 @@ function Offers() {
         <div className="offer-card">
           <img
             src="/images/pressure-washing.png"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             className="rounded-lg"
           ></img>
           <div className="offer-text">
@@ -167,12 +175,12 @@ function Offers() {
         <div className="offer-card">
           <img
             src="/images/gutter-roof-package.png"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             className="rounded-lg"
           ></img>
           <div className="offer-text">
-            <h3 className="font-bold">Property Protection Package</h3>
+            <h3 className="font-bold ">Property Protection Package</h3>
             <h2
               className="text-left w-70 font-extrabold"
               style={{ color: '#4a8aea ' }}
@@ -215,8 +223,8 @@ function Offers() {
         <div className="offer-card">
           <img
             src="/images/seasonal-maintenance.png"
-            width={400}
-            height={400}
+            width={500}
+            height={500}
             className="rounded-lg"
           ></img>
           <div className="offer-text">
